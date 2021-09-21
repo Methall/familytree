@@ -1,0 +1,36 @@
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+html { height: 100% }
+body { position:absolute; top:0; bottom:0; right:0; left:0; }
+
+.text {
+  font-family: Calibri,sans-serif;
+}
+
+.top-container {
+  width: 25%;
+  height: 4%;
+  background: white;
+  white-space: nowrap;
+}
+
+.tree-container {
+  position:absolute; top: 4%;
+  width: 90%;
+  height: 96.9%;
+  background: white;
+  white-space: nowrap;
+}
+
+.left-info-container {
+  position:absolute; top: 4%; left:90%;
+  width: 10%;
+  height: 96.9%;
+  background: white;
+  white-space: nowrap;
+}

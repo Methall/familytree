@@ -1,0 +1,28 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   x = "40"
+   y = "100"
+   width="51"
+   height="60"
+   viewBox="0 0 510 600"
+   id="reformatus_id"> 
+
+  <g id="crcna-logo" style="fill:black;stroke:none;">
+    <g id="triangle">      
+      <defs>
+        <polygon id="trianglePart" points="0,40 510,40 470,0 40,0"/>
+      </defs>
+
+      <use xlink:href="#trianglePart" transform="translate(0,472)"/>
+
+      <use xlink:href="#trianglePart" transform="translate(510,472) rotate(-120,0,40)"/>
+      <use xlink:href="#trianglePart" transform="translate(-510,472) rotate(120,510,40)"/>      
+    </g>
+    <g id="cross">
+      <rect x="235" y="0" width="40" height="600"/>
+      <rect x="80" y="264" width="350" height="40"/>
+    </g>
+  </g>
+</svg>
