@@ -29,3 +29,9 @@ function link_coeff_b(gender) {
     return -1
   } 
 }
+
+function getDimensionAttr(element_by_id){
+  get_element = document.getElementById(element_by_id)
+  dim_attr = get_element.getBoundingClientRect()
+  return dim_attr
+}

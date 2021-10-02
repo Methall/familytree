@@ -12,6 +12,14 @@ body { position:absolute; top:0; bottom:0; right:0; left:0; }
   font-family: Calibri,sans-serif;
 }
 
+.tree-container {
+  position:absolute; top: 4%;
+  width: 100%;
+  height: 96.9%;
+  background: white;
+  white-space: nowrap;
+}
+
 .top-container {
   width: 25%;
   height: 4%;
@@ -19,15 +27,7 @@ body { position:absolute; top:0; bottom:0; right:0; left:0; }
   white-space: nowrap;
 }
 
-.tree-container {
-  position:absolute; top: 4%;
-  width: 90%;
-  height: 96.9%;
-  background: white;
-  white-space: nowrap;
-}
-
-.left-info-container {
+.right-container {
   position:absolute; top: 4%; left:90%;
   width: 10%;
   height: 96.9%;

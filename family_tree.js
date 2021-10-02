@@ -1,15 +1,17 @@
 var initial_family_tree = "frank_peter"
+var top_panel_init = true
+var right_panel_init = false
 
-family_tree(initial_family_tree,"1")
+family_tree(initial_family_tree,"1",right_panel_init,top_panel_init)
 
-function family_tree(family_tree_data,id) {
+function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
     d3.json("data/"+ family_tree_data +".json").then(function(treeData) {
 
         var node_width = 238
             node_height = 90
-            treemap_node_height = 115
+            treemap_node_height = 150
             node_gap_gen_0 = 140
-            node_gap_gen_1 = 378
+            node_gap_gen_1 = 400
             religion_svg_dim = 96
             katolikus_sym_scale = 0.016
             evangelikus_sym_scale = 0.030
@@ -22,11 +24,12 @@ function family_tree(family_tree_data,id) {
         var nodes = d3.hierarchy(treeData)
 
         nodes = treemap(nodes)
-
+        
         //body dimensions
         var body_dim = d3.select("body").node().getBoundingClientRect()
 
-        var left_info_svg = d3.select("#left_info_area").append("svg")
+        var right_info_svg = d3.select("#right_area").append("svg")
+            .attr("id", "right_svg")
             .attr("height", "100%")
             .attr("width", "100%")
 
@@ -38,28 +41,13 @@ function family_tree(family_tree_data,id) {
             .attr("id", "svg_group")
 
         // Get main SVG attributes
-        var get_element = document.getElementById('main_svg')
-        var main_svg_dim = get_element.getBoundingClientRect()
+        main_svg_dim = getDimensionAttr('main_svg')
         var root_node_init_position_x = (main_svg_dim.width / 2) - (node_width / 2)
         var root_node_init_position_y = first_node_y_offset
 
-        main_svg.append("line")
-            .attr('x1', main_svg_dim.x)
-            .attr('y1', 0)
-            .attr('x2', main_svg_dim.width)
-            .attr('y2', 0)
-            .attr('stroke', 'black')
-
-        main_svg.append("line")
-            .attr('x1', main_svg_dim.width)
-            .attr('y1', main_svg_dim.height)
-            .attr('x2', main_svg_dim.width)
-            .attr('y2', 0)
-            .attr('stroke', 'black')
-
         d3.json("data/families.json").then(familiesData => {
             var top_rect_width = 60
-            var top_rect_heigth = 25
+            var top_rect_heigth = getDimensionAttr('top_area').height / 1.3
             var top_svg = d3.select("#top_area").append("svg")
                 .attr("id", "top_svg")
                 .attr("height", "100%")
@@ -82,12 +70,12 @@ function family_tree(family_tree_data,id) {
                 .attr("stroke", "black")
                 .attr("stroke-width", 1)
                 .attr("x", (d,i) => 10 + (top_rect_width + 20) * i)
-                .attr("y", 5)
+                .attr("y", getDimensionAttr('top_area').y / 2.6)
                 .on("click", family_tree_button)
             rect.append('text')
                 .text(d => d.name)
                 .attr('x', (d,i) => (top_rect_width + 20) * i + 39)
-                .attr('y', 20)
+                .attr('y', top_rect_heigth / 2 + 6)
                 .attr('font-size', 10)
                 .attr('class', 'text')
                 .attr('font-weight', 800)
@@ -96,6 +84,153 @@ function family_tree(family_tree_data,id) {
                 .on("click", family_tree_button)
                 
         })
+
+        //top line
+        function topLine(top_line_flag,right_line_flag) {
+            css_style_change(top_line_flag,right_line_flag)
+            if (top_line_flag) {
+                d_button_path = downup
+                d_arrow_path = downup_arrow
+            } else {
+                d_button_path = updown
+                d_arrow_path = updown_arrow
+            }
+            dimension = getDimensionAttr('main_svg')
+            top_svg_group = main_svg.append("g")
+                .attr("id", "top_svg_group")
+            top_svg_group.append("line")
+                .attr('id', 'top_line')
+                .attr('x1', dimension.x)
+                .attr('y1', 0)
+                .attr('x2', dimension.width)
+                .attr('y2', 0)
+                .attr('stroke', 'black')
+            top_button_group = top_svg_group.append("g")
+                .attr('id', 'top_button_group')
+                .on("click", top_button_click)
+            top_button_group.append('path')
+                .attr('id', 'updown_button')
+                .attr('d', function(){return d_button_path})
+                .attr('fill', 'white')
+                .attr('stroke', 'black')
+                .attr('stroke-width', '0.1')
+            top_button_group.append('path')
+                .attr('id', 'top_updown_arrow')
+                .attr('d', function(){return d_arrow_path})
+                .attr('fill', 'white')
+                .attr('stroke', 'black')
+                .attr('stroke-width', '0.1')
+            var top_line_width_actual = getDimensionAttr('top_line').width
+            var top_line_y_actual = d3.select('#top_line').attr("y1")
+            d3.select('#top_button_group').attr('transform', 'translate('+(top_line_width_actual * 0.02)+','+(top_line_y_actual + 1)+') scale(7)')
+        }
+
+        //right line
+        function rightLine(right_line_flag,top_line_flag) {
+            css_style_change(top_line_flag,right_line_flag)
+            if (right_line_flag) {
+                d_button_path = downup
+                d_arrow_path = downup_arrow
+            } else {
+                d_button_path = updown
+                d_arrow_path = updown_arrow
+            }
+            dimension = getDimensionAttr('main_svg')
+            right_svg_group = main_svg.append("g")
+                .attr("id", "right_svg_group")
+            right_svg_group.append("line")
+                .attr('id', 'right_line')
+                .attr('x1', dimension.width)
+                .attr('y1', dimension.height)
+                .attr('x2', dimension.width)
+                .attr('y2', 0)
+                .attr('stroke', 'black')
+            right_button_group = right_svg_group.append("g")
+                .attr("id", "right_button_group")
+                .on("click", right_button_click)
+            right_button_group.append('path')
+                .attr('id', 'right_button')
+                .attr('d', function(){return d_button_path})
+                .attr('fill', 'white')
+                .attr('stroke', 'black')
+                .attr('stroke-width', '0.1')
+             right_button_group.append('path')
+                .attr('id', 'right_updown_arrow')
+                .attr('d', function(){return d_arrow_path})
+                .attr('fill', 'white')
+                .attr('stroke', 'black')
+                .attr('stroke-width', '0.1')
+            var right_line_height_actual = getDimensionAttr('right_line').height
+            var right_line_x_actual = d3.select('#right_line').attr("x1")
+            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual-1)+','+(right_line_height_actual*0.02)+') scale(7) rotate(90)')
+        }
+
+        rightLine(right_line_flag,top_line_flag)
+        topLine(top_line_flag,right_line_flag)
+        
+        function css_style_change(top_line_flag,right_line_flag) {
+            if ((top_line_flag) && (right_line_flag)) {
+                document.getElementById('right_area').style.left = "90%"
+                document.getElementById('right_area').style.top = "4%"
+                document.getElementById('right_area').style.width = "10%"
+                document.getElementById('right_area').style.height = "96.9%"
+                document.getElementById('tree_area').style.height = "96.9%"
+                document.getElementById('tree_area').style.top = "4%"
+                document.getElementById('tree_area').style.width = "90%"
+            } else if (!(top_line_flag) && (right_line_flag)) {
+                document.getElementById('right_area').style.left = "90%"
+                document.getElementById('right_area').style.top = "4%"
+                document.getElementById('right_area').style.width = "10%"
+                document.getElementById('right_area').style.height = "96.9%"
+                document.getElementById('tree_area').style.height = "100%"
+                document.getElementById('tree_area').style.top = "0%"
+                document.getElementById('tree_area').style.width = "90%"
+            } else if ((top_line_flag) && !(right_line_flag)){
+                document.getElementById('right_area').style.left = "100%"
+                document.getElementById('right_area').style.top = "0%"
+                document.getElementById('right_area').style.width = "0%"
+                document.getElementById('right_area').style.height = "100%"
+                document.getElementById('tree_area').style.height = "96.9%"
+                document.getElementById('tree_area').style.top = "4%"
+                document.getElementById('tree_area').style.width = "100%"
+            } else {
+                document.getElementById('right_area').style.left = "100%"
+                document.getElementById('right_area').style.top = "0%"
+                document.getElementById('right_area').style.width = "0%"
+                document.getElementById('right_area').style.height = "100%"
+                document.getElementById('tree_area').style.height = "100%"
+                document.getElementById('tree_area').style.top = "0%"
+                document.getElementById('tree_area').style.width = "100%"
+            }
+        }
+
+        function right_button_click(event) {
+            d3.select('#right_svg_group').remove()
+            d3.select('#top_svg_group').remove()
+            if (right_line_flag) {
+                right_line_flag = false
+                rightLine(right_line_flag,top_line_flag)
+                topLine(top_line_flag,right_line_flag)
+            } else {
+                right_line_flag = true
+                rightLine(right_line_flag,top_line_flag)
+                topLine(top_line_flag,right_line_flag)
+            }
+        }
+
+        function top_button_click(event) {
+            d3.select('#top_svg_group').remove()
+            d3.select('#right_svg_group').remove()
+            if (top_line_flag) {
+                top_line_flag = false
+                topLine(top_line_flag,right_line_flag)
+                rightLine(right_line_flag,top_line_flag)
+            } else {
+                top_line_flag = true
+                topLine(top_line_flag,right_line_flag)
+                rightLine(right_line_flag,top_line_flag)
+            }
+        }
 
         var zoom = d3.zoom()
         .scaleExtent([0.5, 2.5])
@@ -127,7 +262,7 @@ function family_tree(family_tree_data,id) {
         function update(included,clicked_id) {
 
             // adds the links between the nodes
-            var link = svg_group.selectAll(".link")
+            svg_group.selectAll(".link")
                 .data(nodes.descendants().slice(1))
                 .enter().append("path")
                 .filter(d => {
@@ -525,42 +660,51 @@ function family_tree(family_tree_data,id) {
 
             //Get all the nodes in direct line into an array
             var gen_depth = d3.range(next_gen,last_gen_depth,1)
-            var actual_id = [currentId]
-            for (var g of gen_depth) {
-                temp_array = []
-                for (var i of actual_id) {
-                    nodes.each(function(d) {
-                        if (i == d.data.id) {
-                            for (var k of generationRange(g)) {
-                                nodes.each(function(d) {
-                                    if (k == d.data.id) {
-                                        if (i == d.parent.data.id) {
-                                            included.push(k)
-                                            temp_array.push(k)
+
+            function included_array(id){
+                var actual_id = [id]
+                for (var g of gen_depth) {
+                    temp_array = []
+                    for (var i of actual_id) {
+                        nodes.each(function(d) {
+                            if (i == d.data.id) {
+                                for (var k of generationRange(g)) {
+                                    nodes.each(function(d) {
+                                        if (k == d.data.id) {
+                                            if (i == d.parent.data.id) {
+                                                included.push(k)
+                                                temp_array.push(k)
+                                            }
                                         }
-                                    }
-                                })
+                                    })
+                                }
                             }
-                        }
-                    })
+                        })
+                    }
+                    actual_id = []
+                    actual_id = temp_array
+                    temp_array = []
                 }
-                actual_id = []
-                actual_id = temp_array
-                temp_array = []
             }
 
-            //Remove all nodes and links for redraw only the needed ones again
+            included_array(currentId)
+
+            if (currentGeneration > 3) {
+                included_array(Number(currentId)+1)
+            }
+
+            //Remove all nodes and links for redrawing only the needed ones again
             nodes.each(function(d) {
                 d3.select('[id="node'+d.data.id+'"]').remove()
                 d3.select('[id="link'+d.data.id+'"]').remove()
             })
-
+            //console.log(included)
             update(included,currentId)
         }
 
         function family_tree_button(event, d){
             d3.selectAll("svg").remove()
-            family_tree(d.file,d.id)
+            family_tree(d.file,d.id,right_line_flag,top_line_flag)
         }
     })
 }
