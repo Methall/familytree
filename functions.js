@@ -35,3 +35,8 @@ function getDimensionAttr(element_by_id){
   dim_attr = get_element.getBoundingClientRect()
   return dim_attr
 }
+
+function split_name(name) {
+  var split_name = name.split(" ")
+  return split_name
+}

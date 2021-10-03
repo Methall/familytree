@@ -46,8 +46,12 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         var root_node_init_position_y = first_node_y_offset
 
         d3.json("data/families.json").then(familiesData => {
-            var top_rect_width = 60
+            var number_of_family = 6 //set minimum family number for decorative look
+            var top_rect_width = (getDimensionAttr('top_area').width / number_of_family) - 12
             var top_rect_heigth = getDimensionAttr('top_area').height / 1.3
+            var font_size = 10
+            var firstname_text_y_coeff = 12
+
             var top_svg = d3.select("#top_area").append("svg")
                 .attr("id", "top_svg")
                 .attr("height", "100%")
@@ -57,7 +61,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .enter()
                 .append('g')
             rect.append("rect")
-                .attr("id", d => d.file)
+                .attr("id", "family_select_rect")
                 .attr("width", top_rect_width)
                 .attr("height", top_rect_heigth)
                 .attr("fill", d => {
@@ -69,20 +73,31 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 })
                 .attr("stroke", "black")
                 .attr("stroke-width", 1)
-                .attr("x", (d,i) => 10 + (top_rect_width + 20) * i)
+                .attr("x", (d,i) => 10 + (top_rect_width + 10) * i)
                 .attr("y", getDimensionAttr('top_area').y / 2.6)
                 .on("click", family_tree_button)
             rect.append('text')
-                .text(d => d.name)
-                .attr('x', (d,i) => (top_rect_width + 20) * i + 39)
-                .attr('y', top_rect_heigth / 2 + 6)
-                .attr('font-size', 10)
+                .attr("id", "family_select_surname_text")
+                .text(d => {return split_name(d.name)[0]})
+                .attr('x', (d,i) => 10 + (top_rect_width + 10) * i + (top_rect_width / 2))
+                .attr('y', top_rect_heigth / 2 + 2)
+                .attr('font-size', font_size)
                 .attr('class', 'text')
                 .attr('font-weight', 800)
                 .attr('text-anchor', 'middle')
                 .style("cursor", "default")
                 .on("click", family_tree_button)
-                
+            rect.append('text')
+                .attr("id", "family_select_first_text")
+                .text(d => {return split_name(d.name)[1]})
+                .attr('x', (d,i) => 10 + (top_rect_width + 10) * i + (top_rect_width / 2))
+                .attr('y', getDimensionAttr('family_select_surname_text').y + firstname_text_y_coeff)
+                .attr('font-size', font_size)
+                .attr('class', 'text')
+                .attr('font-weight', 800)
+                .attr('text-anchor', 'middle')
+                .style("cursor", "default")
+                .on("click", family_tree_button)
         })
 
         //top line
