@@ -24,7 +24,15 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         var nodes = d3.hierarchy(treeData)
 
         nodes = treemap(nodes)
-        
+
+        var zoom = d3.zoom()
+        .scaleExtent([0.5, 2.5])
+        //.translateExtent([[-3000,0],[3000,3000]])
+        .on('zoom', function(event) {
+            d3.select("#svg_group")
+                .attr("transform", event.transform)
+        })
+
         //body dimensions
         var body_dim = d3.select("body").node().getBoundingClientRect()
 
@@ -39,6 +47,8 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             .attr("width", "100%")
         svg_group = main_svg.append("g")
             .attr("id", "svg_group")
+
+        main_svg.call(zoom).on("dblclick.zoom", null)
 
         // Get main SVG attributes
         main_svg_dim = getDimensionAttr('main_svg')
@@ -125,19 +135,39 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .on("click", top_button_click)
             top_button_group.append('path')
                 .attr('id', 'updown_button')
-                .attr('d', function(){return d_button_path})
+                .attr('d', d_button_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
                 .attr('stroke-width', '0.1')
             top_button_group.append('path')
                 .attr('id', 'top_updown_arrow')
-                .attr('d', function(){return d_arrow_path})
+                .attr('d', d_arrow_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
                 .attr('stroke-width', '0.1')
             var top_line_width_actual = getDimensionAttr('top_line').width
             var top_line_y_actual = d3.select('#top_line').attr("y1")
             d3.select('#top_button_group').attr('transform', 'translate('+(top_line_width_actual * 0.02)+','+(top_line_y_actual + 1)+') scale(7)')
+            to_the_top_button_group = top_svg_group.append("g")
+                .attr('id', 'to_the_top_button_group')
+                .on("click", to_the_top_button_click)
+            to_the_top_button_group.append('path')
+                .attr('id', 'to_the_top_button')
+                .attr('d', updown)
+                .attr('fill', '#B8ECB8')
+                .attr('stroke', 'black')
+                .attr('stroke-width', '0.1')
+            to_the_top_button_group.append('text')
+                .attr("id", "to_the_top_button_text")
+                .text("Top")
+                .attr('x', getDimensionAttr('to_the_top_button').x / 2)
+                .attr('y', 2.5)
+                .attr('font-size', 3)
+                .attr('class', 'text')
+                .attr('font-weight', 700)
+                .attr('text-anchor', 'middle')
+                .style("cursor", "default")
+            d3.select('#to_the_top_button_group').attr('transform', 'translate('+ (getDimensionAttr('top_button_group').x + getDimensionAttr('top_button_group').width) +','+(top_line_y_actual + 1)+') scale(5)')
         }
 
         //right line
@@ -165,13 +195,13 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .on("click", right_button_click)
             right_button_group.append('path')
                 .attr('id', 'right_button')
-                .attr('d', function(){return d_button_path})
+                .attr('d', d_button_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
                 .attr('stroke-width', '0.1')
              right_button_group.append('path')
                 .attr('id', 'right_updown_arrow')
-                .attr('d', function(){return d_arrow_path})
+                .attr('d', d_arrow_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
                 .attr('stroke-width', '0.1')
@@ -246,16 +276,6 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 rightLine(right_line_flag,top_line_flag)
             }
         }
-
-        var zoom = d3.zoom()
-        .scaleExtent([0.5, 2.5])
-        //.translateExtent([[-3000,0],[3000,3000]])
-        .on('zoom', function(event) {
-          d3.select("#svg_group")
-            .attr("transform", event.transform)
-        })
-
-        main_svg.call(zoom).on("dblclick.zoom", null)
 
         nodes.each(function(d) {
             if (d.data.generation == '0') {
@@ -713,13 +733,23 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 d3.select('[id="node'+d.data.id+'"]').remove()
                 d3.select('[id="link'+d.data.id+'"]').remove()
             })
-            //console.log(included)
+
             update(included,currentId)
         }
 
         function family_tree_button(event, d){
             d3.selectAll("svg").remove()
             family_tree(d.file,d.id,right_line_flag,top_line_flag)
+        }
+
+        function to_the_top_button_click(event) {
+            d3.select("#svg_group")
+                .transition()
+                .duration(750)
+                .attr("transform", d3.zoomIdentity)
+            d3.zoomTransform(this).x = 0
+            d3.zoomTransform(this).y = 0
+            d3.zoomTransform(this).k = 1
         }
     })
 }
