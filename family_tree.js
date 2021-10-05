@@ -36,11 +36,6 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         //body dimensions
         var body_dim = d3.select("body").node().getBoundingClientRect()
 
-        var right_info_svg = d3.select("#right_area").append("svg")
-            .attr("id", "right_svg")
-            .attr("height", "100%")
-            .attr("width", "100%")
-
         var main_svg = d3.select("#tree_area").append("svg")
             .attr("id", "main_svg")
             .attr("height", "100%")
@@ -49,6 +44,13 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             .attr("id", "svg_group")
 
         main_svg.call(zoom).on("dblclick.zoom", null)
+
+        var right_info_svg = d3.select("#right_area").append("svg")
+            .attr("id", "right_svg")
+            .attr("height", "100%")
+            .attr("width", "100%")
+        right_info_svg_group = right_info_svg.append("g")
+            .attr("id", "right_info_svg_group")
 
         // Get main SVG attributes
         main_svg_dim = getDimensionAttr('main_svg')
@@ -66,6 +68,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr("id", "top_svg")
                 .attr("height", "100%")
                 .attr("width", "100%")
+
             var rect = top_svg.selectAll()
                 .data(familiesData)
                 .enter()
@@ -186,9 +189,9 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             right_svg_group.append("line")
                 .attr('id', 'right_line')
                 .attr('x1', dimension.width)
-                .attr('y1', dimension.height)
+                .attr('y1', 0)
                 .attr('x2', dimension.width)
-                .attr('y2', 0)
+                .attr('y2', dimension.height)
                 .attr('stroke', 'black')
             right_button_group = right_svg_group.append("g")
                 .attr("id", "right_button_group")
@@ -212,42 +215,6 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
 
         rightLine(right_line_flag,top_line_flag)
         topLine(top_line_flag,right_line_flag)
-        
-        function css_style_change(top_line_flag,right_line_flag) {
-            if ((top_line_flag) && (right_line_flag)) {
-                document.getElementById('right_area').style.left = "90%"
-                document.getElementById('right_area').style.top = "4%"
-                document.getElementById('right_area').style.width = "10%"
-                document.getElementById('right_area').style.height = "96.9%"
-                document.getElementById('tree_area').style.height = "96.9%"
-                document.getElementById('tree_area').style.top = "4%"
-                document.getElementById('tree_area').style.width = "90%"
-            } else if (!(top_line_flag) && (right_line_flag)) {
-                document.getElementById('right_area').style.left = "90%"
-                document.getElementById('right_area').style.top = "4%"
-                document.getElementById('right_area').style.width = "10%"
-                document.getElementById('right_area').style.height = "96.9%"
-                document.getElementById('tree_area').style.height = "100%"
-                document.getElementById('tree_area').style.top = "0%"
-                document.getElementById('tree_area').style.width = "90%"
-            } else if ((top_line_flag) && !(right_line_flag)){
-                document.getElementById('right_area').style.left = "100%"
-                document.getElementById('right_area').style.top = "0%"
-                document.getElementById('right_area').style.width = "0%"
-                document.getElementById('right_area').style.height = "100%"
-                document.getElementById('tree_area').style.height = "96.9%"
-                document.getElementById('tree_area').style.top = "4%"
-                document.getElementById('tree_area').style.width = "100%"
-            } else {
-                document.getElementById('right_area').style.left = "100%"
-                document.getElementById('right_area').style.top = "0%"
-                document.getElementById('right_area').style.width = "0%"
-                document.getElementById('right_area').style.height = "100%"
-                document.getElementById('tree_area').style.height = "100%"
-                document.getElementById('tree_area').style.top = "0%"
-                document.getElementById('tree_area').style.width = "100%"
-            }
-        }
 
         function right_button_click(event) {
             d3.select('#right_svg_group').remove()
@@ -291,10 +258,11 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         })
 
         var included = [1,2,3]
+        var init_colored_id = "none"
 
-        update(included,"first")
+        update(included,"first",init_colored_id)
 
-        function update(included,clicked_id) {
+        function update(included,clicked_id,colored_id) {
 
             // adds the links between the nodes
             svg_group.selectAll(".link")
@@ -337,12 +305,20 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             
             var main_rect = node.append('svg')
               .append('g')
+              .on("click", click_node)
             
             // adds the main rectangle to the node
             main_rect.append("rect")
+              .attr("id", d => "big_rect"+d.data.id)
               .attr("width", node_width)
               .attr("height", node_height)
-              .attr("fill", "white")
+              .attr("fill", function(d) {
+                  if (colored_id == d.data.id) {
+                    return "#E1FADD"
+                  } else {
+                    return "white"
+                  }
+              })
               .attr("stroke", "black")
               .attr("stroke-width", 1)
               .attr("x", 1)
@@ -673,6 +649,16 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 var last_gen_depth = Number(currentGeneration) + 3
             }
 
+            //keep colored node
+            var colored_id
+            nodes.each(function(d) {
+                if (d.data.generation <= currentGeneration) {
+                    if (d3.select('[id="big_rect'+d.data.id+'"]').attr("fill") == "#E1FADD") {
+                        colored_id = d.data.id    
+                    }
+                }
+            })
+
             //If you choose node above the previous one remove nodes below the needed level (last_gen_depth)
             nodes.each(function(d) {
                 if (d.data.generation > currentGeneration) {
@@ -734,7 +720,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 d3.select('[id="link'+d.data.id+'"]').remove()
             })
 
-            update(included,currentId)
+            update(included,currentId,colored_id)
         }
 
         function family_tree_button(event, d){
@@ -750,6 +736,31 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             d3.zoomTransform(this).x = 0
             d3.zoomTransform(this).y = 0
             d3.zoomTransform(this).k = 1
+        }
+
+        function click_node(event, d) {
+            actual_right_area_style = document.getElementById('right_area').style.width
+            nodes.each(function(d) {
+                d3.select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
+            })
+            if (d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill") == "white") {
+                d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "#E1FADD")
+            } else {
+                d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
+            }
+            document.getElementById('right_area').style.width = "10%"
+            d3.select("#right_info_svg_group").selectAll("text").remove()
+            right_info_svg_group.append("text")
+                .attr("id", "click_name_text")
+                .text(d.data.name)
+                .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
+                .attr('y', getDimensionAttr('top_svg').height)
+                .attr('class', 'text')
+                .attr('text-anchor', 'middle')
+                .attr('font-weight', 'bold')
+                .attr('font-size', 20)
+            
+            document.getElementById('right_area').style.width = actual_right_area_style
         }
     })
 }
