@@ -326,6 +326,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             
             // adds the header rectangle to the node
             main_rect.append("rect")
+              .attr("id", d => "small_rect"+d.data.id)
               .attr("width", node_width)
               .attr("height", node_height * 0.14478)
               .attr("fill", function(d) {
@@ -648,16 +649,18 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             } else {
                 var last_gen_depth = Number(currentGeneration) + 3
             }
-
+            
             //keep colored node
-            var colored_id
-            nodes.each(function(d) {
-                if (d.data.generation <= currentGeneration) {
-                    if (d3.select('[id="big_rect'+d.data.id+'"]').attr("fill") == "#E1FADD") {
-                        colored_id = d.data.id    
+            colored_id = "none"
+            for (var i of included) {
+                nodes.each(function(d) {
+                    if (i == d.data.id) {
+                        if (d3.select('[id="big_rect'+d.data.id+'"]').attr("fill") == "#E1FADD") {
+                            colored_id = d.data.id
+                        }
                     }
-                }
-            })
+                })
+            }
 
             //If you choose node above the previous one remove nodes below the needed level (last_gen_depth)
             nodes.each(function(d) {
@@ -740,25 +743,38 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
 
         function click_node(event, d) {
             actual_right_area_style = document.getElementById('right_area').style.width
+            var actual_node_fill = d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill")
             nodes.each(function(d) {
                 d3.select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
             })
-            if (d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill") == "white") {
+            if (actual_node_fill == "white") {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "#E1FADD")
+
+                document.getElementById('right_area').style.width = "10%"
+                d3.select("#right_info_svg_group").selectAll("text").remove()
+                right_info_svg_group.append("text")
+                    .attr("id", "click_name_text")
+                    .text(d.data.name)
+                    .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
+                    .attr('y', getDimensionAttr('top_svg').height)
+                    .attr('class', 'text')
+                    .attr('text-anchor', 'middle')
+                    .attr('font-weight', 'bold')
+                    .attr('font-size', 20)
+                //right_info_svg_group.append("text")
+                //    .attr("id", "click_siblings_text")
+                //    .text(d.data.siblings[0])
+                //    .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
+                //    .attr('y', getDimensionAttr('click_name_text').y + 10)
+                //    .attr('class', 'text')
+                //    .attr('text-anchor', 'middle')
+                //    .attr('font-weight', 'bold')
+                //    .attr('font-size', 20)
+
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
+                d3.select("#right_info_svg_group").selectAll("text").remove()
             }
-            document.getElementById('right_area').style.width = "10%"
-            d3.select("#right_info_svg_group").selectAll("text").remove()
-            right_info_svg_group.append("text")
-                .attr("id", "click_name_text")
-                .text(d.data.name)
-                .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
-                .attr('y', getDimensionAttr('top_svg').height)
-                .attr('class', 'text')
-                .attr('text-anchor', 'middle')
-                .attr('font-weight', 'bold')
-                .attr('font-size', 20)
             
             document.getElementById('right_area').style.width = actual_right_area_style
         }
