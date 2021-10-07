@@ -43,36 +43,28 @@ function split_name(name) {
 
 function css_style_change(top_line_flag,right_line_flag) {
   if ((top_line_flag) && (right_line_flag)) {
-      document.getElementById('right_area').style.left = "90%"
-      document.getElementById('right_area').style.top = "4%"
-      document.getElementById('right_area').style.width = "10%"
-      document.getElementById('right_area').style.height = "96.9%"
       document.getElementById('tree_area').style.height = "96.9%"
       document.getElementById('tree_area').style.top = "4%"
-      document.getElementById('tree_area').style.width = "90%"
+      document.getElementById('tree_area').style.width = "82%"
+      document.getElementById('right_area').style.left = "82%"
+      document.getElementById('right_area').style.top = "4%"
   } else if (!(top_line_flag) && (right_line_flag)) {
-      document.getElementById('right_area').style.left = "90%"
-      document.getElementById('right_area').style.top = "4%"
-      document.getElementById('right_area').style.width = "10%"
-      document.getElementById('right_area').style.height = "96.9%"
       document.getElementById('tree_area').style.height = "100%"
       document.getElementById('tree_area').style.top = "0%"
       document.getElementById('tree_area').style.width = "90%"
-  } else if ((top_line_flag) && !(right_line_flag)){
-      document.getElementById('right_area').style.left = "100%"
+      document.getElementById('right_area').style.left = "90%"
       document.getElementById('right_area').style.top = "0%"
-      document.getElementById('right_area').style.width = "0%"
-      document.getElementById('right_area').style.height = "100%"
+  } else if ((top_line_flag) && !(right_line_flag)){
       document.getElementById('tree_area').style.height = "96.9%"
       document.getElementById('tree_area').style.top = "4%"
       document.getElementById('tree_area').style.width = "100%"
-  } else {
       document.getElementById('right_area').style.left = "100%"
-      document.getElementById('right_area').style.top = "0%"
-      document.getElementById('right_area').style.width = "0%"
-      document.getElementById('right_area').style.height = "100%"
+      document.getElementById('right_area').style.top = "4%"
+  } else {
       document.getElementById('tree_area').style.height = "100%"
       document.getElementById('tree_area').style.top = "0%"
       document.getElementById('tree_area').style.width = "100%"
+      document.getElementById('right_area').style.left = "100%"
+      document.getElementById('right_area').style.top = "0%"
   }
 }

@@ -1,6 +1,6 @@
 var initial_family_tree = "frank_peter"
 var top_panel_init = true
-var right_panel_init = false
+var right_panel_init = true
 
 family_tree(initial_family_tree,"1",right_panel_init,top_panel_init)
 
@@ -128,7 +128,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr("id", "top_svg_group")
             top_svg_group.append("line")
                 .attr('id', 'top_line')
-                .attr('x1', dimension.x)
+                .attr('x1', 0)
                 .attr('y1', 0)
                 .attr('x2', dimension.width)
                 .attr('y2', 0)
@@ -170,7 +170,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr('font-weight', 700)
                 .attr('text-anchor', 'middle')
                 .style("cursor", "default")
-            d3.select('#to_the_top_button_group').attr('transform', 'translate('+ (getDimensionAttr('top_button_group').x + getDimensionAttr('top_button_group').width) +','+(top_line_y_actual + 1)+') scale(5)')
+            d3.select('#to_the_top_button_group').attr('transform', 'translate('+ ((top_line_width_actual * 0.02) + getDimensionAttr('top_button_group').x + getDimensionAttr('top_button_group').width) +','+(top_line_y_actual + 1)+') scale(5)')
         }
 
         //right line
@@ -750,7 +750,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             if (actual_node_fill == "white") {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "#E1FADD")
 
-                document.getElementById('right_area').style.width = "10%"
+                document.getElementById('right_area').style.width = "18%"
                 d3.select("#right_info_svg_group").selectAll("text").remove()
                 right_info_svg_group.append("text")
                     .attr("id", "click_name_text")
@@ -761,16 +761,33 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                     .attr('text-anchor', 'middle')
                     .attr('font-weight', 'bold')
                     .attr('font-size', 20)
-                //right_info_svg_group.append("text")
-                //    .attr("id", "click_siblings_text")
-                //    .text(d.data.siblings[0])
-                //    .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
-                //    .attr('y', getDimensionAttr('click_name_text').y + 10)
-                //    .attr('class', 'text')
-                //    .attr('text-anchor', 'middle')
-                //    .attr('font-weight', 'bold')
-                //    .attr('font-size', 20)
+                right_info_svg_group.append("text")
+                    .attr("id", "click_dates_text")
+                    .text(""+d.data.birth_date+" - "+d.data.death_date+"")
+                    .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
+                    .attr('y', getDimensionAttr('top_svg').height + 18)
+                    .attr('class', 'text')
+                    .attr('text-anchor', 'middle')
+                    .attr('font-size', 15)
+                right_info_svg_group.append("text")
+                    .attr("id", "click_places_text")
+                    .text(""+d.data.birth_place+" - "+d.data.death_place+"")
+                    .attr('x', getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width / 2))
+                    .attr('y', getDimensionAttr('top_svg').height + 34)
+                    .attr('class', 'text')
+                    .attr('text-anchor', 'middle')
+                    .attr('font-size', 15)
 
+                for (let i = 1; i <= d.data.siblings.length; i++) {
+                    right_info_svg_group.append("text")
+                        .attr("id", "sibling_name")
+                        .text(""+i+". Gajárszki Réka")
+                        .attr('x', 2)
+                        .attr('y', (getDimensionAttr('top_svg').height + 30) + (i * 30))
+                        .attr('class', 'text')
+                        .attr('text-anchor', 'start')
+                        .attr('font-size', 15)
+                }
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
                 d3.select("#right_info_svg_group").selectAll("text").remove()

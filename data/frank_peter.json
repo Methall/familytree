@@ -1,12 +1,12 @@
 {
 	"id": "1",
 	"generation": "0",
-	"name": "X Men",
+	"name": "Frank Péter",
 	"gender": "male",
 	"birth_place": "Budapest",
 	"birth_date": "1984.01.17",
-	"death_date": "Budapest",
-	"death_place": "1984.01.17",
+	"death_date": "1984.01.17",
+	"death_place": "Budapest",
 	"marriage_date": "",
 	"marriage_place": "",
 	"religion": "katolikus",
@@ -14,7 +14,10 @@
 	"mother_id": "",
 	"father_id": "",
 	"comment": "",
-	"siblings": [],
+	"siblings": [
+		{"sibling_id": "1.0.1","sibling_name": "Wolvarine","sibling_birth_place": "Budapest","sibling_birth_date": "1984.01.17", "sibling_death_place": "Budapest","sibling_death_date": "1984.01.17","death_place_date": "1984.01.17","sibling_spouse_name": "Valaki Senki", "sibling_marriage_place": "Budapest", "sibling_marriage_date": "1984.01.17"},
+		{"sibling_id": "1.0.2","sibling_name": "Wolvarine","sibling_birth_place": "Budapest","sibling_birth_date": "1984.01.17", "sibling_death_place": "Budapest","sibling_death_date": "1984.01.17","death_place_date": "1984.01.17","sibling_spouse_name": "Valaki Senki", "sibling_marriage_place": "Budapest", "sibling_marriage_date": "1984.01.17"}
+	],
 	"children": [{
 	"id": "2",
 	"generation": "1",
