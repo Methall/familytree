@@ -45,26 +45,59 @@ function css_style_change(top_line_flag,right_line_flag) {
   if ((top_line_flag) && (right_line_flag)) {
       document.getElementById('tree_area').style.height = "96.9%"
       document.getElementById('tree_area').style.top = "4%"
-      document.getElementById('tree_area').style.width = "82%"
+      css_top_true_right_true_tree_area_width = document.getElementById('tree_area').style.width = "82%"
       document.getElementById('right_area').style.left = "82%"
       document.getElementById('right_area').style.top = "4%"
+      css_top_true_right_true_right_area_width = document.getElementById('right_area').style.width = "18%"
   } else if (!(top_line_flag) && (right_line_flag)) {
       document.getElementById('tree_area').style.height = "100%"
       document.getElementById('tree_area').style.top = "0%"
-      document.getElementById('tree_area').style.width = "90%"
-      document.getElementById('right_area').style.left = "90%"
+      document.getElementById('tree_area').style.width = "82%"
+      document.getElementById('right_area').style.left = "82%"
       document.getElementById('right_area').style.top = "0%"
+      document.getElementById('right_area').style.width = "18%"
   } else if ((top_line_flag) && !(right_line_flag)){
       document.getElementById('tree_area').style.height = "96.9%"
       document.getElementById('tree_area').style.top = "4%"
       document.getElementById('tree_area').style.width = "100%"
       document.getElementById('right_area').style.left = "100%"
       document.getElementById('right_area').style.top = "4%"
+      document.getElementById('right_area').style.width = "0%"
   } else {
       document.getElementById('tree_area').style.height = "100%"
       document.getElementById('tree_area').style.top = "0%"
       document.getElementById('tree_area').style.width = "100%"
       document.getElementById('right_area').style.left = "100%"
       document.getElementById('right_area').style.top = "0%"
+      document.getElementById('right_area').style.width = "0%"
   }
+}
+
+function wrap_text(text,svg_width,text_length,svg,x_pos,y_pos) {
+  var texts = []
+  var accum_text = ""
+  var i_accum = 0
+  for (var i of text) {
+      i_accum = i_accum + 1
+      accum_text = accum_text.concat(i)
+      svg.append("text")
+          .attr("id", "comment_text")
+          .text(""+accum_text+"")
+          .attr('x', x_pos)
+          .attr('y', y_pos)
+          .attr('class', 'text')
+          .attr('text-anchor', 'start')
+          .attr('font-size', 12)
+      if (i_accum == text_length) {
+          texts.push(accum_text)
+          d3.select("#comment_text").remove()
+          break;
+      }
+      if (getDimensionAttr('comment_text').width >= (svg_width - 6)) {
+          texts.push(accum_text)
+          accum_text = ""
+      }
+      d3.select("#comment_text").remove()
+  }
+  return texts
 }

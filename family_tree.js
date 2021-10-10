@@ -1,6 +1,8 @@
-var initial_family_tree = "frank_peter"
-var top_panel_init = true
-var right_panel_init = true
+initial_family_tree = "frank_peter"
+top_panel_init = true
+right_panel_init = true
+
+css_style_change(top_panel_init,right_panel_init)
 
 family_tree(initial_family_tree,"1",right_panel_init,top_panel_init)
 
@@ -732,17 +734,19 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         }
 
         function to_the_top_button_click(event) {
+            var t = d3.zoomIdentity.translate(0, 0).scale(1)
             d3.select("#svg_group")
                 .transition()
                 .duration(750)
-                .attr("transform", d3.zoomIdentity)
+                .attr("transform", t)
             d3.zoomTransform(this).x = 0
             d3.zoomTransform(this).y = 0
             d3.zoomTransform(this).k = 1
         }
 
         function click_node(event, d) {
-            actual_right_area_style = document.getElementById('right_area').style.width
+            actual_tree_area_style_width = document.getElementById('tree_area').style.width
+            actual_right_area_style_width = document.getElementById('right_area').style.width
             var actual_node_fill = d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill")
             nodes.each(function(d) {
                 d3.select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
@@ -750,7 +754,9 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             if (actual_node_fill == "white") {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "#E1FADD")
 
-                document.getElementById('right_area').style.width = "18%"
+                document.getElementById('tree_area').style.width = css_top_true_right_true_tree_area_width
+                document.getElementById('right_area').style.width = css_top_true_right_true_right_area_width
+                
                 d3.select("#right_info_svg_group").selectAll("text").remove()
                 right_info_svg_group.append("text")
                     .attr("id", "click_name_text")
@@ -761,6 +767,14 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                     .attr('text-anchor', 'middle')
                     .attr('font-weight', 'bold')
                     .attr('font-size', 20)
+                right_info_svg_group.append("text")
+                    .attr("id", "click_id_text")
+                    .text("["+d.data.id+"]")
+                    .attr('x', (getDimensionAttr('right_svg').width - (getDimensionAttr('right_svg').width - getDimensionAttr('click_name_text').width) / 2) + 15)
+                    .attr('y', getDimensionAttr('top_svg').height)
+                    .attr('class', 'text')
+                    .attr('text-anchor', 'start')
+                    .attr('font-size', 15)
                 right_info_svg_group.append("text")
                     .attr("id", "click_dates_text")
                     .text(""+d.data.birth_date+" - "+d.data.death_date+"")
@@ -778,22 +792,74 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                     .attr('text-anchor', 'middle')
                     .attr('font-size', 15)
 
-                for (let i = 1; i <= d.data.siblings.length; i++) {
+                for (let i = 0; i <= (d.data.siblings.length - 1); i++) {
                     right_info_svg_group.append("text")
-                        .attr("id", "sibling_name")
-                        .text(""+i+". Gajárszki Réka")
+                        .text(""+(i+1)+". "+d.data.siblings[i].sibling_name+"")
                         .attr('x', 2)
-                        .attr('y', (getDimensionAttr('top_svg').height + 30) + (i * 30))
+                        .attr('y', (getDimensionAttr('top_svg').height + 55) + (i * 62))
                         .attr('class', 'text')
                         .attr('text-anchor', 'start')
-                        .attr('font-size', 15)
+                        .attr('font-size', 12)
+                        .attr('font-weight', 'bold')
+                   right_info_svg_group.append("text")
+                        .text(""+d.data.siblings[i].sibling_birth_date+" - "+d.data.siblings[i].sibling_death_date+"")
+                        .attr('x', 2)
+                        .attr('y', (getDimensionAttr('top_svg').height + 70) + (i * 62))
+                        .attr('class', 'text')
+                        .attr('text-anchor', 'start')
+                        .attr('font-size', 12)
+                    right_info_svg_group.append("text")
+                        .attr("id", d.data.siblings[i].sibling_id)
+                        .text(""+d.data.siblings[i].sibling_birth_place+" - "+d.data.siblings[i].sibling_death_place+"")
+                        .attr('x', 2)
+                        .attr('y', (getDimensionAttr('top_svg').height + 85) + (i * 62))
+                        .attr('class', 'text')
+                        .attr('text-anchor', 'start')
+                        .attr('font-size', 12)
+                    right_info_svg_group.append("text")
+                        .attr("id", d.data.siblings[i].sibling_id)
+                        .text(""+d.data.siblings[i].sibling_spouse_name+" ("+d.data.siblings[i].sibling_marriage_place+", "+d.data.siblings[i].sibling_marriage_date+")")
+                        .attr('x', 2)
+                        .attr('y', (getDimensionAttr('top_svg').height + 100) + (i * 62))
+                        .attr('class', 'text')
+                        .attr('text-anchor', 'start')
+                        .attr('font-size', 12)
                 }
+                var sibling_length = d.data.siblings.length - 1
+                var last_sibling_y_pos = d3.select('[id="'+d.data.siblings[sibling_length].sibling_id+'"]').attr("y")
+                right_info_svg_group.append("text")
+                    .attr("id", "comment_title_text")
+                    .text("Megjegyzés: ")
+                    .attr('x', 2)
+                    .attr('y', Number(last_sibling_y_pos) + 35)
+                    .attr('class', 'text')
+                    .attr('text-anchor', 'start')
+                    .attr('font-size', 12)
+                    .attr('font-weight', 'bold')
+                comment_text_y_pos = d3.select("#comment_title_text").attr("y")
+
+                var text_length = d.data.comment.length
+                text_array = wrap_text(d.data.comment,getDimensionAttr('right_svg').width,text_length,right_info_svg_group,2,Number(comment_text_y_pos) + 15)
+
+                accum_y_coeff = 0
+                for (var i of text_array) {
+                    right_info_svg_group.append("text")
+                        .text(""+i+"")
+                        .attr('x', 2)
+                        .attr('y', Number(comment_text_y_pos) + 16 + (accum_y_coeff * 13))
+                        .attr('class', 'text')
+                        .attr('text-anchor', 'start')
+                        .attr('font-size', 12)
+                    accum_y_coeff = accum_y_coeff + 1
+                }
+
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
                 d3.select("#right_info_svg_group").selectAll("text").remove()
             }
-            
-            document.getElementById('right_area').style.width = actual_right_area_style
+
+            document.getElementById('tree_area').style.width = actual_tree_area_style_width
+            document.getElementById('right_area').style.width = actual_right_area_style_width
         }
     })
 }
