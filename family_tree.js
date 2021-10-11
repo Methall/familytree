@@ -35,9 +35,6 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr("transform", event.transform)
         })
 
-        //body dimensions
-        var body_dim = d3.select("body").node().getBoundingClientRect()
-
         var main_svg = d3.select("#tree_area").append("svg")
             .attr("id", "main_svg")
             .attr("height", "100%")
@@ -54,148 +51,153 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         right_info_svg_group = right_info_svg.append("g")
             .attr("id", "right_info_svg_group")
 
+        var top_svg = d3.select("#top_area").append("svg")
+            .attr("id", "top_svg")
+            .attr("height", "100%")
+            .attr("width", "100%")
+        top_svg_group = top_svg.append("g")
+            .attr("id", "top_svg_group")
+
         // Get main SVG attributes
         main_svg_dim = getDimensionAttr('main_svg')
         var root_node_init_position_x = (main_svg_dim.width / 2) - (node_width / 2)
         var root_node_init_position_y = first_node_y_offset
 
-        d3.json("data/families.json").then(familiesData => {
-            var number_of_family = 6 //set minimum family number for decorative look
-            var top_rect_width = (getDimensionAttr('top_area').width / number_of_family) - 12
-            var top_rect_heigth = getDimensionAttr('top_area').height / 1.3
-            var font_size = 10
-            var firstname_text_y_coeff = 12
-
-            var top_svg = d3.select("#top_area").append("svg")
-                .attr("id", "top_svg")
-                .attr("height", "100%")
-                .attr("width", "100%")
-
-            var rect = top_svg.selectAll()
-                .data(familiesData)
-                .enter()
-                .append('g')
-            rect.append("rect")
-                .attr("id", "family_select_rect")
-                .attr("width", top_rect_width)
-                .attr("height", top_rect_heigth)
-                .attr("fill", d => {
-                    if (d.id == id) {
-                        return "#e5ffec"
-                    } else {
-                        return "white"
-                    }
-                })
-                .attr("stroke", "black")
-                .attr("stroke-width", 1)
-                .attr("x", (d,i) => 10 + (top_rect_width + 10) * i)
-                .attr("y", getDimensionAttr('top_area').y / 2.6)
-                .on("click", family_tree_button)
-            rect.append('text')
-                .attr("id", "family_select_surname_text")
-                .text(d => {return split_name(d.name)[0]})
-                .attr('x', (d,i) => 10 + (top_rect_width + 10) * i + (top_rect_width / 2))
-                .attr('y', top_rect_heigth / 2 + 2)
-                .attr('font-size', font_size)
-                .attr('class', 'text')
-                .attr('font-weight', 800)
-                .attr('text-anchor', 'middle')
-                .style("cursor", "default")
-                .on("click", family_tree_button)
-            rect.append('text')
-                .attr("id", "family_select_first_text")
-                .text(d => {return split_name(d.name)[1]})
-                .attr('x', (d,i) => 10 + (top_rect_width + 10) * i + (top_rect_width / 2))
-                .attr('y', getDimensionAttr('family_select_surname_text').y + firstname_text_y_coeff)
-                .attr('font-size', font_size)
-                .attr('class', 'text')
-                .attr('font-weight', 800)
-                .attr('text-anchor', 'middle')
-                .style("cursor", "default")
-                .on("click", family_tree_button)
-        })
-
-        //top line
+        //top svg
         function topLine(top_line_flag,right_line_flag) {
             css_style_change(top_line_flag,right_line_flag)
+            d_button_path = round_button
             if (top_line_flag) {
-                d_button_path = downup
-                d_arrow_path = downup_arrow
+                d_arrow_path = arrow_in
             } else {
-                d_button_path = updown
-                d_arrow_path = updown_arrow
+                d_arrow_path = arrow_out
             }
-            dimension = getDimensionAttr('main_svg')
-            top_svg_group = main_svg.append("g")
-                .attr("id", "top_svg_group")
-            top_svg_group.append("line")
+            dimension = getDimensionAttr('top_svg')
+            var top_svg_sub_group = top_svg_group.append("g")
+                .attr('id', 'top_svg_sub_group')
+            top_svg_sub_group.append("line")
                 .attr('id', 'top_line')
                 .attr('x1', 0)
-                .attr('y1', 0)
-                .attr('x2', dimension.width)
-                .attr('y2', 0)
+                .attr('y1', dimension.height-1)
+                .attr('x2',  getDimensionAttr('top_svg').width)
+                .attr('y2', dimension.height-1)
                 .attr('stroke', 'black')
-            top_button_group = top_svg_group.append("g")
+            top_button_group = top_svg_sub_group.append("g")
                 .attr('id', 'top_button_group')
                 .on("click", top_button_click)
             top_button_group.append('path')
-                .attr('id', 'updown_button')
+                .attr('id', 'round_button')
                 .attr('d', d_button_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
-                .attr('stroke-width', '0.1')
+                .attr('stroke-width', 1)
             top_button_group.append('path')
-                .attr('id', 'top_updown_arrow')
+                .attr('id', 'arrow_in')
                 .attr('d', d_arrow_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
-                .attr('stroke-width', '0.1')
-            var top_line_width_actual = getDimensionAttr('top_line').width
+                .attr('stroke-width', 1)
+            var top_line_x_actual = Number(d3.select('#top_line').attr("x"))
+            var button_width = getDimensionAttr('round_button').width
             var top_line_y_actual = d3.select('#top_line').attr("y1")
-            d3.select('#top_button_group').attr('transform', 'translate('+(top_line_width_actual * 0.02)+','+(top_line_y_actual + 1)+') scale(7)')
-            to_the_top_button_group = top_svg_group.append("g")
+            d3.select('#top_button_group').attr('transform', 'translate('+(top_line_x_actual + 2 + button_width)+','+(top_line_y_actual-1)+') rotate(180)')
+            to_the_top_button_group = top_svg_sub_group.append("g")
                 .attr('id', 'to_the_top_button_group')
                 .on("click", to_the_top_button_click)
             to_the_top_button_group.append('path')
                 .attr('id', 'to_the_top_button')
-                .attr('d', updown)
+                .attr('d', round_button)
                 .attr('fill', '#B8ECB8')
                 .attr('stroke', 'black')
-                .attr('stroke-width', '0.1')
+                .attr('stroke-width', 1)
+            d3.select('#to_the_top_button_group').attr('transform', 'translate('+ (top_line_x_actual + 2 + button_width * 2.3) +','+(top_line_y_actual-1)+') rotate(180)')
             to_the_top_button_group.append('text')
-                .attr("id", "to_the_top_button_text")
-                .text("Top")
-                .attr('x', getDimensionAttr('to_the_top_button').x / 2)
-                .attr('y', 2.5)
-                .attr('font-size', 3)
-                .attr('class', 'text')
-                .attr('font-weight', 700)
-                .attr('text-anchor', 'middle')
-                .style("cursor", "default")
-            d3.select('#to_the_top_button_group').attr('transform', 'translate('+ ((top_line_width_actual * 0.02) + getDimensionAttr('top_button_group').x + getDimensionAttr('top_button_group').width) +','+(top_line_y_actual + 1)+') scale(5)')
+            .attr("id", "to_the_top_button_text")
+            .text("Top")
+            .attr('x', -28)
+            .attr('y', -2)
+            .attr('font-size', 13)
+            .attr('class', 'text')
+            .attr('font-weight', 700)
+            .attr('text-anchor', 'middle')
+            .style("cursor", "default")
+            d3.select('#to_the_top_button_text').attr('transform', 'translate(0,0) rotate(180)')
+
+            if (top_line_flag) {
+                d3.json("data/families.json").then(familiesData => {
+                    var number_of_family = 15 //set minimum family number for decorative look
+                    var top_rect_width = (getDimensionAttr('top_area').width / number_of_family) - 12
+                    var top_rect_heigth = getDimensionAttr('top_area').height / 1.3
+                    var font_size = 10
+                    var firstname_text_y_coeff = 22
+
+                    var rect = top_svg_sub_group.selectAll()
+                        .data(familiesData)
+                        .enter()
+                        .append('g')
+                    rect.append("rect")
+                        .attr("id", d => {return "family_select_rect"+d.id})
+                        .attr("width", top_rect_width)
+                        .attr("height", top_rect_heigth)
+                        .attr("fill", d => {
+                            if (d.id == id) {
+                                return "#e5ffec"
+                            } else {
+                                return "white"
+                            }
+                        })
+                        .attr("stroke", "black")
+                        .attr("stroke-width", 1)
+                        .attr("x", (d,i) => (getDimensionAttr('top_area').width * 0.15) + ((top_rect_width+10) * i))
+                        .attr("y", (d,i) => ((getDimensionAttr('top_area').height - getDimensionAttr("family_select_rect"+(i+1)+"").height) / 2))
+                        .on("click", family_tree_button)
+                    rect.append('text')
+                        .attr("id", d => {return "family_select_surname_text"+d.id})
+                        .text(d => {return split_name(d.name)[0]})
+                        .attr('x', (d,i) => Number(d3.select("#family_select_rect"+(i+1)+"").attr("x")) + (top_rect_width / 2))
+                        .attr('y', (d,i) => getDimensionAttr("family_select_rect"+(i+1)+"").height / 2 + 2)
+                        .attr('font-size', font_size)
+                        .attr('class', 'text')
+                        .attr('font-weight', 800)
+                        .attr('text-anchor', 'middle')
+                        .style("cursor", "default")
+                        .on("click", family_tree_button)
+                    rect.append('text')
+                        .attr("id", d => {return "family_select_first_text"+d.id})
+                        .text(d => {return split_name(d.name)[1]})
+                        .attr('x', (d,i) => Number(d3.select("#family_select_rect"+(i+1)+"").attr("x")) + (top_rect_width / 2))
+                        .attr('y', (d,i) => getDimensionAttr("family_select_surname_text"+(i+1)+"").y + firstname_text_y_coeff)
+                        .attr('font-size', font_size)
+                        .attr('class', 'text')
+                        .attr('font-weight', 800)
+                        .attr('text-anchor', 'middle')
+                        .style("cursor", "default")
+                        .on("click", family_tree_button)
+                })
+            }
+           
         }
 
-        //right line
+        //right svg
         function rightLine(right_line_flag,top_line_flag) {
             css_style_change(top_line_flag,right_line_flag)
+            d_button_path = round_button
             if (right_line_flag) {
-                d_button_path = downup
-                d_arrow_path = downup_arrow
+                d_arrow_path = arrow_in
             } else {
-                d_button_path = updown
-                d_arrow_path = updown_arrow
+                d_arrow_path = arrow_out
             }
-            dimension = getDimensionAttr('main_svg')
-            right_svg_group = main_svg.append("g")
-                .attr("id", "right_svg_group")
-            right_svg_group.append("line")
+            dimension = getDimensionAttr('right_svg')
+            var right_svg_sub_group = right_info_svg_group.append("g")
+                .attr('id', 'right_svg_sub_group')
+            right_svg_sub_group.append("line")
                 .attr('id', 'right_line')
-                .attr('x1', dimension.width)
+                .attr('x1', 1)
                 .attr('y1', 0)
-                .attr('x2', dimension.width)
+                .attr('x2', 1)
                 .attr('y2', dimension.height)
                 .attr('stroke', 'black')
-            right_button_group = right_svg_group.append("g")
+            right_button_group = right_svg_sub_group.append("g")
                 .attr("id", "right_button_group")
                 .on("click", right_button_click)
             right_button_group.append('path')
@@ -203,29 +205,31 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr('d', d_button_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
-                .attr('stroke-width', '0.1')
+                .attr('stroke-width', 1)
              right_button_group.append('path')
                 .attr('id', 'right_updown_arrow')
                 .attr('d', d_arrow_path)
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
-                .attr('stroke-width', '0.1')
+                .attr('stroke-width', 1)
             var right_line_height_actual = getDimensionAttr('right_line').height
             var right_line_x_actual = d3.select('#right_line').attr("x1")
-            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual-1)+','+(right_line_height_actual*0.02)+') scale(7) rotate(90)')
+            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(right_line_height_actual*0.07)+') rotate(-90)')
         }
 
         rightLine(right_line_flag,top_line_flag)
         topLine(top_line_flag,right_line_flag)
 
         function right_button_click(event) {
-            d3.select('#right_svg_group').remove()
-            d3.select('#top_svg_group').remove()
+            d3.select('#right_svg_sub_group').remove()
+            d3.select('#top_svg_sub_group').remove()
+            d3.select("#right_info_svg_group").selectAll("text").attr("fill", "white")
             if (right_line_flag) {
                 right_line_flag = false
                 rightLine(right_line_flag,top_line_flag)
                 topLine(top_line_flag,right_line_flag)
             } else {
+                d3.select("#right_info_svg_group").selectAll("text").attr("fill", "black")
                 right_line_flag = true
                 rightLine(right_line_flag,top_line_flag)
                 topLine(top_line_flag,right_line_flag)
@@ -233,8 +237,8 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         }
 
         function top_button_click(event) {
-            d3.select('#top_svg_group').remove()
-            d3.select('#right_svg_group').remove()
+            d3.select('#top_svg_sub_group').remove()
+            d3.select('#right_svg_sub_group').remove()
             if (top_line_flag) {
                 top_line_flag = false
                 topLine(top_line_flag,right_line_flag)
@@ -769,8 +773,8 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                     .attr('font-size', 20)
                 right_info_svg_group.append("text")
                     .attr("id", "click_id_text")
-                    .text("["+d.data.id+"]")
-                    .attr('x', (getDimensionAttr('right_svg').width - (getDimensionAttr('right_svg').width - getDimensionAttr('click_name_text').width) / 2) + 15)
+                    .text("["+d.data.id+"."+d.data.generation+"]")
+                    .attr('x', (getDimensionAttr('main_svg').x + (getDimensionAttr('right_svg').width - (getDimensionAttr('right_svg').width - getDimensionAttr('click_name_text').width) / 2)))
                     .attr('y', getDimensionAttr('top_svg').height)
                     .attr('class', 'text')
                     .attr('text-anchor', 'start')
