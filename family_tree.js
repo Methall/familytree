@@ -27,14 +27,6 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
 
         nodes = treemap(nodes)
 
-        var zoom = d3.zoom()
-        .scaleExtent([0.5, 2.5])
-        //.translateExtent([[-3000,0],[3000,3000]])
-        .on('zoom', function(event) {
-            d3.select("#svg_group")
-                .attr("transform", event.transform)
-        })
-
         var main_svg = d3.select("#tree_area").append("svg")
             .attr("id", "main_svg")
             .attr("height", "100%")
@@ -42,7 +34,15 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         svg_group = main_svg.append("g")
             .attr("id", "svg_group")
 
-        main_svg.call(zoom).on("dblclick.zoom", null)
+        zoomed = d3.zoom()
+        .scaleExtent([0.5, 2.5])
+        //.translateExtent([[-3000,0],[3000,3000]])
+        .on('zoom', function(event) {
+            d3.select("#svg_group")
+                .attr("transform", event.transform)
+        })
+
+        main_svg.call(zoomed).on("dblclick.zoom", null)
 
         var right_info_svg = d3.select("#right_area").append("svg")
             .attr("id", "right_svg")
@@ -740,12 +740,13 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
         function to_the_top_button_click(event) {
             var t = d3.zoomIdentity.translate(0, 0).scale(1)
             d3.select("#svg_group")
-                .transition()
-                .duration(750)
-                .attr("transform", t)
-            d3.zoomTransform(this).x = 0
-            d3.zoomTransform(this).y = 0
-            d3.zoomTransform(this).k = 1
+                .call(zoomed.transform, t)
+            zoomed = d3.zoom()
+                .scaleExtent([0.5, 2.5])
+                .on('zoom', function(event) {
+                    d3.select("#svg_group")
+                        .attr("transform", event.transform)
+                })
         }
 
         function click_node(event, d) {
@@ -864,6 +865,13 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
 
             document.getElementById('tree_area').style.width = actual_tree_area_style_width
             document.getElementById('right_area').style.width = actual_right_area_style_width
+
+            console.log(actual_right_area_style_width)
+            if (document.getElementById('right_area').style.left != "98.5%") {
+                d3.select("#right_info_svg_group").selectAll("text").attr("fill", "black")
+            } else {
+                d3.select("#right_info_svg_group").selectAll("text").attr("fill", "white")
+            }
         }
     })
 }
