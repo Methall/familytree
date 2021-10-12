@@ -218,7 +218,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             var button_width = Number(getDimensionAttr('right_button').width)
             var right_line_y_actual = Number(d3.select('#right_line').attr("y1"))
             var right_line_x_actual = Number(d3.select('#right_line').attr("x1"))
-            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(right_line_y_actual+button_width+15)+') rotate(-90)')
+            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(right_line_y_actual+button_width+2)+') rotate(-90)')
         }
 
         rightLine(right_line_flag,top_line_flag)
