@@ -19,14 +19,11 @@
 #    "mother_id": "",
 #    "father_id": "",
 #    "siblings": [
-#    {"sibling_id": "1.0.1","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","death_place_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+#    {"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_birth_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 #    ],
 #	 "comment": "",
 #    "children": []
 #}
-
-## Sibling template
-# {"sibling_id": "1.0.1","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","death_place_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 
 if [[ -f ./tree_template.json ]]; then
 	rm tree_template.json
@@ -35,9 +32,11 @@ fi
 generation_number=$1
 first_gender=$2
 
-node="{\n\t\"id\": \"\",\n\t\"generation\": \"\",\n\t\"name\": \"\",\n\t\"gender\": \"\",\n\t\"birth_place\": \"\",\n\t\"birth_date\": \"\",\n\t\"death_date\": \"\",\n\t\"death_place\": \"\",\n\t\"marriage_date\": \"\",\n\t\"marriage_place\": \"\",\n\t\"religion\": \"\",\n\t\"spouse_id\": \"\",\n\t\"mother_id\": \"\",\n\t\"father_id\": \"\",\n\t\"comment\": \"\",\n\t\"siblings\": [],\n\t\"children\": []\n}"
+sibling="{\"sibling_id\": \"\",\"sibling_name\": \"\",\"sibling_birth_place\": \"\",\"sibling_birth_date\": \"\",\"sibling_death_place\": \"\",\"sibling_death_date\": \"\",\"sibling_spouse_name\": \"\",\"sibling_marriage_place\": \"\",\"sibling_marriage_date\": \"\"}"
 
-sibling="{\n\t\"id\": \"\",\n\t\"generation\": \"\",\n\t\"name\": \"\",\n\t\"gender\": \"\",\n\t\"birth_place\": \"\",\n\t\"birth_date\": \"\",\n\t\"death_date\": \"\",\n\t\"death_place\": \"\",\n\t\"marriage_date\": \"\",\n\t\"marriage_place\": \"\",\n\t\"religion\": \"\",\n\t\"spouse_id\": \"\",\n\t\"mother_id\": \"\",\n\t\"father_id\": \"\",\n\t\"siblings\": []\n}"
+node="{\n\t\"id\": \"\",\n\t\"generation\": \"\",\n\t\"name\": \"\",\n\t\"gender\": \"\",\n\t\"birth_place\": \"\",\n\t\"birth_date\": \"\",\n\t\"death_date\": \"\",\n\t\"death_place\": \"\",\n\t\"marriage_date\": \"\",\n\t\"marriage_place\": \"\",\n\t\"religion\": \"\",\n\t\"spouse_id\": \"\",\n\t\"mother_id\": \"\",\n\t\"father_id\": \"\",\n\t\"comment\": \"\",\n\t\"siblings\": ["${sibling}"],\n\t\"children\": []\n}"
+
+
 
 for i in $(seq 0 $(($generation_number-1))) # generation level
 do

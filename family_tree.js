@@ -1,6 +1,6 @@
 initial_family_tree = "frank_peter"
-top_panel_init = true
-right_panel_init = true
+top_panel_init = false
+right_panel_init = false
 
 css_style_change(top_panel_init,right_panel_init)
 
