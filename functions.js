@@ -50,8 +50,6 @@ function css_style_change(top_line_flag,right_line_flag) {
       document.getElementById('tree_area').style.width = "82%"
       document.getElementById('right_area').style.left = "82%"
       document.getElementById('right_area').style.width = "18%"
-      css_top_true_right_true_tree_area_width = document.getElementById('tree_area').style.width = "82%"
-      css_top_true_right_true_right_area_width = document.getElementById('right_area').style.width = "18%"
   } else if (!(top_line_flag) && (right_line_flag)) {
       document.getElementById('top_area').style.height = "2%"
       document.getElementById('top_area').style.width = "82%"

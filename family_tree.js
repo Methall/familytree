@@ -761,8 +761,8 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             if (actual_node_fill == "white") {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "#E1FADD")
 
-                document.getElementById('tree_area').style.width = css_top_true_right_true_tree_area_width
-                document.getElementById('right_area').style.width = css_top_true_right_true_right_area_width
+                document.getElementById('tree_area').style.width = "82%"
+                document.getElementById('right_area').style.width = "18%"
                 
                 d3.select("#right_info_svg_group").selectAll("text").remove()
                 right_info_svg_group.append("text")
