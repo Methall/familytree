@@ -212,9 +212,9 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
                 .attr('stroke-width', 1)
-            var right_line_height_actual = getDimensionAttr('right_line').height
+            var top_area_height_actual = getDimensionAttr('top_area').height
             var right_line_x_actual = d3.select('#right_line').attr("x1")
-            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(right_line_height_actual*0.07)+') rotate(-90)')
+            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(top_area_height_actual+38)+') rotate(-90)')
         }
 
         rightLine(right_line_flag,top_line_flag)
