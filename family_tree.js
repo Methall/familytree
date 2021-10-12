@@ -736,17 +736,15 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             d3.selectAll("svg").remove()
             family_tree(d.file,d.id,right_line_flag,top_line_flag)
         }
-
+        
         function to_the_top_button_click(event) {
-            var t = d3.zoomIdentity.translate(0, 0).scale(1)
             d3.select("#svg_group")
-                .call(zoomed.transform, t)
-            zoomed = d3.zoom()
-                .scaleExtent([0.5, 2.5])
-                .on('zoom', function(event) {
-                    d3.select("#svg_group")
-                        .attr("transform", event.transform)
-                })
+                .transition()
+                .duration(750)
+                .attr("transform", d3.zoomIdentity)
+            d3.zoomTransform(d3.select("#svg_group").node()).x = 0
+            d3.zoomTransform(d3.select("#svg_group").node()).y = 0
+            d3.zoomTransform(d3.select("#svg_group").node()).k = 1
         }
 
         function click_node(event, d) {
