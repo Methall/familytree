@@ -128,9 +128,9 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                     var actual_top_area_width = document.getElementById('top_area').style.width
                     document.getElementById('top_area').style.width = "82%"
                     var number_of_family = 15 //set minimum family number for decorative look
-                    var top_rect_width = (getDimensionAttr('top_area').width / number_of_family) - 12
-                    var top_rect_heigth = getDimensionAttr('top_area').height / 1.3
-                    var font_size = 10
+                    var top_rect_width = Number(getDimensionAttr('top_area').width / number_of_family) - 12
+                    var top_rect_heigth = Number(getDimensionAttr('top_area').height / 1.3)
+                    var font_size = 12
                     var firstname_text_y_coeff = 22
 
                     var rect = top_svg_sub_group.selectAll()
@@ -157,7 +157,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                         .attr("id", d => {return "family_select_surname_text"+d.id})
                         .text(d => {return split_name(d.name)[0]})
                         .attr('x', (d,i) => Number(d3.select("#family_select_rect"+(i+1)+"").attr("x")) + (top_rect_width / 2))
-                        .attr('y', (d,i) => getDimensionAttr("family_select_rect"+(i+1)+"").height / 2 + 2)
+                        .attr('y', (d,i) => getDimensionAttr("family_select_rect"+(i+1)+"").height / 2 + 3)
                         .attr('font-size', font_size)
                         .attr('class', 'text')
                         .attr('font-weight', 800)
