@@ -98,8 +98,8 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr('stroke', 'black')
                 .attr('stroke-width', 1)
             var top_line_x_actual = Number(d3.select('#top_line').attr("x"))
-            var button_width = getDimensionAttr('round_button').width
-            var top_line_y_actual = d3.select('#top_line').attr("y1")
+            var button_width = Number(getDimensionAttr('round_button').width)
+            var top_line_y_actual = Number(d3.select('#top_line').attr("y1"))
             d3.select('#top_button_group').attr('transform', 'translate('+(top_line_x_actual + 2 + button_width)+','+(top_line_y_actual-1)+') rotate(180)')
             to_the_top_button_group = top_svg_sub_group.append("g")
                 .attr('id', 'to_the_top_button_group')
@@ -125,6 +125,8 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
 
             if (top_line_flag) {
                 d3.json("data/families.json").then(familiesData => {
+                    var actual_top_area_width = document.getElementById('top_area').style.width
+                    document.getElementById('top_area').style.width = "82%"
                     var number_of_family = 15 //set minimum family number for decorative look
                     var top_rect_width = (getDimensionAttr('top_area').width / number_of_family) - 12
                     var top_rect_heigth = getDimensionAttr('top_area').height / 1.3
@@ -173,6 +175,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                         .attr('text-anchor', 'middle')
                         .style("cursor", "default")
                         .on("click", family_tree_button)
+                    document.getElementById('top_area').style.width = actual_top_area_width
                 })
             }
            
@@ -212,9 +215,10 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                 .attr('fill', 'white')
                 .attr('stroke', 'black')
                 .attr('stroke-width', 1)
-            var top_area_height_actual = getDimensionAttr('top_area').height
-            var right_line_x_actual = d3.select('#right_line').attr("x1")
-            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(top_area_height_actual+38)+') rotate(-90)')
+            var button_width = Number(getDimensionAttr('right_button').width)
+            var right_line_y_actual = Number(d3.select('#right_line').attr("y1"))
+            var right_line_x_actual = Number(d3.select('#right_line').attr("x1"))
+            d3.select('#right_button_group').attr('transform', 'translate('+(right_line_x_actual*2)+','+(right_line_y_actual+button_width+15)+') rotate(-90)')
         }
 
         rightLine(right_line_flag,top_line_flag)
