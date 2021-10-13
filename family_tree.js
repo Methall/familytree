@@ -416,9 +416,10 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                         return 2
                     }
                 })
-                .attr('y', node_height / 2 - 18)
+                .attr('y', node_height / 2 - 21)
                 .attr('class', 'text')
-                .attr('font-weight', 100)
+                .attr('font-weight', 200)
+                .attr('font-size', 13)
                 .attr('text-anchor', (d) => {
                     if (d.data.gender === 'male') {
                         return 'end'
