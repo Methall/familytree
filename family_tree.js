@@ -801,6 +801,7 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
 
                 for (let i = 0; i <= (d.data.siblings.length - 1); i++) {
                     right_info_svg_group.append("text")
+                        .attr("id", d.data.siblings[i].sibling_id)
                         .text(""+(i+1)+". "+d.data.siblings[i].sibling_name+"")
                         .attr('x', 2)
                         .attr('y', (getDimensionAttr('top_svg').height + 55) + (i * 62))
@@ -808,37 +809,46 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
                         .attr('text-anchor', 'start')
                         .attr('font-size', 12)
                         .attr('font-weight', 'bold')
-                   right_info_svg_group.append("text")
-                        .text(""+d.data.siblings[i].sibling_birth_date+" - "+d.data.siblings[i].sibling_death_date+"")
-                        .attr('x', 2)
-                        .attr('y', (getDimensionAttr('top_svg').height + 70) + (i * 62))
-                        .attr('class', 'text')
-                        .attr('text-anchor', 'start')
-                        .attr('font-size', 12)
-                    right_info_svg_group.append("text")
-                        .attr("id", d.data.siblings[i].sibling_id)
-                        .text(""+d.data.siblings[i].sibling_birth_place+" - "+d.data.siblings[i].sibling_death_place+"")
-                        .attr('x', 2)
-                        .attr('y', (getDimensionAttr('top_svg').height + 85) + (i * 62))
-                        .attr('class', 'text')
-                        .attr('text-anchor', 'start')
-                        .attr('font-size', 12)
-                    right_info_svg_group.append("text")
-                        .attr("id", d.data.siblings[i].sibling_id)
-                        .text(""+d.data.siblings[i].sibling_spouse_name+" ("+d.data.siblings[i].sibling_marriage_place+", "+d.data.siblings[i].sibling_marriage_date+")")
-                        .attr('x', 2)
-                        .attr('y', (getDimensionAttr('top_svg').height + 100) + (i * 62))
-                        .attr('class', 'text')
-                        .attr('text-anchor', 'start')
-                        .attr('font-size', 12)
+                    if ((d.data.siblings[i].sibling_birth_date != "") || (d.data.siblings[i].sibling_death_date != "")) {
+                        right_info_svg_group.append("text")
+                            .text(""+d.data.siblings[i].sibling_birth_date+" - "+d.data.siblings[i].sibling_death_date+"")
+                            .attr('x', 2)
+                            .attr('y', (getDimensionAttr('top_svg').height + 70) + (i * 62))
+                            .attr('class', 'text')
+                            .attr('text-anchor', 'start')
+                            .attr('font-size', 12)
+                    }
+                    if ((d.data.siblings[i].sibling_birth_place != "") || (d.data.siblings[i].sibling_death_place != "")) {
+                        right_info_svg_group.append("text")
+                            .text(""+d.data.siblings[i].sibling_birth_place+" - "+d.data.siblings[i].sibling_death_place+"")
+                            .attr('x', 2)
+                            .attr('y', (getDimensionAttr('top_svg').height + 85) + (i * 62))
+                            .attr('class', 'text')
+                            .attr('text-anchor', 'start')
+                            .attr('font-size', 12)
+                    }
+                    if ((d.data.siblings[i].sibling_spouse_name != "") || (d.data.siblings[i].sibling_marriage_place != "") || (d.data.siblings[i].sibling_marriage_date != "")) {
+                        right_info_svg_group.append("text")
+                            .text(""+d.data.siblings[i].sibling_spouse_name+" ("+d.data.siblings[i].sibling_marriage_place+", "+d.data.siblings[i].sibling_marriage_date+")")
+                            .attr('x', 2)
+                            .attr('y', (getDimensionAttr('top_svg').height + 100) + (i * 62))
+                            .attr('class', 'text')
+                            .attr('text-anchor', 'start')
+                            .attr('font-size', 12)
+                    }
                 }
+
                 var sibling_length = d.data.siblings.length - 1
-                var last_sibling_y_pos = d3.select('[id="'+d.data.siblings[sibling_length].sibling_id+'"]').attr("y")
+                if (sibling_length == -1) {
+                    var last_sibling_y_pos = Number(d3.select('#click_places_text').attr("y")-45)
+                } else {
+                    var last_sibling_y_pos = d3.select('[id="'+d.data.siblings[sibling_length].sibling_id+'"]').attr("y")
+                }
                 right_info_svg_group.append("text")
                     .attr("id", "comment_title_text")
                     .text("Megjegyzés: ")
                     .attr('x', 2)
-                    .attr('y', Number(last_sibling_y_pos) + 35)
+                    .attr('y', Number(last_sibling_y_pos) + 70)
                     .attr('class', 'text')
                     .attr('text-anchor', 'start')
                     .attr('font-size', 12)
@@ -868,7 +878,6 @@ function family_tree(family_tree_data,id,right_line_flag,top_line_flag) {
             document.getElementById('tree_area').style.width = actual_tree_area_style_width
             document.getElementById('right_area').style.width = actual_right_area_style_width
 
-            console.log(actual_right_area_style_width)
             if (document.getElementById('right_area').style.left != "98.5%") {
                 d3.select("#right_info_svg_group").selectAll("text").attr("fill", "black")
             } else {
