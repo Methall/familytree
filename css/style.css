@@ -5,36 +5,72 @@
   stroke-width: 1px;
 }
 
-body { 
-  position:fixed; top:0; bottom:0; right:0; left:0;
-  margin:0;padding:0
-}
-
 .text {
   font-family: Calibri,sans-serif;
 }
 
-.tree-container {
-  position:absolute; top: 4%;
-  width: 100%;
-  height: 96.9%;
-  background: white;
-  white-space: nowrap;
+body {
+  font-family: "Lato", sans-serif;
 }
 
-.top-container {
-  position:absolute; top: 0%;
-  width: 82%;
-  height: 4%;
-  background: white;
-  white-space: nowrap;
-
-}
-
-.right-container {
-  position:absolute; top: 0%; 
+.sidebar {
   height: 100%;
-  width: 100%;
-  background: white;
-  white-space: nowrap;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left-style: solid;
+  border-width: 1px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 15px 5px 15px 5px;
+  border-style: solid;
+  border-right-style: none;
+  border-width: 1px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#right_open_button_div {
+  position: fixed;
+  right: 0;
+  transition: margin-right .5s;
+  opacity: 1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
