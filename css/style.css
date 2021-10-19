@@ -13,21 +13,42 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.sidebar {
-  height: 100%;
-  width: 0;
+.add_div {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px 2px 0px 2px;
+  margin-top: 3px;
+}
+
+.add_text {
+  font-size: 13px;
+  cursor: default;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.upbar {
+  height: 0;
+  left: 0;
+  right: 100%;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
-  right: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
-  border-left-style: solid;
+  padding-left: 30px;
+  border-bottom-style: solid;
   border-width: 1px;
+  background-color: white;
 }
 
-.sidebar a {
+.upbar a, .sidebar a {
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -35,31 +56,103 @@ body {
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.upbar a:hover, .sidebar a:hover {
   color: #f1f1f1;
 }
 
-.sidebar .closebtn {
+.upbar .closeupbtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  font-size: 36px;
+  margin-top: 0;
+  cursor: default;
+  user-select: none;
+}
+
+.openupbtn {
+  font-size: 20px;
+  cursor: default;
+  background-color: white;
+  color: black;
+  padding: 0px 20px 0px 20px;
+  border-style: solid;
+  border-top-style: none;
+  border-width: 1px;
+  user-select: none;
+}
+
+.topupbtn {
+  font-size: 20px;
+  cursor: default;
+  background-color: white;
+  color: black;
+  padding: 0px 10px 0px 10px;
+  border-style: solid;
+  border-top-style: none;
+  border-width: 1px;
+  user-select: none;
+}
+
+.openupbtn:hover, .openrightbtn:hover {
+  background-color: #444;
+}
+
+.topupbtn:hover {
+  background-color: #c2e4a0;
+}
+
+#up_open_button_div {
+  position: fixed;
+  top: 1px;
+  transition: margin-top .5s;
+  opacity: 1;
+}
+
+#top_button_div {
+  position: fixed;
+  top: 1px;
+  left: 70px;
+  transition: margin-top .5s;
+  opacity: 1;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  border-left-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+
+.sidebar .closerightbtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  cursor: default;
+  user-select: none;
 }
 
-.openbtn {
+.openrightbtn {
   font-size: 20px;
-  cursor: pointer;
+  cursor: default;
   background-color: white;
   color: black;
   padding: 15px 5px 15px 5px;
   border-style: solid;
   border-right-style: none;
   border-width: 1px;
-}
-
-.openbtn:hover {
-  background-color: #444;
+  user-select: none;
 }
 
 #right_open_button_div {
@@ -67,6 +160,7 @@ body {
   right: 0;
   transition: margin-right .5s;
   opacity: 1;
+  z-index: 2;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

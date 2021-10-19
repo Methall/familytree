@@ -10,13 +10,26 @@
 
 <body>
 <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <h2 style="text-align:center;">Collapsed Sidebar</h2>
-    <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+    <a href="javascript:void(0)" class="closerightbtn" onclick="closeRightPan()">×</a>
+    <h2 id="right_panel_name_text" style="text-align:center;"></h2>
+    <p id="right_panel_sibling_text"></p>
+    <p id="right_panel_comment_text"></p>
 </div>
 
 <div id="right_open_button_div">
-    <button id="right_open_button_id" class="openbtn" onclick="openNav()"><</button>  
+    <button id="right_open_button_id" class="openrightbtn" onclick="openRightPan()"><</button>  
+</div>
+
+<div id="myUpbar" class="upbar">
+    <a href="javascript:void(0)" class="closeupbtn" onclick="closeUpPan()">×</a>
+</div>
+
+<div id="up_open_button_div">
+    <button id="up_open_button_id" class="openupbtn" onclick="openUpPan()">v</button>  
+</div>
+
+<div id="top_button_div">
+    <button id="top_button_id" class="topupbtn">Top</button>
 </div>
 
 <!-- load the d3.js library -->    	
