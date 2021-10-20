@@ -236,6 +236,7 @@ function family_tree(family_tree_data) {
               .attr('font-weight', 800)
               .attr('text-anchor', 'middle')
               .style("cursor", "default")
+              .style("user-select", "none")
           
             //date
             main_rect.append('text')
@@ -245,6 +246,7 @@ function family_tree(family_tree_data) {
                 .attr('class', 'text')
                 .attr('text-anchor', 'middle')
                 .style("cursor", "default")
+                .style("user-select", "none")
           
             //places
             main_rect.append('text')
@@ -254,6 +256,7 @@ function family_tree(family_tree_data) {
                 .attr('class', 'text')
                 .attr('text-anchor', 'middle')
                 .style("cursor", "default")
+                .style("user-select", "none")
           
             //id
             main_rect.append('text')
@@ -276,6 +279,8 @@ function family_tree(family_tree_data) {
                     }
                 })
                 .style("cursor", "default")
+                .style("user-select", "none")
+                
             //marriage
             main_rect.append('text')
                 .text( d => {
@@ -304,6 +309,7 @@ function family_tree(family_tree_data) {
                     }
                 })
                 .style("cursor", "default")
+                .style("user-select", "none")
             
             //religion    
             var religion_svg = main_rect.append('svg')
