@@ -1,6 +1,7 @@
 function openRightPan() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("right_open_button_div").style.marginRight = "250px";
+    document.getElementById("right_panel_sibling_text").innerHTML = "Kattints egy személy négyzetére a családfán"
     d3.select("#right_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
 }
 
