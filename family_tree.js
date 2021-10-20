@@ -280,7 +280,7 @@ function family_tree(family_tree_data) {
                 })
                 .style("cursor", "default")
                 .style("user-select", "none")
-                
+
             //marriage
             main_rect.append('text')
                 .text( d => {
@@ -299,7 +299,7 @@ function family_tree(family_tree_data) {
                 })
                 .attr('y', node_height / 2 - 21)
                 .attr('class', 'text')
-                .attr('font-weight', 200)
+                .attr('font-weight', 500)
                 .attr('font-size', 13)
                 .attr('text-anchor', (d) => {
                     if (d.data.gender === 'male') {
