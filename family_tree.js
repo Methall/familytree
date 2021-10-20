@@ -66,6 +66,9 @@ function closeUpPan() {
 function family_choice_click(event,d) {
     d3.select("body").select('#myUpbar').selectAll("g").style("background", "white")
     d3.select(this).style("background", "#c2e4a0")
+    document.getElementById("right_panel_name_text").innerHTML = ""
+    document.getElementById("right_panel_sibling_text").innerHTML = ""
+    document.getElementById("right_panel_comment_text").innerHTML = ""
     d3.selectAll("svg").remove()
     family_tree(d.file)
 }
