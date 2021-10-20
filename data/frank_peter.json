@@ -11,7 +11,7 @@
 	"marriage_place": "",
 	"religion": "reformatus",
 	"comment": "",
-	"siblings": [],
+	"siblings": [{"sibling_id": "1.0.1","sibling_name": "Frank Judit","sibling_birth_place": "private","sibling_birth_date": "private","sibling_death_place": "private","sibling_death_date": "private","sibling_spouse_name": "private","sibling_marriage_place": "private","sibling_marriage_date": "private"}],
 	"children": [{
 	"id": "2",
 	"generation": "1",
