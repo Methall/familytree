@@ -13,7 +13,7 @@ function printTree() {
 function openRightPan() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("right_open_button_div").style.marginRight = "250px";
-    if (document.getElementById("right_panel_sibling_text").innerHTML == "") {
+    if (document.getElementById("right_panel_name_text").innerHTML == "") {
         document.getElementById("right_panel_sibling_text").innerHTML = "Kattints egy személyre a családfán"
     }
     d3.select("#right_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
@@ -390,6 +390,7 @@ function family_tree(family_tree_data) {
                 .attr('transform', 'translate(0,0) scale('+ evangelikus_sym_scale +')')
                 
             religion_svg.append('path')
+                .attr("id", d => "evangelikus_virag"+d.data.id)
                 .attr('d', d => {
                     if (d.data.religion === 'evangelikus') {
                         return evangelikus_virag
@@ -410,6 +411,7 @@ function family_tree(family_tree_data) {
                 .attr('transform', 'translate(0,0) scale('+ evangelikus_sym_scale +')')
                 
             religion_svg.append('path')
+                .attr("id", d => "evangelikus_kereszt"+d.data.id)
                 .attr('d', d => {
                     if (d.data.religion === 'evangelikus') {
                         return evangelikus_kereszt
@@ -648,6 +650,10 @@ function family_tree(family_tree_data) {
             document.getElementById("right_panel_comment_text").innerHTML = ""
             if (actual_node_fill == "white") {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "#E1FADD")
+                if (d.data.religion == "evangelikus") {
+                    d3.select(this).select('[id="evangelikus_kereszt'+d.data.id+'"]').attr("fill", "#E1FADD")
+                    d3.select(this).select('[id="evangelikus_virag'+d.data.id+'"]').attr("fill", "#E1FADD")
+                }
                 document.getElementById("right_panel_name_text").innerHTML = d.data.name
                 document.getElementById("right_panel_comment_text").innerHTML = "<b>Megjegyzés:</b><br>"+d.data.comment+"";
                 for (let i = 0; i <= (d.data.siblings.length - 1); i++) {
@@ -675,6 +681,10 @@ function family_tree(family_tree_data) {
                 }
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
+                if (d.data.religion == "evangelikus") {
+                    d3.select(this).select('[id="evangelikus_kereszt'+d.data.id+'"]').attr("fill", "white")
+                    d3.select(this).select('[id="evangelikus_virag'+d.data.id+'"]').attr("fill", "white")
+                }
                 document.getElementById("right_panel_name_text").innerHTML = ""
                 document.getElementById("right_panel_sibling_text").innerHTML = ""
                 document.getElementById("right_panel_comment_text").innerHTML = ""
