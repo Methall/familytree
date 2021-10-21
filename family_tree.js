@@ -644,6 +644,8 @@ function family_tree(family_tree_data) {
             var actual_node_fill = d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill")
             nodes.each(function(d) {
                 d3.select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
+                d3.select('[id="evangelikus_kereszt'+d.data.id+'"]').attr("fill", "white")
+                d3.select('[id="evangelikus_virag'+d.data.id+'"]').attr("fill", "white")
             })
             document.getElementById("right_panel_name_text").innerHTML = ""
             document.getElementById("right_panel_sibling_text").innerHTML = ""
@@ -681,10 +683,6 @@ function family_tree(family_tree_data) {
                 }
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
-                if (d.data.religion == "evangelikus") {
-                    d3.select(this).select('[id="evangelikus_kereszt'+d.data.id+'"]').attr("fill", "white")
-                    d3.select(this).select('[id="evangelikus_virag'+d.data.id+'"]').attr("fill", "white")
-                }
                 document.getElementById("right_panel_name_text").innerHTML = ""
                 document.getElementById("right_panel_sibling_text").innerHTML = ""
                 document.getElementById("right_panel_comment_text").innerHTML = ""
