@@ -49,8 +49,8 @@
 		{"sibling_id": "4.2.4","sibling_name": "Frank Lajos","sibling_birth_place": "Kecel","sibling_birth_date": "1919.08.03","sibling_death_place": "Kecel","sibling_death_date": "1997","sibling_spouse_name": "Veki Magdolna","sibling_marriage_place": "Kecel","sibling_marriage_date": "1946.11.18"},
 		{"sibling_id": "4.2.5","sibling_name": "Frank Mária","sibling_birth_place": "Kecel","sibling_birth_date": "1921.06.19","sibling_death_place": "Kecel","sibling_death_date": "2014.10","sibling_spouse_name": "Fodor Gábor","sibling_marriage_place": "Kecel","sibling_marriage_date": "1943.11.15"},
 		{"sibling_id": "4.2.6","sibling_name": "Frank Julianna","sibling_birth_place": "Kecel","sibling_birth_date": "1923.06.12","sibling_death_place": "Kecel","sibling_death_date": "1926.02.08","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
-		{"sibling_id": "4.2.7","sibling_name": "Frank Teréz","sibling_birth_place": "Kecel","sibling_birth_date": "1931.06","sibling_death_place": "Kecel","sibling_death_date": "1931.08.15","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
-		{"sibling_id": "4.2.8","sibling_name": "Frank Sándor","sibling_birth_place": "","sibling_birth_date": "","sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
+		{"sibling_id": "4.2.7","sibling_name": "Frank Teréz","sibling_birth_place": "Kecel","sibling_birth_date": "1931.06.?","sibling_death_place": "Kecel","sibling_death_date": "1931.08.15","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
+		{"sibling_id": "4.2.8","sibling_name": "Frank Sándor","sibling_birth_place": "?","sibling_birth_date": "?","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
 	"children": [{
 	"id": "8",
 	"generation": "3",
@@ -162,7 +162,7 @@
 	"marriage_place": "Soltvadkert",
 	"religion": "katolikus",
 	"comment": "",
-	"siblings": [{"sibling_id": "5.2.1","sibling_name": "Vörös János","sibling_birth_place": "","sibling_birth_date": "","sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
+	"siblings": [{"sibling_id": "5.2.1","sibling_name": "Vörös János","sibling_birth_place": "?","sibling_birth_date": "?","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
 	"children": [{
 	"id": "10",
 	"generation": "3",
