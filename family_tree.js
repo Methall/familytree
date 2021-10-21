@@ -684,7 +684,7 @@ function family_tree(family_tree_data) {
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
                 document.getElementById("right_panel_name_text").innerHTML = ""
-                document.getElementById("right_panel_sibling_text").innerHTML = ""
+                document.getElementById("right_panel_sibling_text").innerHTML = "Kattints egy személyre a családfán"
                 document.getElementById("right_panel_comment_text").innerHTML = ""
             }
 

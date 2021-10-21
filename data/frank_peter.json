@@ -87,7 +87,52 @@
 		{"sibling_id": "16.4.4","sibling_name": "Frank Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1871.05.26","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "16.4.5","sibling_name": "Frank József","sibling_birth_place": "Csávoly","sibling_birth_date": "1874.05.06","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "16.4.6","sibling_name": "Frank József","sibling_birth_place": "CSávoly","sibling_birth_date": "1876.04.08","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
-	"children": []
+	"children": [ {
+		"id": "32",
+		"generation": "5",
+		"name": "Frank Jakab",
+		"gender": "male",
+		"birth_place": "Csávoly",
+		"birth_date": "1834.08.24",
+		"death_date": "1894.03.27",
+		"death_place": "Felsőszentiván",
+		"marriage_date": "1862.08.18",
+		"marriage_place": "Csávoly",
+		"religion": "katolikus",
+		"comment": "",
+		"siblings": [
+		{"sibling_id": "32.5.1","sibling_name": "Frank János","sibling_birth_place": "Felsőszentiván","sibling_birth_date": "1837.11.18", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "32.5.2","sibling_name": "Frank János","sibling_birth_place": "Csávoly","sibling_birth_date": "1842.04.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "32.5.3","sibling_name": "Frank András","sibling_birth_place": "Csávoly","sibling_birth_date": "1844.08.26", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "32.5.4","sibling_name": "Frank Katalin","sibling_birth_place": "Csávoly","sibling_birth_date": "1847.12.16", "sibling_death_place": "Csávoly","sibling_death_date": "1847.12.17","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "32.5.5","sibling_name": "Frank Magdolna","sibling_birth_place": "Csávoly","sibling_birth_date": "1847.12.16", "sibling_death_place": "Csávoly","sibling_death_date": "1848.01.02","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "32.5.6","sibling_name": "Frank Lőrinc","sibling_birth_place": "Csávoly","sibling_birth_date": "1849.01.06", "sibling_death_place": "Csávoly","sibling_death_date": "1856.03.21","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+		],
+		"children": []
+	},
+	{
+		"id": "33",
+		"generation": "5",
+		"name": "Wagner Anna",
+		"gender": "female",
+		"birth_place": "Csávoly",
+		"birth_date": "1836.11.06",
+		"death_date": "1916.03.07",
+		"death_place": "Rém",
+		"marriage_date": "1862.08.18",
+		"marriage_place": "Csávoly",
+		"religion": "katolikus",
+		"comment": "",
+		"siblings": [
+		{"sibling_id": "33.5.1","sibling_name": "Wagner Péter","sibling_birth_place": "Csávoly","sibling_birth_date": "1819.11.11", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "33.5.2","sibling_name": "Wagner Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1821.04.02", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Mandich Kiliánusz", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1842.10.25"},
+		{"sibling_id": "33.5.3","sibling_name": "Wagner János","sibling_birth_place": "Csávoly","sibling_birth_date": "1822.08.28", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "33.5.4","sibling_name": "Wagner Erzsébet","sibling_birth_place": "Csávoly","sibling_birth_date": "1824.04.04", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "33.5.5","sibling_name": "Wagner Annamária","sibling_birth_place": "Csávoly","sibling_birth_date": "1825.10.13", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "33.5.6","sibling_name": "Wagner Ferenc","sibling_birth_place": "Csávoly","sibling_birth_date": "1827.07.24", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+		],
+		"children": []
+	}]
 },{
 	"id": "17",
 	"generation": "4",
@@ -106,7 +151,54 @@
 		{"sibling_id": "17.4.3","sibling_name": "Bischof Kunigunda","sibling_birth_place": "Nádudvar","sibling_birth_date": "1855.11.27","sibling_death_place": "Nemesnádudvar","sibling_death_date": "1895.01.07","sibling_spouse_name": "Durst Ádám","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "17.4.4","sibling_name": "Bischof Péter","sibling_birth_place": "Nádudvar","sibling_birth_date": "1864.09.06","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "17.4.5","sibling_name": "Bischof István","sibling_birth_place": "Nádudvar","sibling_birth_date": "1866.12.26","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
-	"children": []
+	"children": [ {
+		"id": "34",
+		"generation": "5",
+		"name": "Bischof András",
+		"gender": "male",
+		"birth_place": "Nádudvar",
+		"birth_date": "1825.11.22",
+		"death_date": "1867.09.13",
+		"death_place": "Nádudvar",
+		"marriage_date": "1846.01.13",
+		"marriage_place": "Nádudvar",
+		"religion": "katolikus",
+		"comment": "Testvérei, Anna Mária és Erzsébet ikrek.",
+		"siblings": [
+		{"sibling_id": "34.5.1","sibling_name": "Bischof Antal","sibling_birth_place": "Nádudvar","sibling_birth_date": "1824.01.03", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "34.5.2","sibling_name": "Bischof Lőrinc","sibling_birth_place": "Nádudvar","sibling_birth_date": "1828.08.07", "sibling_death_place": "Felsőszentiván","sibling_death_date": "1893.09.01","sibling_spouse_name": "Koch Marianna", "sibling_marriage_place": "Felsőszentiván", "sibling_marriage_date": "1855.11.06"},
+		{"sibling_id": "34.5.3","sibling_name": "Bischof Károly","sibling_birth_place": "Nádudvar","sibling_birth_date": "1830.08.30", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Faltum Kunigunda", "sibling_marriage_place": "Nádudvar", "sibling_marriage_date": "1856.11.17"},
+		{"sibling_id": "34.5.4","sibling_name": "Bischof Anna","sibling_birth_place": "Nádudvar","sibling_birth_date": "1833.05.23", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "34.5.5","sibling_name": "Bischof Anna Mária","sibling_birth_place": "Nádudvar","sibling_birth_date": "1836.02.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "34.5.6","sibling_name": "Bischof Erzsébet","sibling_birth_place": "Nádudvar","sibling_birth_date": "1836.02.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "34.5.7","sibling_name": "Bischof Antal","sibling_birth_place": "Nádudvar","sibling_birth_date": "1839.06.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Schneider Magdolna", "sibling_marriage_place": "Nádudvar", "sibling_marriage_date": "1862.11.04"}
+		],
+		"children": []
+	},
+	{
+		"id": "35",
+		"generation": "5",
+		"name": "Schumacher Magdolna",
+		"gender": "female",
+		"birth_place": "Nádudvar",
+		"birth_date": "1827.03.26",
+		"death_date": "1913.02.18",
+		"death_place": "Nemesnádudvar",
+		"marriage_date": "1846.01.13",
+		"marriage_place": "Nádudvar",
+		"religion": "katolikus",
+		"comment": "Testvérei, Anna és János ikrek.",
+		"siblings": [
+		{"sibling_id": "35.5.1","sibling_name": "Schumacher Sebestyén","sibling_birth_place": "Nádudvar","sibling_birth_date": "1821.04.11", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "35.5.2","sibling_name": "Schumacher Krisztina","sibling_birth_place": "Nádudvar","sibling_birth_date": "1824.01.17", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "35.5.3","sibling_name": "Schumacher Jusztina","sibling_birth_place": "Nádudvar","sibling_birth_date": "1829.07.31", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "35.5.4","sibling_name": "Schumacher Anna","sibling_birth_place": "Nádudvar","sibling_birth_date": "1833.08.18", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "35.5.5","sibling_name": "Schumacher János","sibling_birth_place": "Nádudvar","sibling_birth_date": "1833.08.18", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "35.5.6","sibling_name": "Schumacher Katalin","sibling_birth_place": "Nádudvar ","sibling_birth_date": "1836.04.19", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "35.5.7","sibling_name": "Schumacher Kilián","sibling_birth_place": "Nádudvar","sibling_birth_date": "1838.10.22", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": []
+	}]
 }]
 },{
 	"id": "9",
@@ -139,7 +231,7 @@
 	"marriage_place": "?",
 	"religion": "",
 	"comment": "",
-	"siblings": [{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "","sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
+	"siblings": [],
 	"children": []
 },{
 	"id": "19",
@@ -157,7 +249,41 @@
 	"siblings": [{"sibling_id": "19.4.1","sibling_name": "Guttengéber Menyhért","sibling_birth_place": "Császártöltés","sibling_birth_date": "1866.01.01","sibling_death_place": "Császártöltés","sibling_death_date": "1866.01.02","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
 		{"sibling_id": "19.4.2","sibling_name": "Guttengéber Franciska","sibling_birth_place": "Császártöltés","sibling_birth_date": "1868.12.23","sibling_death_place": "Kecel","sibling_death_date": "1917.01.12","sibling_spouse_name": "Molnár Ferenc","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "19.4.3","sibling_name": "Guttengéber Menyhért","sibling_birth_place": "Császártöltés","sibling_birth_date": "1870.11.08","sibling_death_place": "Császártöltés","sibling_death_date": "1874.01.15","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
-	"children": []
+	"children": [
+		{
+			"id": "38",
+			"generation": "5",
+			"name": "?",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "39",
+			"generation": "5",
+			"name": "Guttengéber Katalin",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "1829.?.?",
+			"death_date": "1894.08.28",
+			"death_place": "Császártöltés",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}
+	]
 }]
 }]
 },{
@@ -208,7 +334,40 @@
 	"religion": "katolikus",
 	"comment": "",
 	"siblings": [{"sibling_id": "20.4.1","sibling_name": "Vörös Mária","sibling_birth_place": "Kistelek","sibling_birth_date": "1863.08.27","sibling_death_place": "Kistelek","sibling_death_date": "1867.02.24","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
-	"children": []
+	"children": [ {
+		"id": "40",
+		"generation": "5",
+		"name": "Vörös Ferenc",
+		"gender": "male",
+		"birth_place": "Kistelek",
+		"birth_date": "1815.02.03",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "1856.04.13",
+		"marriage_place": "Kistelek",
+		"religion": "katolikus",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	},
+	{
+		"id": "41",
+		"generation": "5",
+		"name": "Tóth Erzsébet",
+		"gender": "female",
+		"birth_place": "Szeged",
+		"birth_date": "1826(?)",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "1856.04.13",
+		"marriage_place": "Kistelek",
+		"religion": "katolikus",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	}]
 },{
 	"id": "21",
 	"generation": "4",
@@ -227,7 +386,40 @@
 		{"sibling_id": "21.4.3","sibling_name": "Csúri Rozália","sibling_birth_place": "Kistelek","sibling_birth_date": "1871.06.08","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "21.4.4","sibling_name": "Csúri Anna","sibling_birth_place": "Kistelek","sibling_birth_date": "1874.07.26","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "21.4.5","sibling_name": "Csúri Sándor","sibling_birth_place": "Kistelek","sibling_birth_date": "1877.05.21","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
-	"children": []
+	"children": [ {
+		"id": "42",
+		"generation": "5",
+		"name": "Csúri József",
+		"gender": "male",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	},
+	{
+		"id": "43",
+		"generation": "5",
+		"name": "Bozó Rozália",
+		"gender": "female",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	}]
 }]
 },{
 	"id": "11",
@@ -246,33 +438,113 @@
 	"children": [{
 	"id": "22",
 	"generation": "4",
-	"name": "",
+	"name": "Gszelmann Gáspár",
 	"gender": "male",
-	"birth_place": "",
-	"birth_date": "",
-	"death_date": "",
-	"death_place": "",
-	"marriage_date": "",
-	"marriage_place": "",
-	"religion": "",
+	"birth_place": "Vadkert",
+	"birth_date": "1883.05.03",
+	"death_date": "1911.02.04",
+	"death_place": "Soltvadkert",
+	"marriage_date": "1907.01.08",
+	"marriage_place": "Soltvadkert",
+	"religion": "evangelikus",
 	"comment": "",
-	"siblings": [{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "","sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
-	"children": []
+	"siblings": [{"sibling_id": "22.4.1","sibling_name": "Gszellmann Gáspár","sibling_birth_place": "Vadkert","sibling_birth_date": "1882.01.28","sibling_death_place": "Vadkert","sibling_death_date": "1882.02.02","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
+		{"sibling_id": "22.4.2","sibling_name": "Gszellmann Éva","sibling_birth_place": "Vadkert","sibling_birth_date": "1885.07.11","sibling_death_place": "Vadkert","sibling_death_date": "1887.05.13","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
+		{"sibling_id": "22.4.3","sibling_name": "Gszellmann Erzsébet","sibling_birth_place": "Vadkert","sibling_birth_date": "1887.11.08","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Vindecker Márton","sibling_marriage_place": "Soltvadkert","sibling_marriage_date": "1907.01.31"},
+		{"sibling_id": "22.4.4","sibling_name": "Gszellmann Terézia","sibling_birth_place": "Vadkert","sibling_birth_date": "1891.02.11","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
+		{"sibling_id": "22.4.5","sibling_name": "Gszellmann Julianna","sibling_birth_place": "Vadkert","sibling_birth_date": "1893.07.22","sibling_death_place": "Soltvadkert","sibling_death_date": "1918.11.16","sibling_spouse_name": "Frei Henrik","sibling_marriage_place": "Soltvadkert","sibling_marriage_date": "1911.12.14"},
+		{"sibling_id": "22.4.6","sibling_name": "Gszellmann Éva","sibling_birth_place": "Vadkert","sibling_birth_date": "1896.09.09","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Baranyi Sándor","sibling_marriage_place": "Soltvadkert","sibling_marriage_date": "1920.03.23"},
+		{"sibling_id": "22.4.7","sibling_name": "Gszellmann Katalin","sibling_birth_place": "Soltvadkert","sibling_birth_date": "1901.07.26","sibling_death_place": "Soltvadkert","sibling_death_date": "1969.02.02","sibling_spouse_name": "Valuska András; Kerti Gábor","sibling_marriage_place": "Soltvadkert; ?","sibling_marriage_date": "1920.11.23; 1957.?.?"}],
+	"children": [ {
+		"id": "44",
+		"generation": "5",
+		"name": "Gszellmann Gáspár",
+		"gender": "male",
+		"birth_place": "Vadkert",
+		"birth_date": "1858.12.17",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "1881.11.04",
+		"marriage_place": "Vadkert",
+		"religion": "evangelikus",
+		"comment": "",
+		"siblings": [
+		{"sibling_id": "44.5.1","sibling_name": "Gszellmann Mária","sibling_birth_place": "Vadkert","sibling_birth_date": "1853.10.30", "sibling_death_place": "Vadkert","sibling_death_date": "1896.10.08","sibling_spouse_name": "Szaszler Mátyás", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "44.5.2","sibling_name": "Gszellmann János","sibling_birth_place": "Vadkert","sibling_birth_date": "1856.01.20", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "44.5.3","sibling_name": "Gszellmann Éva","sibling_birth_place": "Vadkert","sibling_birth_date": "1861.04.25", "sibling_death_place": "Vadkert","sibling_death_date": "1861.05.08","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "44.5.4","sibling_name": "Gszellmann Ádám","sibling_birth_place": "Vadkert","sibling_birth_date": "1862.07.07", "sibling_death_place": "Vadkert","sibling_death_date": "1862.10.29","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "44.5.5","sibling_name": "Gszellmann Krisztina","sibling_birth_place": "Vadkert","sibling_birth_date": "1864.09.14", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Lehotzki András", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1881.11.07"},
+		{"sibling_id": "44.5.6","sibling_name": "Gszellmann Henrik","sibling_birth_place": "Vadkert","sibling_birth_date": "1869.03.22", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Ruck Margit", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1892.05.16"}
+		],
+		"children": []
+	},
+	{
+		"id": "45",
+		"generation": "5",
+		"name": "Lehóczki Katalin",
+		"gender": "female",
+		"birth_place": "Vadkert",
+		"birth_date": "1861.01.30",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "1881.11.04",
+		"marriage_place": "Vadkert",
+		"religion": "evangelikus",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	}]
 },{
 	"id": "23",
 	"generation": "4",
-	"name": "",
+	"name": "Lehóczki Margit",
 	"gender": "female",
-	"birth_place": "",
-	"birth_date": "",
-	"death_date": "",
-	"death_place": "",
-	"marriage_date": "",
-	"marriage_place": "",
-	"religion": "",
-	"comment": "",
-	"siblings": [{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "","sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}],
-	"children": []
+	"birth_place": "Harta",
+	"birth_date": "1890.12.17",
+	"death_date": "1970.11.08",
+	"death_place": "Soltvadkert",
+	"marriage_date": "1907.01.08",
+	"marriage_place": "Soltvadkert",
+	"religion": "evangelikus",
+	"comment": "Második férje Répa Mihály. Gyermekeik: Répa Mihály (szül.: Soltvadkert, 1913.09.17), Répa István( szül.: 1919.08.27)",
+	"siblings": [],
+	"children": [
+		{
+			"id": "46",
+			"generation": "5",
+			"name": "Lehóczki Péter",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": ",",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},
+		{
+			"id": "47",
+			"generation": "5",
+			"name": "Gröb Katalin",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "?",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}
+	]
 }]
 }]
 }]
