@@ -1,3 +1,15 @@
+function printTree() {
+    document.body.style.visibility = "hidden";
+    document.getElementById("tree_area").style.visibility = "visible";
+
+    document.addEventListener('keydown', (event) => {
+        var name = event.key;
+        if (name == "Escape") {
+            document.body.style.visibility = "visible";
+        }
+    })
+}
+
 function openRightPan() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("right_open_button_div").style.marginRight = "250px";
@@ -16,9 +28,11 @@ function openUpPan() {
     document.getElementById("up_open_button_div").style.marginTop = "40px";
     document.getElementById("tree_area").style.marginTop = "40px";
     document.getElementById("top_button_div").style.marginTop = "40px";
+    document.getElementById("print_button_div").style.marginTop = "40px";
     document.getElementById("myUpbar").style.zIndex = -1;
     d3.select("#up_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
     d3.select("#top_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
+    d3.select("#print_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
 
     d3.json("data/families.json").then(familiesData => {
 
@@ -59,8 +73,10 @@ function closeUpPan() {
     document.getElementById("up_open_button_div").style.marginTop= "0";
     document.getElementById("top_button_div").style.marginTop= "0";
     document.getElementById("tree_area").style.marginTop = "0";
+    document.getElementById("print_button_div").style.marginTop = "0";
     d3.select("#up_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
     d3.select("#top_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
+    d3.select("#print_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
     document.getElementById("myUpbar").style.zIndex = 1;
 }
 
