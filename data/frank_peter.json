@@ -132,7 +132,146 @@
 				{"sibling_id": "64.4.7","sibling_name": "Frank János","sibling_birth_place": "Csávoly","sibling_birth_date": "1831.09.08", "sibling_death_place": "Csávoly","sibling_death_date": "1833.08.30","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
 				{"sibling_id": "64.4.8","sibling_name": "Frank Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1834.09.28", "sibling_death_place": "Csávoly","sibling_death_date": "1834.10.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
-				"children": []
+				"children": [{
+					"id": "128",
+					"generation": "7",
+					"name": "Frank Jakab",
+					"gender": "male",
+					"birth_place": "Csávoly",
+					"birth_date": "1794.05.06",
+					"death_date": "1845.07.06",
+					"death_place": "Felsőszentiván",
+					"marriage_date": "1812.11.24",
+					"marriage_place": "Csávoly",
+					"religion": "katolikus",
+					"comment": "",
+					"siblings": [
+					{"sibling_id": "128.7.1","sibling_name": "Frank Pál","sibling_birth_place": "Soroksár","sibling_birth_date": "1777.01.01", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "128.7.2","sibling_name": "Frank Magdolna","sibling_birth_place": "Soroksár","sibling_birth_date": "1779.06.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "128.7.3","sibling_name": "Frank Antal","sibling_birth_place": "Csávoly","sibling_birth_date": "1781.09.06", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Bajerinn Mária", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1800.02.18"},
+					{"sibling_id": "128.7.4","sibling_name": "Frank Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1784.04.04", "sibling_death_place": "Csávoly","sibling_death_date": "1799.03.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "128.7.5","sibling_name": "Frank János","sibling_birth_place": "Csávoly","sibling_birth_date": "1786.09.11", "sibling_death_place": "Csávoly","sibling_death_date": "1833.03.05","sibling_spouse_name": "Baumann Anna", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "128.7.6","sibling_name": "Frank Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1790.03.05", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "128.7.7","sibling_name": "Frank Tamás","sibling_birth_place": "Csávoly","sibling_birth_date": "1792.01.18", "sibling_death_place": "Csávoly","sibling_death_date": "1852.05.24","sibling_spouse_name": "Tossenberger Katalin", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1811.11.05"},
+					{"sibling_id": "128.7.8","sibling_name": "Frank Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1799.03.07", "sibling_death_place": "Csávoly","sibling_death_date": "1799.03.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+					],
+					"children": [{
+						"id": "256",
+						"generation": "8",
+						"name": "Frank János György",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "1753(?)",
+						"death_date": "1810.03.16",
+						"death_place": "Csávoly",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "katolikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "257",
+						"generation": "8",
+						"name": "Holencz Annamária",
+						"gender": "female",
+						"birth_place": "Soroksár",
+						"birth_date": "1755.08.17",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "katolikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": [{
+							"id": "514",
+							"generation": "9",
+							"name": "Holentz József",
+							"gender": "male",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "515",
+							"generation": "9",
+							"name": "? Annamária",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}]
+					}]
+				},{
+					"id": "129",
+					"generation": "7",
+					"name": "Poner Ilona",
+					"gender": "female",
+					"birth_place": "Csávoly",
+					"birth_date": "1793.10.02",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "1812.11.24",
+					"marriage_place": "Csávoly",
+					"religion": "katolikus",
+					"comment": "",
+					"siblings": [
+					{"sibling_id": "129.7.1","sibling_name": "Poner József","sibling_birth_place": "Csávoly","sibling_birth_date": "1791.10.09", "sibling_death_place": "Csávoly","sibling_death_date": "1795.04.06","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "129.7.2","sibling_name": "Poner Katalin","sibling_birth_place": "Csávoly","sibling_birth_date": "1796.05.31", "sibling_death_place": "Csávoly","sibling_death_date": "1849.04.13","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "129.7.3","sibling_name": "Poner Mihály","sibling_birth_place": "Csávoly","sibling_birth_date": "1801.09.01", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+					],
+					"children": [{
+						"id": "258",
+						"generation": "8",
+						"name": "Poner János",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "259",
+						"generation": "8",
+						"name": "Scheiblin Magdolna",
+						"gender": "female",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}]
+				}]
 			},{
 				"id": "65",
 				"generation": "6",
@@ -149,7 +288,39 @@
 				"siblings": [
 				{"sibling_id": "65.6.1","sibling_name": "Pfeffer János","sibling_birth_place": "Csávoly","sibling_birth_date": "1810.09.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 				],
-				"children": []
+				"children": [{
+					"id": "130",
+					"generation": "7",
+					"name": "Pfeffer Mihály",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "131",
+					"generation": "7",
+					"name": "Lük Katalin",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			}
 		]
 	},
@@ -194,7 +365,39 @@
 				{"sibling_id": "66.6.3","sibling_name": "Wagner Ádám","sibling_birth_place": "Csávoly","sibling_birth_date": "1795.02.04", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 				{"sibling_id": "66.6.4","sibling_name": "Wagner Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1796.12.08", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 				],
-				"children": []
+				"children": [{
+					"id": "132",
+					"generation": "7",
+					"name": "Wagner Pongrác",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "133",
+					"generation": "7",
+					"name": "Mainczer Margit",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			},{
 				"id": "67",
 				"generation": "6",
@@ -210,7 +413,39 @@
 				"comment": "",
 				"siblings": [
 				],
-				"children": []
+				"children": [{
+					"id": "134",
+					"generation": "7",
+					"name": "Ramhab Ferenc",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "135",
+					"generation": "7",
+					"name": "Mosthoff Erzsébet",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			}
 		]
 	}]
@@ -275,7 +510,39 @@
 				{"sibling_id": "68.6.4","sibling_name": "Bischof Jakab","sibling_birth_place": "Nádudvar","sibling_birth_date": "1786.?.?", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 				{"sibling_id": "68.6.5","sibling_name": "Bischof János","sibling_birth_place": "Nádudvar","sibling_birth_date": "1787.08.21", "sibling_death_place": "Nádudvar","sibling_death_date": "1789.10.07","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
-				"children": []
+				"children": [{
+					"id": "139",
+					"generation": "7",
+					"name": "Bischof Károly",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "140",
+					"generation": "7",
+					"name": "Rutterschmidt Magdolna",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			},{
 				"id": "69",
 				"generation": "6",
@@ -296,7 +563,39 @@
 				{"sibling_id": "69.6.4","sibling_name": "Zimermann Péter","sibling_birth_place": "Nádudvar","sibling_birth_date": "1817.06.18", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 				{"sibling_id": "69.6.5","sibling_name": "Zimermann Antal","sibling_birth_place": "Nádudvar","sibling_birth_date": "1811.07.11", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 				],
-				"children": []
+				"children": [{
+					"id": "141",
+					"generation": "7",
+					"name": "Zimermann Menyhért",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "142",
+					"generation": "7",
+					"name": "Baumgartner Annamária",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			}
 		]
 	},
@@ -688,7 +987,103 @@
 				{"sibling_id": "88.6.2","sibling_name": "Gszellmann Krisztina","sibling_birth_place": "Vadkert","sibling_birth_date": "1825.09.05", "sibling_death_place": "Vadkert","sibling_death_date": "1827.10.08","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
 				{"sibling_id": "88.6.3","sibling_name": "Gszellmann Helena","sibling_birth_place": "Vadkert","sibling_birth_date": "1828.06.26", "sibling_death_place": "Vadkert","sibling_death_date": "1830.10.06","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
-				"children": []
+				"children": [{
+					"id": "176",
+					"generation": "7",
+					"name": "Joan Ernst Geselman",
+					"gender": "male",
+					"birth_place": "Vadkert(?)",
+					"birth_date": "1785.02.23(?)",
+					"death_date": "1841.05.01(?)",
+					"death_place": "Vadkert(?)",
+					"marriage_date": "1808.11.08(?)",
+					"marriage_place": "Vadkert(?)",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": [{
+						"id": "352",
+						"generation": "8",
+						"name": "Gszellmann Jakab",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "1754(?)",
+						"death_date": "1786.04.29(?)",
+						"death_place": "Vadkert(?)",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "353",
+						"generation": "8",
+						"name": "Kolbeyerin Krisztina",
+						"gender": "female",
+						"birth_place": "Vadkert(?)",
+						"birth_date": "1765(?)",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}]
+				},{
+					"id": "177",
+					"generation": "7",
+					"name": "Eva Elisabetha Gillich",
+					"gender": "female",
+					"birth_place": "Vadkert(?)",
+					"birth_date": "1790.10.27(?)",
+					"death_date": "1861.02.27(?)",
+					"death_place": "Vadkert(?)",
+					"marriage_date": "1808.11.08(?)",
+					"marriage_place": "Vadkert(?)",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": [{
+						"id": "354",
+						"generation": "8",
+						"name": "Gillich Gáspár",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "1766(?)",
+						"death_date": "1847.09.13(?)",
+						"death_place": "Vadkert(?)",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "355",
+						"generation": "8",
+						"name": "Beischlagin Mária Margit",
+						"gender": "female",
+						"birth_place": "?",
+						"birth_date": "1769(?)",
+						"death_date": "1832.04.16(?)",
+						"death_place": "Vadkert(?)",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}]
+				}]
 			}, {
 				"id": "89",
 				"generation": "6",
@@ -705,7 +1100,177 @@
 				"siblings": [
 				{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
-				"children": []
+				"children": [{
+					"id": "178",
+					"generation": "7",
+					"name": "Eiler Salamon",
+					"gender": "male",
+					"birth_place": "Vadkert",
+					"birth_date": "1798.05.21",
+					"death_date": "1883.02.23",
+					"death_place": "Vadkert",
+					"marriage_date": "Vadkert",
+					"marriage_place": "1816.11.12",
+					"religion": "evangelikus",
+					"comment": "",
+					"siblings": [
+					{"sibling_id": "178.7.1","sibling_name": "Eiler Katalin Erzsébet","sibling_birth_place": "Vadkert","sibling_birth_date": "1786.09.02", "sibling_death_place": "Vadkert","sibling_death_date": "1789.07.09","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "178.7.2","sibling_name": "Eiler Mihály","sibling_birth_place": "Vadkert","sibling_birth_date": "1789.09.21", "sibling_death_place": "Vadkert","sibling_death_date": "1789.08.22","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "178.7.3","sibling_name": "Eiler Éva Erzsébet","sibling_birth_place": "Vadkert","sibling_birth_date": "1790.11.04", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "178.7.4","sibling_name": "Eiler Krisztina","sibling_birth_place": "Vadkert","sibling_birth_date": "1792.08.20", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "178.7.5","sibling_name": "Eiler Mária Erzsébet","sibling_birth_place": "Vadkert","sibling_birth_date": "1794.09.08", "sibling_death_place": "Vadkert","sibling_death_date": "1794.09.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "178.7.6","sibling_name": "Eiler András","sibling_birth_place": "Vadkert","sibling_birth_date": "1795.10.26", "sibling_death_place": "Vadkert","sibling_death_date": "1827.11.11","sibling_spouse_name": "Klamm Erzsébet", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1813.11.20"},
+					{"sibling_id": "178.7.7","sibling_name": "Eiler Anna Mária","sibling_birth_place": "Vadkert","sibling_birth_date": "1800.04.25", "sibling_death_place": "Vadkert","sibling_death_date": "1867.12.26","sibling_spouse_name": "Pfund János", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1817.11.11"},
+					{"sibling_id": "178.7.8","sibling_name": "Eiler Mihály","sibling_birth_place": "Vadkert","sibling_birth_date": "1802.12.04", "sibling_death_place": "Vadkert","sibling_death_date": "1804.12.04","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "178.7.9","sibling_name": "Eiler Jakab","sibling_birth_place": "Vadkert","sibling_birth_date": "1806.07.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "178.7.10","sibling_name": "Eiler Konrád","sibling_birth_place": "Vadkert","sibling_birth_date": "1808.?.?", "sibling_death_place": "Vadkert","sibling_death_date": "1809.08.03","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+					],
+					"children": [{
+						"id": "356",
+						"generation": "8",
+						"name": "Eiler Konrád",
+						"gender": "male",
+						"birth_place": "Vadkert(?)",
+						"birth_date": "1759(?)",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "1784.11.20",
+						"marriage_place": "Vadkert",
+						"religion": "evangelikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": [{
+							"id": "712",
+							"generation": "9",
+							"name": "Eiler Salamon(?)",
+							"gender": "male",
+							"birth_place": "Vadkert(?)",
+							"birth_date": "1733(?)",
+							"death_date": "1805.04.09(?)",
+							"death_place": "Vadkert(?)",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": [{
+								"id": "1424",
+								"generation": "10",
+								"name": "Eiler Konrád(?)",
+								"gender": "male",
+								"birth_place": "?",
+								"birth_date": "1710(?)",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							},{
+								"id": "1425",
+								"generation": "10",
+								"name": "Klamm Mária(?)",
+								"gender": "female",
+								"birth_place": "?",
+								"birth_date": "1713(?)",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							}]
+						},{
+							"id": "713",
+							"generation": "9",
+							"name": "Pajer Katalin(?)",
+							"gender": "female",
+							"birth_place": "Vadkert(?)",
+							"birth_date": "1734(?)",
+							"death_date": "1797.05.14(?)",
+							"death_place": "Vadkert(?)",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}]
+					},{
+						"id": "357",
+						"generation": "8",
+						"name": "Vindeker Éva",
+						"gender": "female",
+						"birth_place": "Vadkert(?)",
+						"birth_date": "1763(?)",
+						"death_date": "1843.10.15(?)",
+						"death_place": "Vadkert(?)",
+						"marriage_date": "1784.11.20",
+						"marriage_place": "Vadkert",
+						"religion": "evangelikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": [{
+							"id": "714",
+							"generation": "9",
+							"name": "Vindeker Ludvig",
+							"gender": "male",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "715",
+							"generation": "9",
+							"name": "Klamm Katalin(?)",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}]
+					}]
+				},{
+					"id": "179",
+					"generation": "7",
+					"name": "Kontz Margit",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "1799(?)",
+					"death_date": "1873.10.13",
+					"death_place": "Vadkert",
+					"marriage_date": "1816.11.12",
+					"marriage_place": "Vadkert",
+					"religion": "evangelikus",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			}
 		]
 	},
@@ -755,9 +1320,47 @@
 				"religion": "evangelikus",
 				"comment": "Nincs még hiteles dokumentum, ami igazolja.",
 				"siblings": [
-				{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+				{"sibling_id": "91.6.1","sibling_name": "Müller Anna Erzsébet","sibling_birth_place": "Vadkert","sibling_birth_date": "1807.01.01", "sibling_death_place": "Vadkert","sibling_death_date": "1847.08.30","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "91.6.2","sibling_name": "Müller János Jakab","sibling_birth_place": "Vadkert","sibling_birth_date": "1810.10.05", "sibling_death_place": "Vadkert","sibling_death_date": "1811.11.30","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+				{"sibling_id": "91.6.3","sibling_name": "Müller Péter","sibling_birth_place": "Vadkert","sibling_birth_date": "1812.11.21", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Hedrich Katalin Margit", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1833.01.08"},
+				{"sibling_id": "91.6.4","sibling_name": "Müller Konrád","sibling_birth_place": "Vadkert","sibling_birth_date": "1815.10.02", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Kegel Katalin", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1837.01.01"},
+				{"sibling_id": "91.6.5","sibling_name": "Müller Anna Mária","sibling_birth_place": "Vadkert","sibling_birth_date": "1818.08.19", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Bart János", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1836.02.10"},
+				{"sibling_id": "91.6.6","sibling_name": "Müller Henrik","sibling_birth_place": "Vadkert","sibling_birth_date": "1824.08.13", "sibling_death_place": "Soltvadkert","sibling_death_date": "1902","sibling_spouse_name": "Gillich Margit", "sibling_marriage_place": "Vadkert", "sibling_marriage_date": "1845.11.04"}
 				],
-				"children": []
+				"children": [{
+					"id": "182",
+					"generation": "7",
+					"name": "Müller Mihály",
+					"gender": "male",
+					"birth_place": "",
+					"birth_date": "1782(?)",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "1802.11.09(?)",
+					"marriage_place": "Vadkert(?)",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+					],
+					"children": []
+				},{
+					"id": "182",
+					"generation": "7",
+					"name": "Hachbold Ilona",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "1784.?.?",
+					"death_date": "1867.05.12",
+					"death_place": "Vadkert(?)",
+					"marriage_date": "1802.11.09(?)",
+					"marriage_place": "Vadkert(?)",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			}
 		]
 	}]
