@@ -150,15 +150,15 @@ function family_tree(family_tree_data) {
         var root_node_init_position_y = first_node_y_offset
 
         nodes.each(function(d) {
-            if (d.data.generation == '0') {
+            if (Number(d.data.generation) == 0) {
                 d.x = root_node_init_position_x
                 d.y = root_node_init_position_y
-            } else if (d.data.generation == '1') {
+            } else if (Number(d.data.generation) == 1) {
                 d.x = d.parent.x + node_coeff_a(d.data.gender) * (node_width / 2)
-                d.y = treemap_node_height * d.data.generation
+                d.y = treemap_node_height * Number(d.data.generation)
             } else {
-                d.x = d.parent.x + node_coeff_a(d.data.gender) * (node_width / 2) + node_coeff_a(d.parent.data.gender) * node_coeff_b(d.data.generation)
-                d.y = treemap_node_height * d.data.generation
+                d.x = d.parent.x + node_coeff_a(d.data.gender) * (node_width / 2) + node_coeff_a(d.parent.data.gender) * node_coeff_b(Number(d.data.generation))
+                d.y = treemap_node_height * Number(d.data.generation)
             }
         })
 
@@ -178,19 +178,19 @@ function family_tree(family_tree_data) {
                 })
                 .attr("class", "link")
                 .attr("d", function(d) {
-                    if (d.data.generation == '0') {
+                    if (Number(d.data.generation) == 0) {
                         return null
-                    } else if (d.data.generation == '1') {
+                    } else if (Number(d.data.generation) == 1) {
                         return "m" + (link_coeff_a(d.data.gender,node_width) + d.x) + "," + (d.y + 1)
                         + "l" + 0 + "," + -(d.y - node_height - first_node_y_offset)
-                    } else if ((d.data.generation % 2 == 0) && (d.data.generation != 0)) {
+                    } else if ((Number(d.data.generation) % 2 == 0) && (Number(d.data.generation) != 0)) {
                         return "m" + (link_coeff_a(d.data.gender,node_width) + d.x) + "," + (d.y)
                         + "l" + 0 + "," + -(treemap_node_height - (node_height / 2 ))
-                        + "l" + (link_coeff_b(d.parent.data.gender) * (node_coeff_b(d.data.generation) - (node_width / 2)) - link_coeff_b(d.parent.data.gender) * 0.35) + "," + 0
+                        + "l" + (link_coeff_b(d.parent.data.gender) * (node_coeff_b(Number(d.data.generation)) - (node_width / 2)) - link_coeff_b(d.parent.data.gender) * 0.35) + "," + 0
                     } else {
                         return "m" + (link_coeff_a(d.data.gender,node_width) + d.x) + "," + (d.y + 1)
                         + "l" + 0 + "," + -((treemap_node_height - node_height) / 2)
-                        + "l" + (link_coeff_b(d.parent.data.gender) * (node_coeff_b(d.data.generation) + (node_width / 2))) + "," + 0
+                        + "l" + (link_coeff_b(d.parent.data.gender) * (node_coeff_b(Number(d.data.generation)) + (node_width / 2))) + "," + 0
                         + "l" + 0 + "," + -((treemap_node_height - node_height) / 2)
                     } 
                 })
@@ -506,7 +506,7 @@ function family_tree(family_tree_data) {
                 
             //collapse circle
             circle_button_svg = node
-                .filter(d => ((d.data.generation > 3 && (d.data.generation % 2 == 0)) || d.data.generation == 1) && d.data.gender == 'male' || d.data.id == 3)
+                .filter(d => ((Number(d.data.generation) > 3 && (Number(d.data.generation) % 2 == 0)) || Number(d.data.generation) == 1) && d.data.gender == 'male' || Number(d.data.id) == 3)
                 .append('svg')
                 .attr('width', 36)
                 .attr('height', 36)
@@ -554,7 +554,7 @@ function family_tree(family_tree_data) {
             }
 
             var currentId = d.data.id
-            var currentGeneration = d.data.generation
+            var currentGeneration = Number(d.data.generation)
 
             var next_gen = Number(currentGeneration) + 1
 
@@ -576,9 +576,9 @@ function family_tree(family_tree_data) {
                 })
             }
 
-            //If you choose node above the previous one remove nodes below the needed level (last_gen_depth)
+            //If you choose node above the previous one removes nodes below the needed level (last_gen_depth)
             nodes.each(function(d) {
-                if (d.data.generation > currentGeneration) {
+                if (Number(d.data.generation) > currentGeneration) {
                     if (included.includes(Number(d.data.id))) {
                         const index = included.indexOf(Number(d.data.id))
                         if (index > -1) {
@@ -624,7 +624,6 @@ function family_tree(family_tree_data) {
                     temp_array = []
                 }
             }
-
             included_array(currentId)
 
             if (currentGeneration > 3) {
@@ -636,7 +635,6 @@ function family_tree(family_tree_data) {
                 d3.select('[id="node'+d.data.id+'"]').remove()
                 d3.select('[id="link'+d.data.id+'"]').remove()
             })
-
             update(included,currentId,colored_id)
         }
         
