@@ -657,6 +657,9 @@ function family_tree(family_tree_data) {
                 document.getElementById("right_panel_name_text").innerHTML = d.data.name
                 document.getElementById("right_panel_comment_text").innerHTML = "<b>Megjegyzés:</b><br>"+d.data.comment+"";
                 for (let i = 0; i <= (d.data.siblings.length - 1); i++) {
+                    if (i==0) {
+                        document.getElementById("right_panel_sibling_text").innerHTML += "<b><u>Testvérek:</u></b><br><br>"
+                    }
                     document.getElementById("right_panel_sibling_text").innerHTML += "<b>"+(i+1)+".&nbsp;"+d.data.siblings[i].sibling_name+"</b><br>"
                     if ((d.data.siblings[i].sibling_birth_date != "") || (d.data.siblings[i].sibling_death_date != "")) {
                         document.getElementById("right_panel_sibling_text").innerHTML += ""+d.data.siblings[i].sibling_birth_date+" - "+d.data.siblings[i].sibling_death_date+"<br>";
