@@ -1,3 +1,53 @@
+function help() {
+    if (document.getElementById("help") == null ) {
+
+        d3.select('#help_button_id').style("background-color", "white")
+
+        var below_help_button = Number(getDimensionAttr("help_button_id").y) + Number(getDimensionAttr("help_button_id").height)
+        var help = d3.select('body')
+            help.append('div')
+                .attr("class", "help_button")
+                .attr("id", "help")
+                .style('left', Number(getDimensionAttr("help_button_id").x) + "px")
+                .style('top',  below_help_button + "px")
+                .style("background", "white")
+        
+        document.getElementById("help").innerHTML = "<u><b>Magyarázat a használathoz:</u></b><br><br>"
+        document.getElementById("help").innerHTML += "A családfa fentről lefelé halad, a kiinduló személytől az egyre távolabbi generációk felé. A fát a nevek mellett/alatt lévő kis körre kattinta lehet tovább bontani. Egér görgővel a fa nagyítható/kicsinyíthető, valamint bal egér gombbal mozgatható bármely irányba. <br><br> \
+                                                        <u><b>Családfán lévő személyek téglalapjában látható információk:</u></b><br> \
+                                                        A téglalapok sarkában (férfinál bal felső; nőnél jobb felső sarok) az adott személy egyedi azonosítója látható, amely egy sorszámból és a pont után a generáció számából áll.<br> \
+                                                        A nevek alatt a születési és halálozási helyek és időpontok láthatók.<br> \
+                                                        A két személy közötti helyszín és évszám a házasságra vonatkozik.<br> \
+                                                        A téglalapban lévő szimbólumok vallási hovatartozást jelölnek(lásd lentebb).<br> \
+                                                        Ahol sima kérdőjel <b>?</b> látható, ott az adat még nem ismert. Ahol a kérdőjel zárójelben van <b>(?)</b>, ott az adat ismert (emlékezet, szájhagyomány), de nem bizonyított; nincs hozzá kapcsolható okirat.<br><br> \
+                                                        <u><b>Menü gombok:</u></b><br> \
+                                                        Bal felső sarokban lévő '<b>V</b>' gombra kattintva lenyílik a családfa választó panel. Kattints arra a személyre, akinek a családfáját látni szeretnéd.<br><br> \
+                                                        A jobb felső sarokban lévő '<b><</b>' gombra kattintva kinyílik az információs panel. Ha a fán egy személy téglalapjára kattintasz (zölddel kijelöli), itt jelennek meg a személy testvérei illetve adott esetben a személyre vonatkozó megjegyzés alul.<br><br> \
+                                                        Bal felül a <b>'Top'</b> gombra kattintva a családfa visszaigazodik a kiinduló pontjára, amennyiben nagyítottunk vagy elmozdítottuk a fát.<br><br> \
+                                                        A '<b>Print View</b>'gombra kattintva eltűnnek a fenti és a jobboldali gombok, vonalak. Csak tisztán a családfa marad látható.<br><br>"
+
+        d3.xml("images/reformatus.svg")
+        .then(data => {
+            d3.select("#help").node().append(data.documentElement)
+            d3.select("#help").node().append(" református")
+        })
+        d3.xml("images/katolikus.svg")
+        .then(data => {
+            d3.select("#help").node().append(data.documentElement)
+            d3.select("#help").node().append(" katolikus")
+        })
+        d3.xml("images/evangelikus.svg")
+        .then(data => {
+            d3.select("#help").node().append(data.documentElement)
+            d3.select("#help").node().append(" evangélikus")
+        })
+
+    } else {
+        document.getElementById("help").remove()
+        d3.select('#help_button_id').style("background-color", "#c2e4a0")
+    }
+}
+
 function printTree() {
     document.body.style.visibility = "hidden";
     document.getElementById("tree_area").style.visibility = "visible";
@@ -31,19 +81,24 @@ function openUpPan() {
     document.getElementById("tree_area").style.marginTop = "40px";
     document.getElementById("top_button_div").style.marginTop = "40px";
     document.getElementById("print_button_div").style.marginTop = "40px";
+    document.getElementById("help_div").style.marginTop = "40px";
     document.getElementById("myUpbar").style.zIndex = -1;
     d3.select("#up_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
     d3.select("#top_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
     d3.select("#print_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
+    d3.select("#help_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
+    if (document.getElementById("help") != null ) {
+        d3.select("#help").transition().duration(500).ease(d3.easeLinear).style("opacity", 0)
+    }
 
     d3.json("data/families.json").then(familiesData => {
 
-        var body = d3.select('#myUpbar')
+        var upbar = d3.select('#myUpbar')
             .selectAll('div')
             .data(familiesData)
             .enter()
 
-        var family_choice_div = body.append('div')
+        var family_choice_div = upbar.append('div')
         family_choice_group = family_choice_div.append("g")
             .attr("class", "add_div")
             .attr("id", d => {return "family_choice_group"+d.id})
@@ -76,9 +131,14 @@ function closeUpPan() {
     document.getElementById("top_button_div").style.marginTop= "0";
     document.getElementById("tree_area").style.marginTop = "0";
     document.getElementById("print_button_div").style.marginTop = "0";
+    document.getElementById("help_div").style.marginTop = "0";
     d3.select("#up_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
     d3.select("#top_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
     d3.select("#print_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
+    d3.select("#help_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
+    if (document.getElementById("help") != null ) {
+        d3.select("#help").transition().duration(500).ease(d3.easeLinear).style("opacity", 1)
+    }
     document.getElementById("myUpbar").style.zIndex = 1;
 }
 
@@ -396,7 +456,13 @@ function family_tree(family_tree_data) {
                         return evangelikus_virag
                     }
                     })
-                .attr('fill', 'white')
+                .attr('fill', d => {
+                    if (d.data.id == colored_id) {
+                        return '#E1FADD'
+                    } else {
+                        return 'white'
+                    }
+                })
                 .attr('stroke', 'black')
                 .attr('stroke-width', '3.5')
                 .attr('transform', 'translate(0,0) scale('+ evangelikus_sym_scale +')')
@@ -417,7 +483,13 @@ function family_tree(family_tree_data) {
                         return evangelikus_kereszt
                     }
                     })
-                .attr('fill', 'white')
+                .attr('fill', d => {
+                    if (d.data.id == colored_id) {
+                        return '#E1FADD'
+                    } else {
+                        return 'white'
+                    }
+                })
                 .attr('transform', 'translate(0,0) scale('+ evangelikus_sym_scale +')')
                 
             religion_svg.append('path')

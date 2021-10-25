@@ -2,11 +2,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.0"
-   x = "40"
-   y = "100"
-   width="51"
-   height="60"
-   viewBox="0 0 510 600"
+   width="30"
+   height="25"
+   viewBox="0 0 360 600"
    id="reformatus_id"> 
 
   <g id="crcna-logo" style="fill:black;stroke:none;">

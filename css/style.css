@@ -32,6 +32,15 @@ body {
   margin-top: 3px;
 }
 
+.help_button {
+  position: fixed;
+  max-width: 500px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px 2px 0px 2px;
+  margin: 3px;
+}
+
 .add_text {
   font-size: 13px;
   cursor: default;
@@ -104,6 +113,18 @@ body {
   user-select: none;
 }
 
+.helpbtn {
+  font-size: 20px;
+  cursor: default;
+  background-color: #c2e4a0;
+  color: black;
+  padding: 0px 10px 0px 10px;
+  border-style: solid;
+  border-top-style: none;
+  border-width: 1px;
+  user-select: none;
+}
+
 .openupbtn:hover, .openrightbtn:hover {
   background-color: #444;
 }
@@ -131,6 +152,14 @@ body {
   position: fixed;
   top: 1px;
   left: 132px;
+  transition: margin-top .5s;
+  opacity: 1;
+}
+
+#help_div {
+  position: fixed;
+  top: 1px;
+  left: 235px;
   transition: margin-top .5s;
   opacity: 1;
 }
