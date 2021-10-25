@@ -13,7 +13,8 @@ function help() {
                 .style("background", "white")
         
         document.getElementById("help").innerHTML = "<u><b>Magyarázat a használathoz:</u></b><br><br>"
-        document.getElementById("help").innerHTML += "A családfa fentről lefelé halad, a kiinduló személytől az egyre távolabbi generációk felé. A fát a nevek mellett/alatt lévő kis körre kattinta lehet tovább bontani. Egér görgővel a fa nagyítható/kicsinyíthető, valamint bal egér gombbal mozgatható bármely irányba. <br><br> \
+        document.getElementById("help").innerHTML += "A családfa fentről lefelé halad, a kiinduló személytől az egyre távolabbi generációk felé. A fát a nevek mellett/alatt lévő kis körre kattinta lehet tovább bontani. Egér görgővel a fa nagyítható/kicsinyíthető, valamint bal egér gombbal mozgatható bármely irányba.<br> \
+                                                        Élő személyek adatait a családfa nem tartalmazza (<b>private</b>) a nevükön kívül. Az elhunytak adatai publikus forrásból származnak (lásd lejjebb).<br><br> \
                                                         <u><b>Családfán lévő személyek téglalapjában látható információk:</u></b><br> \
                                                         A téglalapok sarkában (férfinál bal felső; nőnél jobb felső sarok) az adott személy egyedi azonosítója látható, amely egy sorszámból és a pont után a generáció számából áll.<br> \
                                                         A nevek alatt a születési és halálozási helyek és időpontok láthatók.<br> \
@@ -22,9 +23,14 @@ function help() {
                                                         Ahol sima kérdőjel <b>?</b> látható, ott az adat még nem ismert. Ahol a kérdőjel zárójelben van <b>(?)</b>, ott az adat ismert (emlékezet, szájhagyomány), de nem bizonyított; nincs hozzá kapcsolható okirat.<br><br> \
                                                         <u><b>Menü gombok:</u></b><br> \
                                                         Bal felső sarokban lévő '<b>V</b>' gombra kattintva lenyílik a családfa választó panel. Kattints arra a személyre, akinek a családfáját látni szeretnéd.<br><br> \
-                                                        A jobb felső sarokban lévő '<b><</b>' gombra kattintva kinyílik az információs panel. Ha a fán egy személy téglalapjára kattintasz (zölddel kijelöli), itt jelennek meg a személy testvérei illetve adott esetben a személyre vonatkozó megjegyzés alul.<br><br> \
+                                                        A jobb felső sarokban lévő '<b><</b>' gombra kattintva kinyílik az információs panel. Ha a fán egy személy téglalapjára kattintasz (zölddel kijelöli), itt jelennek meg a személy testvérei illetve adott esetben a személyre vonatkozó megjegyzés alul.<br> \
+                                                        A testvéreknél a születési/halálozási idő/hely látható, kiegészítve a házastárs nevével (ha volt) és a házasság helyével/idejével.<br><br> \
                                                         Bal felül a <b>'Top'</b> gombra kattintva a családfa visszaigazodik a kiinduló pontjára, amennyiben nagyítottunk vagy elmozdítottuk a fát.<br><br> \
-                                                        A '<b>Print View</b>'gombra kattintva eltűnnek a fenti és a jobboldali gombok, vonalak. Csak tisztán a családfa marad látható. Az '<b>Escape</b>' billentyűvel lehet visszahozni a normál nézetet.<br><br>"
+                                                        A '<b>Print View</b>'gombra kattintva eltűnnek a fenti és a jobboldali gombok, vonalak. Csak tisztán a családfa marad látható. Az '<b>Escape</b>' billentyűvel lehet visszahozni a normál nézetet.<br><br> \
+                                                        <b><u>Források:</b></u><br> \
+                                                        <a href='https://archivum.asztrik.hu/'>Kalocsai Főegyházmegyei Levéltár (katolikus)</a><br> \
+                                                        <a href='http://www.oskereso.hu/'>Őskereső (evangélikus)</a><br> \
+                                                        <a href='https://www.familysearch.org/hu/'>FamilySearch (polgári, vegyes egyházi)</a><br><br>"
 
         d3.xml("images/reformatus.svg")
         .then(data => {
