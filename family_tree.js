@@ -42,10 +42,19 @@ function help() {
             d3.select("#help").node().append(" evangélikus")
         })
 
+    document.addEventListener('keydown', (event) => {
+        var name = event.key;
+        if (name == "Escape") {
+            document.getElementById("help").remove()
+            d3.select('#help_button_id').style("background-color", "#c2e4a0")
+        }
+    })
+
     } else {
         document.getElementById("help").remove()
         d3.select('#help_button_id').style("background-color", "#c2e4a0")
     }
+
 }
 
 function printTree() {
