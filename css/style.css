@@ -33,7 +33,7 @@ body {
 }
 
 .help_box {
-  position: fixed;
+  position: absolute;
   max-width: 500px;
   border-style: solid;
   border-width: 1px;
@@ -157,7 +157,7 @@ body {
 }
 
 #help_div {
-  position: fixed;
+  position: absolute;
   top: 1px;
   left: 235px;
   transition: margin-top .5s;

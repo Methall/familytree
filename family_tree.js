@@ -5,13 +5,15 @@ function help() {
 
         var below_help_button = Number(getDimensionAttr("help_button_id").y) + Number(getDimensionAttr("help_button_id").height)
         var help = d3.select('body')
-            help.append('div')
-                .attr("class", "help_box")
-                .attr("id", "help")
-                .style('left', Number(getDimensionAttr("help_button_id").x) + "px")
-                .style('top',  below_help_button + "px")
-                .style("background", "white")
-                .style("overflow-y", "auto")
+        var div =  help.append('div')
+            .attr("class", "help_box")
+            .attr("id", "help")
+            .style('left', Number(getDimensionAttr("help_button_id").x) + "px")
+            .style('top',  below_help_button + "px")
+            .style("background", "white")
+            .style("overflow-y", "auto")
+        div.append("p")
+            .attr("class", "add_text")
         
         document.getElementById("help").innerHTML = "<u><b>Magyarázat a használathoz:</u></b><br><br>"
         document.getElementById("help").innerHTML += "A családfa fentről lefelé halad, a kiinduló személytől az egyre távolabbi generációk felé. A fát a nevek mellett/alatt lévő kis körre kattinta lehet tovább bontani. Egér görgővel a fa nagyítható/kicsinyíthető, valamint bal egér gombbal mozgatható bármely irányba.<br> \
