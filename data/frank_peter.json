@@ -1482,7 +1482,39 @@
 		{"sibling_id": "24.4.2","sibling_name": "Kiss Antal","sibling_birth_place": "Tiszalök","sibling_birth_date": "1854.09.21","sibling_death_place": "Tiszalök","sibling_death_date": "1905.12.03","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": ","},
 		{"sibling_id": "24.4.3","sibling_name": "Kiss Balázs","sibling_birth_place": "Tiszalök","sibling_birth_date": "1858.06.08","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "24.4.4","sibling_name": "Kiss András","sibling_birth_place": "Tiszalök","sibling_birth_date": "1863.04.16","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
-	"children": []
+	"children": [{
+		"id": "48",
+		"generation": "5",
+		"name": "Kiss Balázs",
+		"gender": "male",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	},{
+		"id": "49",
+		"generation": "5",
+		"name": "Penthe Sára",
+		"gender": "female",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	}]
 },{
 	"id": "25",
 	"generation": "4",
@@ -1502,7 +1534,71 @@
 		{"sibling_id": "25.4.3","sibling_name": "Tóth András","sibling_birth_place": "Szentmihály","sibling_birth_date": "1870.11.28","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "25.4.4","sibling_name": "Tóth Sára","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1872.12.20","sibling_death_place": "Tiszavasvári","sibling_death_date": "1869.05.08","sibling_spouse_name": "Bódor Károly","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "25.4.5","sibling_name": "Tóth Sándor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1878.07.25","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
-	"children": []
+	"children": [{
+		"id": "50",
+		"generation": "5",
+		"name": "Tóth András",
+		"gender": "male",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	},{
+		"id": "51",
+		"generation": "5",
+		"name": "Pethe Mária",
+		"gender": "female",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": [{
+			"id": "102",
+			"generation": "6",
+			"name": "Pethe András",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "103",
+			"generation": "6",
+			"name": "Nagy Mária",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	}]
 }]
 },{
 	"id": "13",
@@ -1540,7 +1636,39 @@
 	"comment": "",
 	"siblings": [
 	],
-	"children": []
+	"children": [{
+		"id": "52",
+		"generation": "5",
+		"name": "Szukács Gergely",
+		"gender": "male",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	},{
+		"id": "53",
+		"generation": "5",
+		"name": "Demjén Zsuzsanna",
+		"gender": "female",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "?",
+		"marriage_place": "?",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	}]
 },{
 	"id": "27",
 	"generation": "4",
@@ -1561,7 +1689,118 @@
 		{"sibling_id": "27.4.4","sibling_name": "Simon Zsuzsanna","sibling_birth_place": "Szentmihály","sibling_birth_date": "1889.02.17","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Poncsák János","sibling_marriage_place": "Büdszentmihály","sibling_marriage_date": "1910.10.29"},
 		{"sibling_id": "27.4.5","sibling_name": "Simon Rozália","sibling_birth_place": "Szentmihály","sibling_birth_date": "1893.10.23","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Pere Gábor","sibling_marriage_place": "Büdszentmihály","sibling_marriage_date": "1918.03.17"},
 		{"sibling_id": "27.4.6","sibling_name": "Simon Mátyás","sibling_birth_place": "Szentmihály","sibling_birth_date": "1885.01.20","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
-	"children": []
+	"children": [{
+		"id": "54",
+		"generation": "5",
+		"name": "Simon Mátyás",
+		"gender": "male",
+		"birth_place": "Csege",
+		"birth_date": "1846.02.23",
+		"death_date": "1914.02.14",
+		"death_place": "Szentmihály",
+		"marriage_date": "1874.05.?",
+		"marriage_place": "Szentmihály",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+			{"sibling_id": "54.5.1","sibling_name": "Simon István","sibling_birth_place": "Csege","sibling_birth_date": "1843.12.16", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.2","sibling_name": "Simon Sára","sibling_birth_place": "Csege","sibling_birth_date": "1849.03.04", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.3","sibling_name": "Simon Bálint","sibling_birth_place": "Csege","sibling_birth_date": "1852.02.09", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.4","sibling_name": "Simon Zsuzsanna","sibling_birth_place": "Csege","sibling_birth_date": "1854.10.05", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": [{
+			"id": "108",
+			"generation": "6",
+			"name": "Simon István",
+			"gender": "male",
+			"birth_place": "Csege",
+			"birth_date": "1820.11.09",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "1840.12.02(?)",
+			"marriage_place": "Csege(?)",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+				{"sibling_id": "108.6.1","sibling_name": "Simon Sára","sibling_birth_place": "Csege","sibling_birth_date": "1823.04.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "108.6.2","sibling_name": "Simon József","sibling_birth_place": "Csege","sibling_birth_date": "1826.04.03", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "108.6.3","sibling_name": "Simon Sára","sibling_birth_place": "Csege","sibling_birth_date": "1833.11.21", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "108.6.4","sibling_name": "Simon János","sibling_birth_place": "Csege","sibling_birth_date": "1836.02.02", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "108.6.5","sibling_name": "Simon Sára","sibling_birth_place": "Csege","sibling_birth_date": "1840.09.?", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+			],
+			"children": []
+		},{
+			"id": "109",
+			"generation": "6",
+			"name": "Oláh Sára",
+			"gender": "female",
+			"birth_place": "Csege",
+			"birth_date": "1822.04.30",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "1840.12.02",
+			"marriage_place": "Csege",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	},{
+		"id": "55",
+		"generation": "5",
+		"name": "Rabatin Mária",
+		"gender": "female",
+		"birth_place": "Mád",
+		"birth_date": "1848.10.08",
+		"death_date": "1914.08.18",
+		"death_place": "Szentmihály",
+		"marriage_date": "1874.05.?",
+		"marriage_place": "Szentmihály",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+			{"sibling_id": "55.5.1","sibling_name": "Rabatin János","sibling_birth_place": "Perény","sibling_birth_date": "1841.08.22", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.2","sibling_name": "Rabatin Mária","sibling_birth_place": "Perény","sibling_birth_date": "1843.06.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.3","sibling_name": "Rabatin János","sibling_birth_place": "Perény","sibling_birth_date": "1846.02.25", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.4","sibling_name": "Rabatin Juliána","sibling_birth_place": "Mád","sibling_birth_date": "1851.03.17", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Fótos Mihály", "sibling_marriage_place": "?", "sibling_marriage_date": "1873.10.05"},
+			{"sibling_id": "54.5.5","sibling_name": "Rabatin József","sibling_birth_place": "Mád","sibling_birth_date": "1853.03.07", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "54.5.6","sibling_name": "Rabatin Mihály","sibling_birth_place": "Mád","sibling_birth_date": "1858.05.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": [{
+			"id": "110",
+			"generation": "6",
+			"name": "Rabatin János",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "111",
+			"generation": "6",
+			"name": "Csárdás Katalin",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "1874.04.18",
+			"death_place": "Szentmihály",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	}]
 }]
 }]
 },{
@@ -1621,7 +1860,109 @@
 		{"sibling_id": "14.3.7","sibling_name": "Kenéz Imre","sibling_birth_place": "Szentmihály","sibling_birth_date": "1857.01.29","sibling_death_place": "Szentmihály","sibling_death_date": "1917.02.19","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "14.3.8","sibling_name": "Kenéz Gábor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1859.12.01","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}
 	],
-	"children": []
+	"children": [{
+		"id": "56",
+		"generation": "5",
+		"name": "Kenéz János",
+		"gender": "male",
+		"birth_place": "Szentmihály",
+		"birth_date": "1812.10.28",
+		"death_date": "1879.12.02",
+		"death_place": "Szentmihály",
+		"marriage_date": "1838.01.03",
+		"marriage_place": "Szentmihály",
+		"religion": "reformatus",
+		"comment": "Azonos a 62.5 személlyel.",
+		"siblings": [
+			{"sibling_id": "56.5.1","sibling_name": "Kenéz István","sibling_birth_place": "Szentmihály","sibling_birth_date": "1803.11.01", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "56.5.2","sibling_name": "Kenéz András","sibling_birth_place": "Szentmihály","sibling_birth_date": "1809.09.20", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "56.5.3","sibling_name": "Kenéz Sándor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1818.10.18", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "56.5.4","sibling_name": "Kenéz Gábor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1821.09.24", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "56.5.5","sibling_name": "Kenéz Bálint","sibling_birth_place": "Szentmihály","sibling_birth_date": "1825.08.20", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": [{
+			"id": "112",
+			"generation": "6",
+			"name": "Kenéz János",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "113",
+			"generation": "6",
+			"name": "Balog Éva",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	},{
+		"id": "57",
+		"generation": "5",
+		"name": "Bódor Zsuzsanna",
+		"gender": "female",
+		"birth_place": "Szentmihály",
+		"birth_date": "1817.08.16",
+		"death_date": "1898.12.29",
+		"death_place": "Szentmihály",
+		"marriage_date": "1838.01.03",
+		"marriage_place": "Szentmihály",
+		"religion": "reformatus",
+		"comment": "Azonos a 63.5 személlyel.",
+		"siblings": [
+			{"sibling_id": "57.5.1","sibling_name": "Bódor Zsuzsanna","sibling_birth_place": "Szentmihály","sibling_birth_date": "1807.10.07", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": [{
+			"id": "114",
+			"generation": "6",
+			"name": "Bódor István",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "115",
+			"generation": "6",
+			"name": "Tóth Zsuzsanna",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	}]
 },{
 	"id": "29",
 	"generation": "4",
@@ -1640,7 +1981,76 @@
 		{"sibling_id": "29.4.2","sibling_name": "Sári Péter","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1862.06.23","sibling_death_place": "Büdszentmihály","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "29.4.3","sibling_name": "Sári Péter","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1865.01.28","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Bagdi Zsófia","sibling_marriage_place": "Büdszentmihály","sibling_marriage_date": "1894.09.26"}
 	],
-	"children": []
+	"children": [{
+		"id": "58",
+		"generation": "5",
+		"name": "Sári Péter",
+		"gender": "male",
+		"birth_place": "?",
+		"birth_date": "?",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "Szentmihály",
+		"marriage_place": "1842.11.23",
+		"religion": "reformatus",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	},{
+		"id": "59",
+		"generation": "5",
+		"name": "Ényi Zsuzsanna",
+		"gender": "female",
+		"birth_place": "Szentmihály",
+		"birth_date": "1824.06.16",
+		"death_date": "1876.08.14",
+		"death_place": "Szentmihály",
+		"marriage_date": "1842.11.23",
+		"marriage_place": "Szentmihály",
+		"religion": "reformatus",
+		"comment": "",
+		"siblings": [
+			{"sibling_id": "59.5.1","sibling_name": "Ényi Erzsébet","sibling_birth_place": "Szentmihály","sibling_birth_date": "1821.03.08", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "59.5.2","sibling_name": "Ényi Sára","sibling_birth_place": "Szentmihály","sibling_birth_date": "1826.06.15", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "59.5.3","sibling_name": "Ényi Mária","sibling_birth_place": "Szentmihály","sibling_birth_date": "1834.09.12", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "59.5.4","sibling_name": "Ényi Bálint","sibling_birth_place": "Szentmihály","sibling_birth_date": "1816.07.07", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "59.5.5","sibling_name": "Ényi Sándor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1818.08.14", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": [{
+			"id": "118",
+			"generation": "6",
+			"name": "Ényi József",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "119",
+			"generation": "6",
+			"name": "Balog Zsuzsanna",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	}]
 }]
 },{
 	"id": "15",
@@ -1676,7 +2086,110 @@
 		{"sibling_id": "30.4.2","sibling_name": "Gál Sára","sibling_birth_place": "Szentmihály","sibling_birth_date": "1841.08.25","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "30.4.3","sibling_name": "Gál XY","sibling_birth_place": "Szentmihály","sibling_birth_date": "1842.12.04","sibling_death_place": "Szentmihály","sibling_death_date": "1842.12.04","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""}
 	],
-	"children": []
+	"children": [{
+		"id": "60",
+		"generation": "5",
+		"name": "Gál Gergely",
+		"gender": "male",
+		"birth_place": "Szentmihály",
+		"birth_date": "1819.02.24",
+		"death_date": "1845.11.20",
+		"death_place": "Szentmihály",
+		"marriage_date": "1838.11.28",
+		"marriage_place": "Szentmihály",
+		"religion": "reformatus",
+		"comment": "",
+		"siblings": [
+			{"sibling_id": "60.5.1","sibling_name": "Gál János","sibling_birth_place": "Szentmihály","sibling_birth_date": "1813.09.26", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "60.5.2","sibling_name": "Gál Éva","sibling_birth_place": "Szentmihály","sibling_birth_date": "1814.10.20", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "60.5.3","sibling_name": "Gál Julianna","sibling_birth_place": "Szentmihály","sibling_birth_date": "1817.07.31", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "60.5.4","sibling_name": "Gál János","sibling_birth_place": "Szentmihály","sibling_birth_date": "1821.10.19", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "60.5.5","sibling_name": "Gál Julianna","sibling_birth_place": "Szentmihály","sibling_birth_date": "1827.12.03", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "60.5.6","sibling_name": "Gál Sándor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1830.09.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+			{"sibling_id": "60.5.7","sibling_name": "Gál Sándor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1834.01.12", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": [{
+			"id": "120",
+			"generation": "6",
+			"name": "Gál János",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "121",
+			"generation": "6",
+			"name": "Mezei Éva",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	},{
+		"id": "61",
+		"generation": "5",
+		"name": "Nagy Éva",
+		"gender": "female",
+		"birth_place": "Szentmihály",
+		"birth_date": "1820.10.13",
+		"death_date": "?",
+		"death_place": "?",
+		"marriage_date": "1838.11.28",
+		"marriage_place": "Szentmihály",
+		"religion": "reformatus",
+		"comment": "Második férje Lévai Sándor (házasság: Szentmihály, 1850.06.26)",
+		"siblings": [
+		],
+		"children": [{
+			"id": "122",
+			"generation": "6",
+			"name": "Nagy Gy. Péter",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "123",
+			"generation": "6",
+			"name": "Róza Éva",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	}]
 },{
 	"id": "31",
 	"generation": "4",
@@ -1700,7 +2213,40 @@
 		{"sibling_id": "31.4.7","sibling_name": "Kenéz Imre","sibling_birth_place": "Szentmihály","sibling_birth_date": "1857.01.29","sibling_death_place": "Szentmihály","sibling_death_date": "1917.02.19","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
 		{"sibling_id": "31.4.8","sibling_name": "Kenéz Gábor","sibling_birth_place": "Szentmihály","sibling_birth_date": "1859.12.01","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}
 	],
-	"children": []
+	"children": [{
+		"id": "62",
+		"generation": "5",
+		"name": "Azonos az 56.5-össel",
+		"gender": "male",
+		"birth_place": "",
+		"birth_date": "",
+		"death_date": "",
+		"death_place": "",
+		"marriage_date": "",
+		"marriage_place": "",
+		"religion": "",
+		"comment": "Innentől azonos az 56.5-ös személy családfájával, unokatestvér házasság miatt (Kenéz Balázs(14.3) - Gál Zsófia(15.3)).",
+		"siblings": [
+		],
+		"children": []
+	},{
+		"id": "63",
+		"generation": "5",
+		"name": "Azonos az 57.5-össel",
+		"gender": "female",
+		"birth_place": "",
+		"birth_date": "",
+		"death_date": "",
+		"death_place": "",
+		"marriage_date": "",
+		"marriage_place": "",
+		"religion": "",
+		"comment": "Innentől azonos az 57.5-ös személy családfájával, unokatestvér házasság miatt (Kenéz Balázs(14.3) - Gál Zsófia(15.3)).",
+		"siblings": [
+			{"sibling_id": "63.5.1","sibling_name": "Bódor Zsuzsanna","sibling_birth_place": "Szentmihály","sibling_birth_date": "1807.10.07", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+		],
+		"children": []
+	}]
 }]
 }]
 }]

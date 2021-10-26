@@ -3,7 +3,7 @@
 # Only parameter is the generation level number (depth)
 
 # Node template
-# {
+#{
 #    "id": "1",
 #    "generation": "0",
 #    "name": "",
@@ -17,7 +17,7 @@
 #    "religion": "",
 #    "comment": "",
 #    "siblings": [
-#    {"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+#    	{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 #    ],
 #    "children": []
 #}
