@@ -32,7 +32,7 @@ body {
   margin-top: 3px;
 }
 
-.help_button {
+.help_box {
   position: fixed;
   max-width: 500px;
   border-style: solid;
@@ -171,7 +171,7 @@ body {
   z-index: 3;
   top: 0;
   right: 0px;
-  overflow-x: hidden;
+  overflow-y: auto;
   transition: 0.5s;
   padding-top: 30px;
   border-left-style: solid;
