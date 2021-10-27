@@ -42,7 +42,72 @@
 		"siblings": [
 			{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 		],
-		"children": []
+		"children": [{
+			"id": "8",
+			"generation": "3",
+			"name": "Gajárszky Rudolf",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+				{"sibling_id": "12.3.1","sibling_name": "Gajárszki Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1911.09.22", "sibling_death_place": "?","sibling_death_date": "1982(?)","sibling_spouse_name": "Liszi Mária", "sibling_marriage_place": "Székesfehérvár", "sibling_marriage_date": "1935.09.21"}
+			],
+			"children": [{
+				"id": "16",
+				"generation": "4",
+				"name": "Gajárszky István",
+				"gender": "male",
+				"birth_place": "?",
+				"birth_date": "?",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			},{
+				"id": "17",
+				"generation": "4",
+				"name": "Viczing Johanna",
+				"gender": "female",
+				"birth_place": "?",
+				"birth_date": "?",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			}]
+		},{
+			"id": "9",
+			"generation": "3",
+			"name": "Fishter Mária",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
 	},{
 		"id": "5",
 		"generation": "2",
@@ -221,72 +286,7 @@
 		"comment": "",
 		"siblings": [
 		],
-		"children": [{
-			"id": "12",
-			"generation": "3",
-			"name": "Gajárszky Rudolf",
-			"gender": "male",
-			"birth_place": "?",
-			"birth_date": "?",
-			"death_date": "?",
-			"death_place": "?",
-			"marriage_date": "?",
-			"marriage_place": "?",
-			"religion": "",
-			"comment": "",
-			"siblings": [
-				{"sibling_id": "12.3.1","sibling_name": "Gajárszki Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1911.09.22", "sibling_death_place": "?","sibling_death_date": "1982(?)","sibling_spouse_name": "Liszi Mária", "sibling_marriage_place": "Székesfehérvár", "sibling_marriage_date": "1935.09.21"}
-			],
-			"children": [{
-				"id": "24",
-				"generation": "4",
-				"name": "Gajárszky István",
-				"gender": "male",
-				"birth_place": "?",
-				"birth_date": "?",
-				"death_date": "?",
-				"death_place": "?",
-				"marriage_date": "?",
-				"marriage_place": "?",
-				"religion": "",
-				"comment": "",
-				"siblings": [
-				],
-				"children": []
-			},{
-				"id": "25",
-				"generation": "4",
-				"name": "Viczing Johanna",
-				"gender": "female",
-				"birth_place": "?",
-				"birth_date": "?",
-				"death_date": "?",
-				"death_place": "?",
-				"marriage_date": "?",
-				"marriage_place": "?",
-				"religion": "",
-				"comment": "",
-				"siblings": [
-				],
-				"children": []
-			}]
-		},{
-			"id": "13",
-			"generation": "3",
-			"name": "Fishter Mária",
-			"gender": "female",
-			"birth_place": "?",
-			"birth_date": "?",
-			"death_date": "?",
-			"death_place": "?",
-			"marriage_date": "?",
-			"marriage_place": "?",
-			"religion": "",
-			"comment": "",
-			"siblings": [
-			],
-			"children": []
-		}]
+		"children": []
 	},{
 		"id": "7",
 		"generation": "2",
