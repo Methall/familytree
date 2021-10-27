@@ -45,7 +45,7 @@
 		"children": [{
 			"id": "8",
 			"generation": "3",
-			"name": "Gajárszky Rudolf",
+			"name": "Gajárszki Rudolf",
 			"gender": "male",
 			"birth_place": "?",
 			"birth_date": "?",
@@ -61,35 +61,99 @@
 			"children": [{
 				"id": "16",
 				"generation": "4",
-				"name": "Gajárszky István",
+				"name": "Gajárszki István",
 				"gender": "male",
-				"birth_place": "?",
-				"birth_date": "?",
+				"birth_place": "Tárnok",
+				"birth_date": "1882.08.08",
 				"death_date": "?",
 				"death_place": "?",
-				"marriage_date": "?",
-				"marriage_place": "?",
-				"religion": "",
+				"marriage_date": "1908.05.20",
+				"marriage_place": "Tárnok",
+				"religion": "katolikus",
 				"comment": "",
 				"siblings": [
 				],
-				"children": []
+				"children": [{
+					"id": "32",
+					"generation": "5",
+					"name": "Gajárszki János",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "katolikus",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "33",
+					"generation": "5",
+					"name": "Kovács Anna",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "katolikus",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			},{
 				"id": "17",
 				"generation": "4",
 				"name": "Viczing Johanna",
 				"gender": "female",
-				"birth_place": "?",
-				"birth_date": "?",
+				"birth_place": "Tárnok",
+				"birth_date": "1885.05.23",
 				"death_date": "?",
 				"death_place": "?",
-				"marriage_date": "?",
-				"marriage_place": "?",
-				"religion": "",
+				"marriage_date": "1908.05.20",
+				"marriage_place": "Tárnok",
+				"religion": "katolikus",
 				"comment": "",
 				"siblings": [
 				],
-				"children": []
+				"children": [{
+					"id": "34",
+					"generation": "5",
+					"name": "Viczing János",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "katolikus",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "35",
+					"generation": "5",
+					"name": "Ábel Katalin",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "katolikus",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
 			}]
 		},{
 			"id": "9",
