@@ -26,7 +26,172 @@
 	"religion": "",
 	"comment": "",
 	"siblings": [],
-	"children": []
+	"children": [{
+		"id": "4",
+		"generation": "2",
+		"name": "Gajárszky Rudolf István",
+		"gender": "male",
+		"birth_place": "private",
+		"birth_date": "private",
+		"death_date": "private",
+		"death_place": "private",
+		"marriage_date": "private",
+		"marriage_place": "private",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+			{"sibling_id": "","sibling_name": "","sibling_birth_place": "","sibling_birth_date": "", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+		],
+		"children": []
+	},{
+		"id": "5",
+		"generation": "2",
+		"name": "Káldi Rozália",
+		"gender": "female",
+		"birth_place": "private",
+		"birth_date": "private",
+		"death_date": "private",
+		"death_place": "private",
+		"marriage_date": "private",
+		"marriage_place": "private",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": [{
+			"id": "10",
+			"generation": "3",
+			"name": "Káldi Pál",
+			"gender": "male",
+			"birth_place": "Kám",
+			"birth_date": "1895.01.16",
+			"death_date": "1963.07.24",
+			"death_place": "Alsóújlak",
+			"marriage_date": "1928.09.30",
+			"marriage_place": "Kám",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+				{"sibling_id": "10.3.1","sibling_name": "Káldi József","sibling_birth_place": "Kám","sibling_birth_date": "1887.11.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "10.3.2","sibling_name": "Káldi Pál","sibling_birth_place": "Kám","sibling_birth_date": "1890.06.16", "sibling_death_place": "Kám","sibling_death_date": "1893.06.01","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "10.3.3","sibling_name": "Káldi Antal","sibling_birth_place": "Kám","sibling_birth_date": "1892.10.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "10.3.4","sibling_name": "Káldi Péter","sibling_birth_place": "Kám","sibling_birth_date": "1902.06.26", "sibling_death_place": "Alsóújlak","sibling_death_date": "1940.10.25","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+			],
+			"children": [{
+				"id": "20",
+				"generation": "4",
+				"name": "Káldi János",
+				"gender": "male",
+				"birth_place": "?",
+				"birth_date": "1857(?)",
+				"death_date": "1917.01.02",
+				"death_place": "Alsóújlak",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": [{
+					"id": "40",
+					"generation": "5",
+					"name": "Káldi József",
+					"gender": "male",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				},{
+					"id": "41",
+					"generation": "5",
+					"name": "Sós Rozália",
+					"gender": "female",
+					"birth_place": "?",
+					"birth_date": "?",
+					"death_date": "?",
+					"death_place": "?",
+					"marriage_date": "?",
+					"marriage_place": "?",
+					"religion": "",
+					"comment": "",
+					"siblings": [
+					],
+					"children": []
+				}]
+			},{
+				"id": "21",
+				"generation": "4",
+				"name": "Mátyás Borbála",
+				"gender": "female",
+				"birth_place": "Csehimindszent",
+				"birth_date": "1866(?)",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			}]
+		},{
+			"id": "11",
+			"generation": "3",
+			"name": "Nagy Rozália",
+			"gender": "female",
+			"birth_place": "Alsóújlak",
+			"birth_date": "1901.10.20",
+			"death_date": "1989(?)",
+			"death_place": "Alsóújlak",
+			"marriage_date": "1928.09.30",
+			"marriage_place": "Alsóújlak",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": [{
+				"id": "22",
+				"generation": "4",
+				"name": "Nagy János",
+				"gender": "male",
+				"birth_place": "?",
+				"birth_date": "?",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			},{
+				"id": "23",
+				"generation": "4",
+				"name": "Horváth Julianna",
+				"gender": "female",
+				"birth_place": "?",
+				"birth_date": "?",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			}]
+		}]
+	}]
 },{
 	"id": "3",
 	"generation": "1",
@@ -41,6 +206,103 @@
 	"religion": "",
 	"comment": "",
 	"siblings": [{"sibling_id": "3.1.1","sibling_name": "Velegi Lajos","sibling_birth_place": "private","sibling_birth_date": "private","sibling_death_place": "private","sibling_death_date": "private","sibling_spouse_name": "private","sibling_marriage_place": "private","sibling_marriage_date": "private"}],
-	"children": []
+	"children": [{
+		"id": "6",
+		"generation": "2",
+		"name": "Velegi Lajos",
+		"gender": "male",
+		"birth_place": "private",
+		"birth_date": "private",
+		"death_date": "private",
+		"death_place": "private",
+		"marriage_date": "private",
+		"marriage_place": "private",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": [{
+			"id": "12",
+			"generation": "3",
+			"name": "Gajárszky Rudolf",
+			"gender": "male",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+				{"sibling_id": "12.3.1","sibling_name": "Gajárszki Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1911.09.22", "sibling_death_place": "?","sibling_death_date": "1982(?)","sibling_spouse_name": "Liszi Mária", "sibling_marriage_place": "Székesfehérvár", "sibling_marriage_date": "1935.09.21"}
+			],
+			"children": [{
+				"id": "24",
+				"generation": "4",
+				"name": "Gajárszky István",
+				"gender": "male",
+				"birth_place": "?",
+				"birth_date": "?",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			},{
+				"id": "25",
+				"generation": "4",
+				"name": "Viczing Johanna",
+				"gender": "female",
+				"birth_place": "?",
+				"birth_date": "?",
+				"death_date": "?",
+				"death_place": "?",
+				"marriage_date": "?",
+				"marriage_place": "?",
+				"religion": "",
+				"comment": "",
+				"siblings": [
+				],
+				"children": []
+			}]
+		},{
+			"id": "13",
+			"generation": "3",
+			"name": "Fishter Mária",
+			"gender": "female",
+			"birth_place": "?",
+			"birth_date": "?",
+			"death_date": "?",
+			"death_place": "?",
+			"marriage_date": "?",
+			"marriage_place": "?",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
+	},{
+		"id": "7",
+		"generation": "2",
+		"name": "Zsilovics Mária Magdolna",
+		"gender": "female",
+		"birth_place": "private",
+		"birth_date": "private",
+		"death_date": "private",
+		"death_place": "private",
+		"marriage_date": "private",
+		"marriage_place": "private",
+		"religion": "",
+		"comment": "",
+		"siblings": [
+		],
+		"children": []
+	}]
 }]
 }
