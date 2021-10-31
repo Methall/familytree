@@ -54,9 +54,10 @@
 			"marriage_date": "?",
 			"marriage_place": "?",
 			"religion": "",
-			"comment": "",
+			"comment": "Testvére Gajárszki István, 1935-ben Galántai-ra változtatta vezetéknevét (u.b. 149/1935).",
 			"siblings": [
-				{"sibling_id": "12.3.1","sibling_name": "Gajárszki Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1911.09.22", "sibling_death_place": "?","sibling_death_date": "1982(?)","sibling_spouse_name": "Liszi Mária", "sibling_marriage_place": "Székesfehérvár", "sibling_marriage_date": "1935.09.21"}
+				{"sibling_id": "12.3.1","sibling_name": "Gajárszki Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1911.09.22", "sibling_death_place": "?","sibling_death_date": "1982(?)","sibling_spouse_name": "Liszi Mária", "sibling_marriage_place": "Székesfehérvár", "sibling_marriage_date": "1935.09.21"},
+				{"sibling_id": "12.3.2","sibling_name": "Gajárszki István","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1909.11.15", "sibling_death_place": "?","sibling_death_date": "1978(?)","sibling_spouse_name": "?", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 			],
 			"children": [{
 				"id": "16",
