@@ -177,7 +177,7 @@
 				"generation": "4",
 				"name": "Fister György",
 				"gender": "male",
-				"birth_place": "",
+				"birth_place": "Székesfehérvár",
 				"birth_date": "1881.04.28",
 				"death_date": "1965",
 				"death_place": "?",
@@ -186,8 +186,44 @@
 				"religion": "katolikus",
 				"comment": "",
 				"siblings": [
+					{"sibling_id": "18.4.1","sibling_name": "Fister Erzsébet","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1884.11.02", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "18.4.2","sibling_name": "Fister István","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1891.08.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
-				"children": []
+				"children": [
+					{
+						"id": "36",
+						"generation": "5",
+						"name": "Fister Ferenc",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "37",
+						"generation": "5",
+						"name": "Peresztegi Nagy Borbála",
+						"gender": "female",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}
+				]
 			},{
 				"id": "19",
 				"generation": "4",
