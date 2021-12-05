@@ -86,10 +86,10 @@
 				"children": [{
 					"id": "32",
 					"generation": "5",
-					"name": "Gajárszki János",
+					"name": "Gajárszky János",
 					"gender": "male",
-					"birth_place": "?",
-					"birth_date": "?",
+					"birth_place": "Tárnok",
+					"birth_date": "1855.10.15",
 					"death_date": "?",
 					"death_place": "?",
 					"marriage_date": "1878.02.06",
@@ -98,7 +98,43 @@
 					"comment": "",
 					"siblings": [
 					],
-					"children": []
+					"children": [
+						{
+							"id": "64",
+							"generation": "6",
+							"name": "Gajárszky József",
+							"gender": "male",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "katolikus",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "65",
+							"generation": "6",
+							"name": "Szabó Erzsébet",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "katolikus",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}
+					]
+				}
+					]
 				},{
 					"id": "33",
 					"generation": "5",
