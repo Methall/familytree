@@ -250,6 +250,11 @@
 				"religion": "katolikus",
 				"comment": "",
 				"siblings": [
+					{"sibling_id": "19.4.1","sibling_name": "Hegedüs Erzsébet","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1885.11.12", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "19.4.2","sibling_name": "Hegedüs Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1888.11.25", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "19.4.3","sibling_name": "Hegedüs Teréz","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1890.10.14", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "19.4.4","sibling_name": "Hegedüs Mária","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1891.09.02", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "19.4.5","sibling_name": "Hegedüs György","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1894.10.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 				],
 				"children": [{
 					"id": "38",
