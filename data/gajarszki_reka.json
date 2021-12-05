@@ -130,6 +130,10 @@
 				"religion": "katolikus",
 				"comment": "",
 				"siblings": [
+					{"sibling_id": "17.4.1","sibling_name": "Viczing Anna","sibling_birth_place": "Tárnok","sibling_birth_date": "1887.10.24", "sibling_death_place": "Tárnok","sibling_death_date": "1892.12.14","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "17.4.2","sibling_name": "Viczing János","sibling_birth_place": "Tárnok","sibling_birth_date": "1891.06.24", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Gajárszki Katalin", "sibling_marriage_place": "Tárnok", "sibling_marriage_date": "1920.04.29"},
+					{"sibling_id": "17.4.3","sibling_name": "Viczing Irén","sibling_birth_place": "Tárnok","sibling_birth_date": "1895.06.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Jámbor Gyula", "sibling_marriage_place": "Tárnok", "sibling_marriage_date": "1920.04.29"},
+					{"sibling_id": "17.4.4","sibling_name": "Viczing Anna","sibling_birth_place": "Tárnok","sibling_birth_date": "1898", "sibling_death_place": "Tárnok","sibling_death_date": "1900.03.02","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
 				"children": [{
 					"id": "34",
