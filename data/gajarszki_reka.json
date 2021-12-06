@@ -97,6 +97,10 @@
 					"religion": "katolikus",
 					"comment": "",
 					"siblings": [
+						{"sibling_id": "32.5.1","sibling_name": "Gajárszky Lukács","sibling_birth_place": "Tárnok","sibling_birth_date": "1843.01.09", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+						{"sibling_id": "32.5.2","sibling_name": "Gajárszky Ilona","sibling_birth_place": "Tárnok","sibling_birth_date": "1845.03.31", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+						{"sibling_id": "32.5.3","sibling_name": "Gajárszky András","sibling_birth_place": "Tárnok","sibling_birth_date": "1847.11.12", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+						{"sibling_id": "32.5.4","sibling_name": "Gajárszky Magdolna","sibling_birth_place": "Tárnok","sibling_birth_date": "1851.02.22", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 					],
 					"children": [						{
                         "id": "64",
