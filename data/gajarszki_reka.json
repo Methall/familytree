@@ -107,8 +107,8 @@
                         "generation": "6",
                         "name": "Gajárszky József",
                         "gender": "male",
-                        "birth_place": "?",
-                        "birth_date": "?",
+                        "birth_place": "Tárnok",
+                        "birth_date": "1816.10.27",
                         "death_date": "?",
                         "death_place": "?",
                         "marriage_date": "1841.11.03",
@@ -117,14 +117,46 @@
                         "comment": "",
                         "siblings": [
                         ],
-                        "children": []
+                        "children": [						{
+							"id": "128",
+							"generation": "7",
+							"name": "Gajárszky János",
+							"gender": "male",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "katolikus",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "129",
+							"generation": "7",
+							"name": "Mária",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "katolikus",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}]
                     },{
                         "id": "65",
                         "generation": "6",
                         "name": "Szabó Erzsébet",
                         "gender": "female",
-                        "birth_place": "?",
-                        "birth_date": "?",
+                        "birth_place": "Tárnok",
+                        "birth_date": "1821.11.21",
                         "death_date": "?",
                         "death_place": "?",
                         "marriage_date": "1841.11.03",
@@ -133,7 +165,39 @@
                         "comment": "",
                         "siblings": [
                         ],
-                        "children": []
+                        "children": [						{
+							"id": "130",
+							"generation": "6",
+							"name": "Szabó János",
+							"gender": "male",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "katolikus",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "131",
+							"generation": "6",
+							"name": "Erszébet",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "katolikus",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}]
                     }]
 				},{
 					"id": "33",
