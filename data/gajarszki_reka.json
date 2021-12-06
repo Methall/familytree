@@ -167,7 +167,7 @@
                         ],
                         "children": [						{
 							"id": "130",
-							"generation": "6",
+							"generation": "7",
 							"name": "Szabó János",
 							"gender": "male",
 							"birth_place": "?",
@@ -183,7 +183,7 @@
 							"children": []
 						},{
 							"id": "131",
-							"generation": "6",
+							"generation": "7",
 							"name": "Erszébet",
 							"gender": "female",
 							"birth_place": "?",
