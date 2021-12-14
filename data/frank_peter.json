@@ -1816,7 +1816,7 @@
 	"marriage_place": "Budapest",
 	"religion": "reformatus",
 	"comment": "",
-	"siblings": [{"sibling_id": "7.2.1","sibling_name": "Kenéz Sándor","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1906.03.30","sibling_death_place": "","sibling_death_date": "1979.09.13","sibling_spouse_name": "Cseh Ilona","sibling_marriage_place": "Budapest","sibling_marriage_date": "1950"},
+	"siblings": [{"sibling_id": "7.2.1","sibling_name": "Kenéz Sándor","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1906.03.30","sibling_death_place": "","sibling_death_date": "1979.09.13","sibling_spouse_name": "Cseh Ilona","sibling_marriage_place": "","sibling_marriage_date": "1950"},
 		{"sibling_id": "7.2.2","sibling_name": "Kenéz Irma","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1907.09.18","sibling_death_place": "Tiszavasvári","sibling_death_date": "1912.03.08","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
 		{"sibling_id": "7.2.3","sibling_name": "Kenéz Balázs Gyula","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1913.01.13","sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "Pocsai Gizella","sibling_marriage_place": "Tiszavasvári","sibling_marriage_date": "1943.05.22"}],
 	"children": [{
