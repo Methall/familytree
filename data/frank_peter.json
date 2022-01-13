@@ -1460,10 +1460,16 @@
 	"religion": "reformatus",
 	"comment": "",
 	"siblings": [
-		{"sibling_id": "12.3.1","sibling_name": "Kiss Mária","sibling_birth_place": "Tiszalök","sibling_birth_date": "1852.02.22","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
-		{"sibling_id": "12.3.2","sibling_name": "Kiss Antal","sibling_birth_place": "Tiszalök","sibling_birth_date": "1854.09.21","sibling_death_place": "Tiszalök","sibling_death_date": "1905.12.03","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
-		{"sibling_id": "12.3.3","sibling_name": "Kiss Balázs","sibling_birth_place": "Tiszalök","sibling_birth_date": "1858.06.08","sibling_death_place": "Tiszalök","sibling_death_date": "1858.06.11","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
-		{"sibling_id": "12.3.4","sibling_name": "Kiss András","sibling_birth_place": "Tiszalök","sibling_birth_date": "1863.04.16","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"}],
+		{"sibling_id": "12.3.1","sibling_name": "Kiss Lajos","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1886.08.06","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Balogh Zsófia","sibling_marriage_place": "Tiszalök","sibling_marriage_date": "1910.11.26"},
+		{"sibling_id": "12.3.2","sibling_name": "Kiss Julianna","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1888.03.09","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
+		{"sibling_id": "12.3.3","sibling_name": "Kiss Mihály","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1889.10.09","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
+		{"sibling_id": "12.3.4","sibling_name": "Kiss Zsuzsanna","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1890.03.30","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?","sibling_marriage_place": "?","sibling_marriage_date": "?"},
+		{"sibling_id": "12.3.5","sibling_name": "Kiss Erzsébet","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1891.11.27","sibling_death_place": "Tiszalök","sibling_death_date": "1918.10.27","sibling_spouse_name": "Katona Gábor","sibling_marriage_place": "Tiszalök","sibling_marriage_date": "1909.09.25"},
+		{"sibling_id": "12.3.6","sibling_name": "Kiss Mária","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1894.01.30","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Gazdag Sándor","sibling_marriage_place": "Büdszentmihály","sibling_marriage_date": "1913.01.18"},
+		{"sibling_id": "12.3.7","sibling_name": "Kiss Zsuzsanna","sibling_birth_place": "Büdszentmihály","sibling_birth_date": "1897.03.?","sibling_death_place": "Büdszentmihály","sibling_death_date": "1897.10.03","sibling_spouse_name": "","sibling_marriage_place": "","sibling_marriage_date": ""},
+		{"sibling_id": "12.3.8","sibling_name": "Kiss Gábor","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1902.09.14","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Huszti Ilona","sibling_marriage_place": "?","sibling_marriage_date": "?"},
+		{"sibling_id": "12.3.9","sibling_name": "Kiss László","sibling_birth_place": "Tiszavasvári","sibling_birth_date": "1905.01.31","sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Ökrös Ilona","sibling_marriage_place": "?","sibling_marriage_date": "?"}
+	],
 	"children": [{
 	"id": "24",
 	"generation": "4",
