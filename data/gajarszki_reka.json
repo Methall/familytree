@@ -58,7 +58,8 @@
 			"siblings": [
 				{"sibling_id": "12.3.1","sibling_name": "Gajárszki Ferenc","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1911.09.22", "sibling_death_place": "?","sibling_death_date": "1982(?)","sibling_spouse_name": "Liszi Mária", "sibling_marriage_place": "Székesfehérvár", "sibling_marriage_date": "1935.09.21"},
 				{"sibling_id": "12.3.2","sibling_name": "Gajárszki István","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1909.11.15", "sibling_death_place": "?","sibling_death_date": "1978(?)","sibling_spouse_name": "?", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-				{"sibling_id": "12.3.3","sibling_name": "Gajárszki Imre","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1914.07.07", "sibling_death_place": "Budapest(?)","sibling_death_date": "1963.07.17","sibling_spouse_name": "?", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+				{"sibling_id": "12.3.3","sibling_name": "Gajárszki Imre","sibling_birth_place": "Székesfehérvár","sibling_birth_date": "1914.07.07", "sibling_death_place": "Budapest(?)","sibling_death_date": "1963.07.17","sibling_spouse_name": "?", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+				{"sibling_id": "12.3.4","sibling_name": "Gajárszki István József","sibling_birth_place": "Tárnok","sibling_birth_date": "1908.07.?", "sibling_death_place": "Tárnok","sibling_death_date": "1908.08.19","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 			],
 			"children": [{
 				"id": "16",
@@ -90,12 +91,12 @@
 					"gender": "male",
 					"birth_place": "Tárnok",
 					"birth_date": "1855.10.15",
-					"death_date": "?",
-					"death_place": "?",
+					"death_date": "1902.06.08",
+					"death_place": "Tárnok",
 					"marriage_date": "1878.02.06",
 					"marriage_place": "Tárnok",
 					"religion": "katolikus",
-					"comment": "",
+					"comment": "foglalkozása: kisbirtokos, vízkorban hunyt el, 2. felesége Huskovics Katalin",
 					"siblings": [
 						{"sibling_id": "32.5.1","sibling_name": "Gajárszky Lukács","sibling_birth_place": "Tárnok","sibling_birth_date": "1843.01.09", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 						{"sibling_id": "32.5.2","sibling_name": "Gajárszky Ilona","sibling_birth_place": "Tárnok","sibling_birth_date": "1845.03.31", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
@@ -265,7 +266,7 @@
 				"comment": "",
 				"siblings": [
 					{"sibling_id": "17.4.1","sibling_name": "Viczing Anna","sibling_birth_place": "Tárnok","sibling_birth_date": "1887.10.24", "sibling_death_place": "Tárnok","sibling_death_date": "1892.12.14","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-					{"sibling_id": "17.4.2","sibling_name": "Viczing János","sibling_birth_place": "Tárnok","sibling_birth_date": "1891.06.24", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Gajárszki Katalin", "sibling_marriage_place": "Tárnok", "sibling_marriage_date": "1920.04.29"},
+					{"sibling_id": "17.4.2","sibling_name": "Viczing János","sibling_birth_place": "Tárnok","sibling_birth_date": "1891.06.24", "sibling_death_place": "Tárnok","sibling_death_date": "1974.11.12","sibling_spouse_name": "Gajárszki Katalin", "sibling_marriage_place": "Tárnok", "sibling_marriage_date": "1920.04.29"},
 					{"sibling_id": "17.4.3","sibling_name": "Viczing Irén","sibling_birth_place": "Tárnok","sibling_birth_date": "1895.06.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Jámbor Gyula", "sibling_marriage_place": "Tárnok", "sibling_marriage_date": "1920.04.29"},
 					{"sibling_id": "17.4.4","sibling_name": "Viczing Anna","sibling_birth_place": "Tárnok","sibling_birth_date": "1898", "sibling_death_place": "Tárnok","sibling_death_date": "1900.03.02","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 				],
@@ -276,15 +277,47 @@
 					"gender": "male",
 					"birth_place": "?",
 					"birth_date": "?",
-					"death_date": "?",
-					"death_place": "?",
+					"death_date": "1922.04.01",
+					"death_place": "Tárnok",
 					"marriage_date": "?",
 					"marriage_place": "?",
 					"religion": "katolikus",
-					"comment": "",
+					"comment": "foglalkozása: kocsmáros, gutaütésben hunyt el 67 évesen",
 					"siblings": [
 					],
-					"children": []
+					"children": [{
+						"id": "68",
+						"generation": "6",
+						"name": "Viczing János",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "69",
+						"generation": "6",
+						"name": "?",
+						"gender": "female",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "?",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}]
 				},{
 					"id": "35",
 					"generation": "5",
