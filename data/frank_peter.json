@@ -286,7 +286,10 @@
 				"religion": "katolikus",
 				"comment": "",
 				"siblings": [
-				{"sibling_id": "65.6.1","sibling_name": "Pfeffer János","sibling_birth_place": "Csávoly","sibling_birth_date": "1810.09.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+				{"sibling_id": "65.6.1","sibling_name": "Pfeffer Mihály","sibling_birth_place": "Nádudvar","sibling_birth_date": "1804.02.10", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "65.6.2","sibling_name": "Pfeffer Katalin","sibling_birth_place": "Nádudvar","sibling_birth_date": "1805.11.25", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "65.6.3","sibling_name": "Pfeffer Barbara","sibling_birth_place": "Nádudvar","sibling_birth_date": "1808.04.14", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+				{"sibling_id": "65.6.4","sibling_name": "Pfeffer János","sibling_birth_place": "Csávoly","sibling_birth_date": "1810.09.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 				],
 				"children": [{
 					"id": "130",
@@ -297,9 +300,9 @@
 					"birth_date": "?",
 					"death_date": "?",
 					"death_place": "?",
-					"marriage_date": "?",
-					"marriage_place": "?",
-					"religion": "",
+					"marriage_date": "1802.10.19",
+					"marriage_place": "Hajós",
+					"religion": "katolikus",
 					"comment": "",
 					"siblings": [
 					],
@@ -307,19 +310,94 @@
 				},{
 					"id": "131",
 					"generation": "7",
-					"name": "Lük Katalin",
+					"name": "Czik Katalin",
 					"gender": "female",
-					"birth_place": "?",
-					"birth_date": "?",
+					"birth_place": "Hajós",
+					"birth_date": "1781.11.05",
 					"death_date": "?",
 					"death_place": "?",
-					"marriage_date": "?",
-					"marriage_place": "?",
-					"religion": "",
+					"marriage_date": "1802.10.19",
+					"marriage_place": "Hajós",
+					"religion": "katolikus",
 					"comment": "",
 					"siblings": [
+						{"sibling_id": "131.7.1","sibling_name": "Czik Annamária","sibling_birth_place": "Hajós","sibling_birth_date": "1784.06.10", "sibling_death_place": "Hajós","sibling_death_date": "1792.05.01","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+						{"sibling_id": "131.7.2","sibling_name": "Czik Ilona","sibling_birth_place": "Hajós","sibling_birth_date": "1788.04.23", "sibling_death_place": "Hajós","sibling_death_date": "1788.07.25","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+						{"sibling_id": "131.7.3","sibling_name": "Czik Ilona","sibling_birth_place": "Hajós","sibling_birth_date": "1789.08.18", "sibling_death_place": "Hajós","sibling_death_date": "1789.09.06","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+						{"sibling_id": "131.7.4","sibling_name": "Czik Teréz","sibling_birth_place": "Hajós","sibling_birth_date": "1791.?.?", "sibling_death_place": "Hajós","sibling_death_date": "1791.10.03","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+						{"sibling_id": "131.7.5","sibling_name": "Czik Gertrúd","sibling_birth_place": "Hajós","sibling_birth_date": "1793.03.06", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+						{"sibling_id": "131.7.6","sibling_name": "Czik Zsuzsanna","sibling_birth_place": "Hajós","sibling_birth_date": "1796.02.13", "sibling_death_place": "Hajós","sibling_death_date": "1797.11.22","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 					],
-					"children": []
+					"children": [{
+						"id": "262",
+						"generation": "8",
+						"name": "Zick Mátyás",
+						"gender": "male",
+						"birth_place": "Hajós",
+						"birth_date": "1726.02.07",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "1780.02.01",
+						"marriage_place": "Hajós",
+						"religion": "katolikus",
+						"comment": "Első felesége Stoffer Annamária (házasság: 1753.02.26, Hajós)",
+						"siblings": [
+							{"sibling_id": "262.8.1","sibling_name": "Czik János György","sibling_birth_place": "Hajós","sibling_birth_date": "1724.04.25", "sibling_death_place": "Hajós","sibling_death_date": "1780.05.03","sibling_spouse_name": "Annamária", "sibling_marriage_place": "Hajós", "sibling_marriage_date": "1750.10.29"},
+							{"sibling_id": "262.8.2","sibling_name": "Zik Jakab","sibling_birth_place": "Hajós","sibling_birth_date": "1728.04.28", "sibling_death_place": "Hajós","sibling_death_date": "1792.05.01","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+							{"sibling_id": "262.8.3","sibling_name": "Zik Mária Jozefina","sibling_birth_place": "Hajós","sibling_birth_date": "1730.07.25", "sibling_death_place": "Hajós","sibling_death_date": "1792.05.01","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+							{"sibling_id": "262.8.4","sibling_name": "Zik Bernárd","sibling_birth_place": "Hajós","sibling_birth_date": "1733.02.07", "sibling_death_place": "Hajós","sibling_death_date": "1751.04.13","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+							{"sibling_id": "262.8.5","sibling_name": "Zik István","sibling_birth_place": "Hajós","sibling_birth_date": "1735.08.20", "sibling_death_place": "Hajós","sibling_death_date": "1777.02.06","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+						],
+						"children": [{
+							"id": "524",
+							"generation": "9",
+							"name": "Bernhard Zick",
+							"gender": "male",
+							"birth_place": "Binzwangen (Németo.)",
+							"birth_date": "1699.11.16",
+							"death_date": "1748.12.09",
+							"death_place": "Hajós",
+							"marriage_date": "1722.02.01",
+							"marriage_place": "Dürmentingen (Németo.)",
+							"religion": "",
+							"comment": "Születési hely: Binzwangen, Riedlingen, Württemberg, Deutschland. 1722.06.01-én emigrált Németországból Hajósra. Erste Siedlergruppe von Swabia - A sváb telepesek első csoportja. Bernardus Sigg néven szerepel.; Házasság helye: Dürmentingen, Biberach, Baden-Württemberg, Deutschland",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "525",
+							"generation": "9",
+							"name": "Maria Veronika Schumacher",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "1688.?.?",
+							"death_date": "1738.06.04",
+							"death_place": "Hajós",
+							"marriage_date": "1722.02.01",
+							"marriage_place": "Dürmentingen (Németo.)",
+							"religion": "",
+							"comment": "Házasság helye: Dürmentingen, Biberach, Baden-Württemberg, Deutschland",
+							"siblings": [
+							],
+							"children": []
+						}]
+					},{
+						"id": "263",
+						"generation": "8",
+						"name": "Burger Barbara",
+						"gender": "female",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "1780.02.01",
+						"marriage_place": "Hajós",
+						"religion": "katolikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}]
 				}]
 			}
 		]
