@@ -359,7 +359,7 @@
 							"death_place": "Hajós",
 							"marriage_date": "1722.02.01",
 							"marriage_place": "Dürmentingen (Németo.)",
-							"religion": "",
+							"religion": "katolikus",
 							"comment": "Születési hely: Binzwangen, Riedlingen, Württemberg, Deutschland. 1722.06.01-én emigrált Németországból Hajósra. Erste Siedlergruppe von Swabia - A sváb telepesek első csoportja. Bernardus Sigg néven szerepel.; Házasság helye: Dürmentingen, Biberach, Baden-Württemberg, Deutschland",
 							"siblings": [
 								{"sibling_id": "524.9.1","sibling_name": "Maria Ursula Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1698.08.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
@@ -370,7 +370,39 @@
 								{"sibling_id": "524.9.6","sibling_name": "Ferdinand Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1707.10.16", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
 								{"sibling_id": "524.9.7","sibling_name": "Valentin Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1711.02.14", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 							],
-							"children": []
+							"children": [{
+								"id": "1048",
+								"generation": "10",
+								"name": "Johann Jakob Sigg",
+								"gender": "male",
+								"birth_place": "Binzwangen",
+								"birth_date": "1653.05.28",
+								"death_date": "1733.12.28",
+								"death_place": "Binzwangen",
+								"marriage_date": "1697.11.03",
+								"marriage_place": "Binzwangen",
+								"religion": "katolikus",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							},{
+								"id": "1049",
+								"generation": "10",
+								"name": "Ursula Rister",
+								"gender": "female",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "1738.06.26",
+								"death_place": "Binzwangen",
+								"marriage_date": "1697.11.03",
+								"marriage_place": "Binzwangen",
+								"religion": "katolikus",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							}]
 						},{
 							"id": "525",
 							"generation": "9",
