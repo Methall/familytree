@@ -384,8 +384,42 @@
 								"religion": "katolikus",
 								"comment": "",
 								"siblings": [
+									{"sibling_id": "1048.10.1","sibling_name": "Maria Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1651.02.23", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+									{"sibling_id": "1048.10.2","sibling_name": "M. Magdalena Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1655.06.15", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 								],
-								"children": []
+								"children": [{
+									"id": "2096",
+									"generation": "11",
+									"name": "Jacob Sigg",
+									"gender": "male",
+									"birth_place": "?",
+									"birth_date": "?",
+									"death_date": "1681.09.19",
+									"death_place": "Binzwangen",
+									"marriage_date": "?",
+									"marriage_place": "?",
+									"religion": "katolikus",
+									"comment": "",
+									"siblings": [
+									],
+									"children": []
+								},{
+									"id": "2097",
+									"generation": "11",
+									"name": "Justina Braun",
+									"gender": "female",
+									"birth_place": "?",
+									"birth_date": "?",
+									"death_date": "1689.06.04",
+									"death_place": "?",
+									"marriage_date": "?",
+									"marriage_place": "?",
+									"religion": "katolikus",
+									"comment": "",
+									"siblings": [
+									],
+									"children": []
+								}]
 							},{
 								"id": "1049",
 								"generation": "10",
