@@ -351,7 +351,7 @@
 						"children": [{
 							"id": "524",
 							"generation": "9",
-							"name": "Bernhard Zick",
+							"name": "Bernhard Sigg",
 							"gender": "male",
 							"birth_place": "Binzwangen (Németo.)",
 							"birth_date": "1699.11.16",
@@ -362,6 +362,13 @@
 							"religion": "",
 							"comment": "Születési hely: Binzwangen, Riedlingen, Württemberg, Deutschland. 1722.06.01-én emigrált Németországból Hajósra. Erste Siedlergruppe von Swabia - A sváb telepesek első csoportja. Bernardus Sigg néven szerepel.; Házasság helye: Dürmentingen, Biberach, Baden-Württemberg, Deutschland",
 							"siblings": [
+								{"sibling_id": "524.9.1","sibling_name": "Maria Ursula Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1698.08.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+								{"sibling_id": "524.9.2","sibling_name": "Mathias Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1701.02.11", "sibling_death_place": "Binzwangen","sibling_death_date": "1701.03.15","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+								{"sibling_id": "524.9.3","sibling_name": "Jonaatius Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1704.05.11", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+								{"sibling_id": "524.9.4","sibling_name": "Pankraz Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1704.05.11.", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+								{"sibling_id": "524.9.5","sibling_name": "Kunigunda Christina Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1706.02.28", "sibling_death_place": "Binzwangen","sibling_death_date": "1707.04.17","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+								{"sibling_id": "524.9.6","sibling_name": "Ferdinand Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1707.10.16", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+								{"sibling_id": "524.9.7","sibling_name": "Valentin Sigg","sibling_birth_place": "Binzwangen","sibling_birth_date": "1711.02.14", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 							],
 							"children": []
 						},{
