@@ -491,10 +491,11 @@
 		"siblings": [
 		{"sibling_id": "33.5.1","sibling_name": "Wagner Péter","sibling_birth_place": "Csávoly","sibling_birth_date": "1819.11.11", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 		{"sibling_id": "33.5.2","sibling_name": "Wagner Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1821.04.02", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Mandich Kiliánusz", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1842.10.25"},
-		{"sibling_id": "33.5.3","sibling_name": "Wagner János","sibling_birth_place": "Csávoly","sibling_birth_date": "1822.08.28", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-		{"sibling_id": "33.5.4","sibling_name": "Wagner Erzsébet","sibling_birth_place": "Csávoly","sibling_birth_date": "1824.04.04", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-		{"sibling_id": "33.5.5","sibling_name": "Wagner Annamária","sibling_birth_place": "Csávoly","sibling_birth_date": "1825.10.13", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-		{"sibling_id": "33.5.6","sibling_name": "Wagner Ferenc","sibling_birth_place": "Csávoly","sibling_birth_date": "1827.07.24", "sibling_death_place": "","sibling_death_date": "","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+		{"sibling_id": "33.5.3","sibling_name": "Wagner János","sibling_birth_place": "Csávoly","sibling_birth_date": "1822.08.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "33.5.4","sibling_name": "Wagner Erzsébet","sibling_birth_place": "Csávoly","sibling_birth_date": "1824.04.04", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "33.5.5","sibling_name": "Wagner Annamária","sibling_birth_place": "Csávoly","sibling_birth_date": "1825.10.13", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "33.5.6","sibling_name": "Wagner Ferenc","sibling_birth_place": "Csávoly","sibling_birth_date": "1827.07.24", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+		{"sibling_id": "33.5.6","sibling_name": "Wagner József","sibling_birth_place": "Csávoly","sibling_birth_date": "1831.03.28", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 		],
 		"children": [
 			{
