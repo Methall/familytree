@@ -668,7 +668,39 @@
 		"comment": "",
 		"siblings": [
 		],
-		"children": []
+		"children": [{
+			"id": "12",
+			"generation": "3",
+			"name": "Velegi Lajos",
+			"gender": "male",
+			"birth_place": "private",
+			"birth_date": "private",
+			"death_date": "private",
+			"death_place": "private",
+			"marriage_date": "private",
+			"marriage_place": "private",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "13",
+			"generation": "3",
+			"name": "Csatári Eszter",
+			"gender": "female",
+			"birth_place": "private",
+			"birth_date": "private",
+			"death_date": "private",
+			"death_place": "private",
+			"marriage_date": "private",
+			"marriage_place": "private",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
 	},{
 		"id": "7",
 		"generation": "2",
@@ -684,7 +716,39 @@
 		"comment": "",
 		"siblings": [
 		],
-		"children": []
+		"children": [{
+			"id": "14",
+			"generation": "3",
+			"name": "Zsilovits Mihály",
+			"gender": "male",
+			"birth_place": "private",
+			"birth_date": "private",
+			"death_date": "private",
+			"death_place": "private",
+			"marriage_date": "private",
+			"marriage_place": "private",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		},{
+			"id": "15",
+			"generation": "3",
+			"name": "Varga Katalin",
+			"gender": "female",
+			"birth_place": "private",
+			"birth_date": "private",
+			"death_date": "private",
+			"death_place": "private",
+			"marriage_date": "private",
+			"marriage_place": "private",
+			"religion": "",
+			"comment": "",
+			"siblings": [
+			],
+			"children": []
+		}]
 	}]
 }]
 }
