@@ -106,7 +106,8 @@
 		{"sibling_id": "32.5.3","sibling_name": "Frank András","sibling_birth_place": "Csávoly","sibling_birth_date": "1844.08.26", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 		{"sibling_id": "32.5.4","sibling_name": "Frank Katalin","sibling_birth_place": "Csávoly","sibling_birth_date": "1847.12.16", "sibling_death_place": "Csávoly","sibling_death_date": "1847.12.17","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
 		{"sibling_id": "32.5.5","sibling_name": "Frank Magdolna","sibling_birth_place": "Csávoly","sibling_birth_date": "1847.12.16", "sibling_death_place": "Csávoly","sibling_death_date": "1848.01.02","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-		{"sibling_id": "32.5.6","sibling_name": "Frank Lőrinc","sibling_birth_place": "Csávoly","sibling_birth_date": "1849.01.06", "sibling_death_place": "Csávoly","sibling_death_date": "1856.03.21","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+		{"sibling_id": "32.5.6","sibling_name": "Frank Lőrinc","sibling_birth_place": "Csávoly","sibling_birth_date": "1849.01.06", "sibling_death_place": "Csávoly","sibling_death_date": "1856.03.21","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+		{"sibling_id": "32.5.7","sibling_name": "Frank András","sibling_birth_place": "Csávoly","sibling_birth_date": "1845", "sibling_death_place": "Csávoly","sibling_death_date": "1847.05.13","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 		],
 		"children": [
 			{
@@ -236,7 +237,8 @@
 					"siblings": [
 					{"sibling_id": "129.7.1","sibling_name": "Poner József","sibling_birth_place": "Csávoly","sibling_birth_date": "1791.10.09", "sibling_death_place": "Csávoly","sibling_death_date": "1795.04.06","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
 					{"sibling_id": "129.7.2","sibling_name": "Poner Katalin","sibling_birth_place": "Csávoly","sibling_birth_date": "1796.05.31", "sibling_death_place": "Csávoly","sibling_death_date": "1849.04.13","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
-					{"sibling_id": "129.7.3","sibling_name": "Poner Mihály","sibling_birth_place": "Csávoly","sibling_birth_date": "1801.09.01", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
+					{"sibling_id": "129.7.3","sibling_name": "Poner Mihály","sibling_birth_place": "Csávoly","sibling_birth_date": "1801.09.01", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "129.7.4","sibling_name": "Poner Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1804.04.19", "sibling_death_place": "Csávoly","sibling_death_date": "1804.04.29","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 					],
 					"children": [{
 						"id": "258",
