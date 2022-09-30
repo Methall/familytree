@@ -194,7 +194,39 @@
 							"comment": "2. felesége: Seiffert Margit (házasság: Taksony, 1772.02.18) ",
 							"siblings": [
 							],
-							"children": []
+							"children": [{
+								"id": "1024",
+								"generation": "10",
+								"name": "Frank János Kristóf",
+								"gender": "male",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							},{
+								"id": "1025",
+								"generation": "10",
+								"name": "Mária",
+								"gender": "female",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							}]
 						},{
 							"id": "513",
 							"generation": "9",
