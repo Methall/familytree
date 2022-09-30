@@ -152,10 +152,11 @@
 					{"sibling_id": "128.7.2","sibling_name": "Frank Magdolna","sibling_birth_place": "Soroksár","sibling_birth_date": "1779.06.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
 					{"sibling_id": "128.7.3","sibling_name": "Frank Antal","sibling_birth_place": "Csávoly","sibling_birth_date": "1781.09.06", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "Bajerinn Mária", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1800.02.18"},
 					{"sibling_id": "128.7.4","sibling_name": "Frank Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1784.04.04", "sibling_death_place": "Csávoly","sibling_death_date": "1799.03.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
-					{"sibling_id": "128.7.5","sibling_name": "Frank János","sibling_birth_place": "Csávoly","sibling_birth_date": "1786.09.11", "sibling_death_place": "Csávoly","sibling_death_date": "1833.03.05","sibling_spouse_name": "Baumann Anna", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
-					{"sibling_id": "128.7.6","sibling_name": "Frank Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1790.03.05", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
-					{"sibling_id": "128.7.7","sibling_name": "Frank Tamás","sibling_birth_place": "Csávoly","sibling_birth_date": "1792.01.18", "sibling_death_place": "Csávoly","sibling_death_date": "1852.05.24","sibling_spouse_name": "Tossenberger Katalin", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1811.11.05"},
-					{"sibling_id": "128.7.8","sibling_name": "Frank Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1799.03.07", "sibling_death_place": "Csávoly","sibling_death_date": "1799.03.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
+					{"sibling_id": "128.7.5","sibling_name": "Frank Ferenc","sibling_birth_place": "Csávoly","sibling_birth_date": "1785", "sibling_death_place": "Vaskút","sibling_death_date": "1790.02.19","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+					{"sibling_id": "128.7.6","sibling_name": "Frank János","sibling_birth_place": "Csávoly","sibling_birth_date": "1786.09.11", "sibling_death_place": "Csávoly","sibling_death_date": "1833.03.05","sibling_spouse_name": "Baumann Anna", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "128.7.7","sibling_name": "Frank Teréz","sibling_birth_place": "Csávoly","sibling_birth_date": "1790.03.05", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+					{"sibling_id": "128.7.8","sibling_name": "Frank Tamás","sibling_birth_place": "Csávoly","sibling_birth_date": "1792.01.18", "sibling_death_place": "Csávoly","sibling_death_date": "1852.05.24","sibling_spouse_name": "Tossenberger Katalin", "sibling_marriage_place": "Csávoly", "sibling_marriage_date": "1811.11.05"},
+					{"sibling_id": "128.7.9","sibling_name": "Frank Anna","sibling_birth_place": "Csávoly","sibling_birth_date": "1799.03.07", "sibling_death_place": "Csávoly","sibling_death_date": "1799.03.10","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""}
 					],
 					"children": [{
 						"id": "256",
@@ -169,10 +170,42 @@
 						"marriage_date": "Soroksár",
 						"marriage_place": "1776.06.12",
 						"religion": "katolikus",
-						"comment": "",
+						"comment": "1781-ben családjával Soroksárról Csávolyra költözött.",
 						"siblings": [
 						],
-						"children": []
+						"children": [{
+							"id": "512",
+							"generation": "9",
+							"name": "Frank János",
+							"gender": "male",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						},{
+							"id": "513",
+							"generation": "9",
+							"name": "Roth Krisztina",
+							"gender": "female",
+							"birth_place": "?",
+							"birth_date": "?",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "?",
+							"marriage_place": "?",
+							"religion": "",
+							"comment": "",
+							"siblings": [
+							],
+							"children": []
+						}]
 					},{
 						"id": "257",
 						"generation": "8",
@@ -207,7 +240,7 @@
 						},{
 							"id": "515",
 							"generation": "9",
-							"name": "? Annamária",
+							"name": "Lang Annamária",
 							"gender": "female",
 							"birth_place": "?",
 							"birth_date": "?",
