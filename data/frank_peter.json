@@ -312,7 +312,39 @@
 								"comment": "pontosabb születési hely: Blindheim, Dillingen an der Donau, Bavaria, Germany",
 								"siblings": [
 								],
-								"children": []
+								"children": [{
+									"id": "2060",
+									"generation": "11",
+									"name": "Hans Lang",
+									"gender": "male",
+									"birth_place": "Blindheim",
+									"birth_date": "?",
+									"death_date": "1729.09.09",
+									"death_place": "Blindheim",
+									"marriage_date": "1675.01.07",
+									"marriage_place": "Blindheim",
+									"religion": "katolikus",
+									"comment": "pontosabb születési/halálozási hely: Blindheim, Dillingen an der Donau, Bavaria, Germany",
+									"siblings": [
+									],
+									"children": []
+								},{
+									"id": "2061",
+									"generation": "11",
+									"name": "Barbara Nödel",
+									"gender": "female",
+									"birth_place": "?",
+									"birth_date": "1656.?.?",
+									"death_date": "1715.05.25",
+									"death_place": "Blindheim",
+									"marriage_date": "1675.01.07",
+									"marriage_place": "Blindheim",
+									"religion": "katolikus",
+									"comment": "pontosabb születési hely: Gremheim, Schwenningen, Dillingen an der Donau, Bavaria, Germany",
+									"siblings": [
+									],
+									"children": []
+								}]
 							},{
 								"id": "1031",
 								"generation": "10",
