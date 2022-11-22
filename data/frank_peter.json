@@ -291,8 +291,45 @@
 							"religion": "katolikus",
 							"comment": "Dunaharasztiban lett megkeresztelve a születése napján. 1744-ben Taksony-ból Soroksárra költözött a 97-es számú házba.",
 							"siblings": [
+							{"sibling_id": "515.9.1","sibling_name": "Lang János Mihály","sibling_birth_place": "Ráckeve","sibling_birth_date": "1716.09.23", "sibling_death_place": "Ráckeve","sibling_death_date": "1716.10.02","sibling_spouse_name": "", "sibling_marriage_place": "", "sibling_marriage_date": ""},
+							{"sibling_id": "515.9.2","sibling_name": "Lang János","sibling_birth_place": "Ráckeve","sibling_birth_date": "1717.12.12", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+							{"sibling_id": "515.9.3","sibling_name": "Lang Anna Erzsébet","sibling_birth_place": "Taksony","sibling_birth_date": "1722.11.17", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+							{"sibling_id": "515.9.4","sibling_name": "Lang Mária Magdolna","sibling_birth_place": "Taksony","sibling_birth_date": "1724.03.25", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"},
+							{"sibling_id": "515.9.5","sibling_name": "Lang Johanna","sibling_birth_place": "Taksony","sibling_birth_date": "1725.10.27", "sibling_death_place": "?","sibling_death_date": "?","sibling_spouse_name": "?", "sibling_marriage_place": "?", "sibling_marriage_date": "?"}
 							],
-							"children": []
+							"children": [{
+								"id": "1030",
+								"generation": "10",
+								"name": "Leonard Lang",
+								"gender": "male",
+								"birth_place": "Blindheim",
+								"birth_date": "1679.04.06",
+								"death_date": "1751.10.06",
+								"death_place": "Dunaharaszti",
+								"marriage_date": "1715.10.30",
+								"marriage_place": "?",
+								"religion": "katolikus",
+								"comment": "pontosabb születési hely: Blindheim, Dillingen an der Donau, Bavaria, Germany",
+								"siblings": [
+								],
+								"children": []
+							},{
+								"id": "1031",
+								"generation": "10",
+								"name": "Kreis Johanna",
+								"gender": "female",
+								"birth_place": "Gremheim",
+								"birth_date": "1688.02.?",
+								"death_date": "1736.01.24",
+								"death_place": "Dunaharaszti",
+								"marriage_date": "1715.10.30",
+								"marriage_place": "?",
+								"religion": "katolikus",
+								"comment": "pontosabb születési hely: Gremheim, Schwenningen, Dillingen an der Donau, Bavaria, Germany",
+								"siblings": [
+								],
+								"children": []
+							}]
 						}]
 					}]
 				},{
