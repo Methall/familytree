@@ -327,14 +327,46 @@
 									"comment": "pontosabb születési/halálozási hely: Blindheim, Dillingen an der Donau, Bavaria, Germany",
 									"siblings": [
 									],
-									"children": []
+									"children": [{
+										"id": "4120",
+										"generation": "12",
+										"name": "Martin Lang",
+										"gender": "male",
+										"birth_place": "?",
+										"birth_date": "1620(?)",
+										"death_date": "?",
+										"death_place": "?",
+										"marriage_date": "?",
+										"marriage_place": "?",
+										"religion": "",
+										"comment": "",
+										"siblings": [
+										],
+										"children": []
+									},{
+										"id": "4121",
+										"generation": "12",
+										"name": "?",
+										"gender": "female",
+										"birth_place": "?",
+										"birth_date": "?",
+										"death_date": "?",
+										"death_place": "?",
+										"marriage_date": "?",
+										"marriage_place": "?",
+										"religion": "",
+										"comment": "",
+										"siblings": [
+										],
+										"children": []
+									}]
 								},{
 									"id": "2061",
 									"generation": "11",
 									"name": "Barbara Nödel",
 									"gender": "female",
 									"birth_place": "?",
-									"birth_date": "1656.?.?",
+									"birth_date": "1656(?)",
 									"death_date": "1715.05.25",
 									"death_place": "Blindheim",
 									"marriage_date": "1675.01.07",
@@ -343,7 +375,39 @@
 									"comment": "pontosabb születési hely: Gremheim, Schwenningen, Dillingen an der Donau, Bavaria, Germany",
 									"siblings": [
 									],
-									"children": []
+									"children": [{
+										"id": "4122",
+										"generation": "12",
+										"name": "Georg Nödel",
+										"gender": "male",
+										"birth_place": "?",
+										"birth_date": "1631(?)",
+										"death_date": "?",
+										"death_place": "?",
+										"marriage_date": "?",
+										"marriage_place": "?",
+										"religion": "",
+										"comment": "",
+										"siblings": [
+										],
+										"children": []
+									},{
+										"id": "4123",
+										"generation": "12",
+										"name": "?",
+										"gender": "female",
+										"birth_place": "?",
+										"birth_date": "?",
+										"death_date": "?",
+										"death_place": "?",
+										"marriage_date": "?",
+										"marriage_place": "?",
+										"religion": "",
+										"comment": "",
+										"siblings": [
+										],
+										"children": []
+									}]
 								}]
 							},{
 								"id": "1031",
@@ -360,7 +424,39 @@
 								"comment": "pontosabb születési hely: Gremheim, Schwenningen, Dillingen an der Donau, Bavaria, Germany",
 								"siblings": [
 								],
-								"children": []
+								"children": [{
+									"id": "2062",
+									"generation": "11",
+									"name": "Mathias Kreis",
+									"gender": "male",
+									"birth_place": "Lustnau",
+									"birth_date": "1661(?)",
+									"death_date": "?",
+									"death_place": "?",
+									"marriage_date": "?",
+									"marriage_place": "?",
+									"religion": "katolikus",
+									"comment": "pontosabb születési hely: Lustnau, Tübingen, Württemberg, Németország",
+									"siblings": [
+									],
+									"children": []
+								},{
+									"id": "2063",
+									"generation": "11",
+									"name": "Anna Scherer",
+									"gender": "female",
+									"birth_place": "Lustnau",
+									"birth_date": "1661(?)",
+									"death_date": "?",
+									"death_place": "?",
+									"marriage_date": "1685.06.05",
+									"marriage_place": "Blindheim",
+									"religion": "",
+									"comment": "pontosabb születési hely: Lustnau, Tübingen, Württemberg, Németország; pontosabb házassági helyszín: Blindheim, Michelfeld, Landkreis Schwäbisch Hall, Baden-Württemberg, Németország",
+									"siblings": [
+									],
+									"children": []
+								}]
 							}]
 						}]
 					}]
