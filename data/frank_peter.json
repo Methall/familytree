@@ -549,7 +549,39 @@
 					"comment": "",
 					"siblings": [
 					],
-					"children": []
+					"children": [{
+						"id": "260",
+						"generation": "8",
+						"name": "Pfeffer Krisztián",
+						"gender": "male",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "katolikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					},{
+						"id": "261",
+						"generation": "8",
+						"name": "Saloma Hirtz",
+						"gender": "female",
+						"birth_place": "?",
+						"birth_date": "?",
+						"death_date": "?",
+						"death_place": "?",
+						"marriage_date": "?",
+						"marriage_place": "?",
+						"religion": "katolikus",
+						"comment": "",
+						"siblings": [
+						],
+						"children": []
+					}]
 				},{
 					"id": "131",
 					"generation": "7",
