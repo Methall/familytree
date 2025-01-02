@@ -555,11 +555,11 @@
 						"name": "Pfeffer Krisztián",
 						"gender": "male",
 						"birth_place": "?",
-						"birth_date": "?",
-						"death_date": "?",
-						"death_place": "?",
-						"marriage_date": "?",
-						"marriage_place": "?",
+						"birth_date": "1710(?)",
+						"death_date": "1770.08.21",
+						"death_place": "Hajós",
+						"marriage_date": "1744.08.28(?)",
+						"marriage_place": "Hajós(?)",
 						"religion": "katolikus",
 						"comment": "",
 						"siblings": [
@@ -568,19 +568,115 @@
 					},{
 						"id": "261",
 						"generation": "8",
-						"name": "Saloma Hirtz",
+						"name": "Salome Hirtzhaus",
 						"gender": "female",
-						"birth_place": "?",
-						"birth_date": "?",
+						"birth_place": "Hajós",
+						"birth_date": "1726.07.26",
 						"death_date": "?",
 						"death_place": "?",
-						"marriage_date": "?",
-						"marriage_place": "?",
+						"marriage_date": "1744.08.28(?)",
+						"marriage_place": "Hajós(?)",
 						"religion": "katolikus",
 						"comment": "",
 						"siblings": [
 						],
-						"children": []
+						"children": [{
+							"id": "520",
+							"generation": "9",
+							"name": "Hirtzhaus Johann Georg",
+							"gender": "male",
+							"birth_place": "Betzenweiler(?)",
+							"birth_date": "1699.02.05(?)",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "1724.02.06(?)",
+							"marriage_place": "Betzenweiler(?)",
+							"religion": "katolikus",
+							"comment": "Születési, házassági hely (teljes): Betzenweiler, Riedlingen, Württemberg, Deutschland(?)",
+							"siblings": [
+							],
+							"children": [{
+								"id": "1040",
+								"generation": "10",
+								"name": "Hirtshauss Martinus",
+								"gender": "male",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "katolikus",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							},{
+								"id": "1041",
+								"generation": "10",
+								"name": "Huml Christina",
+								"gender": "female",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "katolikus",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							}]
+						},{
+							"id": "522",
+							"generation": "9",
+							"name": "Maria Theresia Stoffer",
+							"gender": "female",
+							"birth_place": "Betzenweiler(?)",
+							"birth_date": "1698.11.06(?)",
+							"death_date": "?",
+							"death_place": "?",
+							"marriage_date": "1724.02.06(?)",
+							"marriage_place": "Betzenweiler(?)",
+							"religion": "katolikus",
+							"comment": "Házassági hely (teljes): Betzenweiler, Riedlingen, Württemberg, Deutschland(?)",
+							"siblings": [
+							],
+							"children": [{
+								"id": "1044",
+								"generation": "10",
+								"name": "Michael Stoffer",
+								"gender": "male",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "katolikus",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							},{
+								"id": "1045",
+								"generation": "10",
+								"name": "N N",
+								"gender": "female",
+								"birth_place": "?",
+								"birth_date": "?",
+								"death_date": "?",
+								"death_place": "?",
+								"marriage_date": "?",
+								"marriage_place": "?",
+								"religion": "katolikus",
+								"comment": "",
+								"siblings": [
+								],
+								"children": []
+							}]
+						}]
 					}]
 				},{
 					"id": "131",
