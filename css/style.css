@@ -1,25 +1,39 @@
+:root {
+  --primary-blue: #4472C4;
+  --primary-orange: #ED7D31;
+  --border-color: #ccc;
+  --highlight-green: #c2e4a0;
+  --selected-green: #E1FADD;
+  --text-gray: #818181;
+  --hover-gray: #444;
+  --transition-speed: 0.5s;
+}
 
 .link {
   fill: none;
-  stroke: #ccc;
+  stroke: var(--border-color);
   stroke-width: 1px;
 }
 
 .text {
-  font-family: Calibri,sans-serif;
+  font-family: Calibri, sans-serif;
 }
 
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .tree-container {
-  position:fixed; top: 0; left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: white;
   z-index: -2;
-  transition: 0.5s;
+  transition: var(--transition-speed);
 }
 
 .add_div {
@@ -59,7 +73,7 @@ body {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: var(--transition-speed);
   padding-left: 30px;
   border-bottom-style: solid;
   border-width: 1px;
@@ -69,13 +83,13 @@ body {
 .upbar a, .sidebar a {
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: var(--text-gray);
   display: block;
   transition: 0.3s;
 }
 
 .upbar a:hover, .sidebar a:hover {
-  color: #f1f1f1;
+  color: var(--hover-gray);
 }
 
 .upbar .closeupbtn {
@@ -116,7 +130,7 @@ body {
 .helpbtn {
   font-size: 20px;
   cursor: default;
-  background-color: #c2e4a0;
+  background-color: var(--highlight-green);
   color: black;
   padding: 0px 10px 0px 10px;
   border-style: solid;
@@ -126,11 +140,11 @@ body {
 }
 
 .openupbtn:hover, .openrightbtn:hover {
-  background-color: #444;
+  background-color: var(--hover-gray);
 }
 
 .topupbtn:hover {
-  background-color: #c2e4a0;
+  background-color: var(--highlight-green);
 }
 
 #up_open_button_div {
@@ -172,7 +186,7 @@ body {
   top: 0;
   right: 0px;
   overflow-y: auto;
-  transition: 0.5s;
+  transition: var(--transition-speed);
   padding-top: 30px;
   border-left-style: solid;
   border-width: 1px;
