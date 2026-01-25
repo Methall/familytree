@@ -1,6 +1,172 @@
+// Export UI handler functions for HTML onclick
+// Expose setLanguage globally before any flag event listeners
+// Track last selected person for language refresh
+let lastSelectedPerson = null;
+
+window.setLanguage = function(lang) {
+    currentLanguage = lang;
+    // Update flag opacity (always update both)
+    var huFlag = document.getElementById('flag_hu');
+    var enFlag = document.getElementById('flag_en');
+    if (huFlag) huFlag.style.opacity = currentLanguage === 'hu' ? '1' : '0.4';
+    if (enFlag) enFlag.style.opacity = currentLanguage === 'en' ? '1' : '0.4';
+    // Update help panel if open
+    if (getElement('help')) updateHelpContent();
+    // Update right panel: if a person is selected, refresh with new language
+    const nameElem = getElement('right_panel_name_text');
+    if (nameElem && nameElem.innerHTML !== "" && lastSelectedPerson) {
+        // Re-render right panel with last selected person
+        renderRightPanel(lastSelectedPerson);
+    } else if (nameElem && nameElem.innerHTML === "") {
+        getElement('right_panel_sibling_text').innerHTML = translations[currentLanguage].clickPerson;
+    }
+    // Update other UI text as needed (add more as required)
+}
+
+// Helper to render right panel for a person (used by click_node and setLanguage)
+function renderRightPanel(d) {
+    const t = translations[currentLanguage];
+    document.getElementById("right_panel_name_text").innerHTML = d.data.name;
+    document.getElementById("right_panel_comment_text").innerHTML = `<b>${t.siblingNoteLabel}</b><br>` + d.data.comment;
+    document.getElementById("right_panel_sibling_text").innerHTML = "";
+    for (let i = 0; i <= (d.data.siblings.length - 1); i++) {
+        if (i==0) {
+            document.getElementById("right_panel_sibling_text").innerHTML += `<b><u>${t.siblingsLabel}</u></b><br><br>`
+        }
+        document.getElementById("right_panel_sibling_text").innerHTML += `<b>${i+1}.&nbsp;${d.data.siblings[i].sibling_name}</b><br>`
+        if ((d.data.siblings[i].sibling_birth_date != "") || (d.data.siblings[i].sibling_death_date != "")) {
+            document.getElementById("right_panel_sibling_text").innerHTML += `${d.data.siblings[i].sibling_birth_date} - ${d.data.siblings[i].sibling_death_date}<br>`;
+        } else {
+            document.getElementById("right_panel_sibling_text").innerHTML += `<br>`
+        }
+        if ((d.data.siblings[i].sibling_birth_place != "") || (d.data.siblings[i].sibling_death_place != "")) {
+            document.getElementById("right_panel_sibling_text").innerHTML += `${d.data.siblings[i].sibling_birth_place} - ${d.data.siblings[i].sibling_death_place}<br>`;
+        } else {
+            document.getElementById("right_panel_sibling_text").innerHTML += `<br>`
+        }
+        if (d.data.siblings[i].sibling_spouse_name != "") {
+            if ((d.data.siblings[i].sibling_marriage_place != "") || (d.data.siblings[i].sibling_marriage_place != "")) {
+                document.getElementById("right_panel_sibling_text").innerHTML += `${d.data.siblings[i].sibling_spouse_name} (${d.data.siblings[i].sibling_marriage_place}, ${d.data.siblings[i].sibling_marriage_date})<br><br>`;
+            } else {
+                document.getElementById("right_panel_sibling_text").innerHTML += `<br><br>`
+            }
+        } else {
+            document.getElementById("right_panel_sibling_text").innerHTML += `<br><br>`
+        }
+    }
+}
+// Add persistent language selector flags next to Help button on page load
+window.addEventListener('DOMContentLoaded', function() {
+    if (!document.getElementById('lang_flag_container')) {
+        var helpBtn = document.getElementById('help_button_id');
+        if (helpBtn) {
+            var langFlagDiv = document.createElement('div');
+            langFlagDiv.id = 'lang_flag_container';
+            langFlagDiv.style.display = 'inline-flex';
+            langFlagDiv.style.gap = '8px';
+            langFlagDiv.style.verticalAlign = 'middle';
+            langFlagDiv.style.marginLeft = '8px';
+            langFlagDiv.style.position = 'relative';
+            langFlagDiv.style.zIndex = '1000';
+            langFlagDiv.style.top = '0px';
+            langFlagDiv.style.left = '8px';
+            langFlagDiv.style.pointerEvents = 'all';
+            // Hungarian flag
+            var flagHu = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            flagHu.setAttribute('id', 'flag_hu');
+            flagHu.setAttribute('width', '30');
+            flagHu.setAttribute('height', '20');
+            flagHu.setAttribute('viewBox', '0 0 30 20');
+            flagHu.style.cursor = 'pointer';
+            flagHu.style.border = '1px solid #ccc';
+            flagHu.style.opacity = currentLanguage === 'hu' ? '1' : '0.4';
+            flagHu.style.pointerEvents = 'all';
+            flagHu.addEventListener('click', function(e) {
+                e.stopPropagation();
+                setLanguage('hu');
+            });
+            var huRect1 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            huRect1.setAttribute('width', '30');
+            huRect1.setAttribute('height', '6.67');
+            huRect1.setAttribute('fill', '#CD2A3E');
+            flagHu.appendChild(huRect1);
+            var huRect2 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            huRect2.setAttribute('width', '30');
+            huRect2.setAttribute('height', '6.67');
+            huRect2.setAttribute('y', '6.67');
+            huRect2.setAttribute('fill', '#FFFFFF');
+            flagHu.appendChild(huRect2);
+            var huRect3 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            huRect3.setAttribute('width', '30');
+            huRect3.setAttribute('height', '6.66');
+            huRect3.setAttribute('y', '13.34');
+            huRect3.setAttribute('fill', '#436F4D');
+            flagHu.appendChild(huRect3);
+            // British flag
+            var flagEn = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            flagEn.setAttribute('id', 'flag_en');
+            flagEn.setAttribute('width', '30');
+            flagEn.setAttribute('height', '20');
+            flagEn.setAttribute('viewBox', '0 0 60 40');
+            flagEn.style.cursor = 'pointer';
+            flagEn.style.border = '1px solid #ccc';
+            flagEn.style.opacity = currentLanguage === 'en' ? '1' : '0.4';
+            flagEn.style.pointerEvents = 'all';
+            flagEn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                setLanguage('en');
+            });
+            var enRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            enRect.setAttribute('width', '60');
+            enRect.setAttribute('height', '40');
+            enRect.setAttribute('fill', '#012169');
+            flagEn.appendChild(enRect);
+            var enPath1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            enPath1.setAttribute('d', 'M0,0 L60,40 M60,0 L0,40');
+            enPath1.setAttribute('stroke', '#FFF');
+            enPath1.setAttribute('stroke-width', '8');
+            flagEn.appendChild(enPath1);
+            var enPath2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            enPath2.setAttribute('d', 'M0,0 L60,40 M60,0 L0,40');
+            enPath2.setAttribute('stroke', '#C8102E');
+            enPath2.setAttribute('stroke-width', '5');
+            flagEn.appendChild(enPath2);
+            var enPath3 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            enPath3.setAttribute('d', 'M30,0 L30,40 M0,20 L60,20');
+            enPath3.setAttribute('stroke', '#FFF');
+            enPath3.setAttribute('stroke-width', '13.33');
+            flagEn.appendChild(enPath3);
+            var enPath4 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            enPath4.setAttribute('d', 'M30,0 L30,40 M0,20 L60,20');
+            enPath4.setAttribute('stroke', '#C8102E');
+            enPath4.setAttribute('stroke-width', '8');
+            flagEn.appendChild(enPath4);
+            langFlagDiv.appendChild(flagHu);
+            langFlagDiv.appendChild(flagEn);
+            var helpDiv = document.getElementById('help_div');
+            if (helpDiv) {
+                helpDiv.appendChild(langFlagDiv);
+            } else {
+                helpBtn.parentNode.insertBefore(langFlagDiv, helpBtn.nextSibling);
+            }
+        }
+    }
+});
+window.to_the_top_button_click = to_the_top_button_click;
+window.openUpPan = openUpPan;
+window.closeUpPan = closeUpPan;
+window.printTree = printTree;
+window.help = help;
+window.openRightPan = openRightPan;
+window.closeRightPan = closeRightPan;
+// Stub for add-parent modal (to be implemented)
+function showAddParentForm(data) {
+    // TODO: show modal form for adding parent
+    alert('Add parent form would open for: ' + (data.name || data.id));
+}
 // Constants
 const NODE_WIDTH = 238;
-const NODE_HEIGHT = 90;
+const NODE_HEIGHT = 90; // restore original height
 const HIGHLIGHT_GREEN = "#c2e4a0";
 const SELECTED_GREEN = "#E1FADD";
 const MARGIN_TOP_OPEN = "40px";
@@ -23,7 +189,9 @@ const translations = {
         reformed: "református",
         catholic: "katolikus",
         lutheran: "evangélikus",
-        clickPerson: "Kattints egy személyre a családfán"
+        clickPerson: "Kattints egy személyre a családfán",
+        siblingsLabel: "Testvérek:",
+        siblingNoteLabel: "Megjegyzés:"
     },
     en: {
         title: "User Guide:",
@@ -36,7 +204,9 @@ const translations = {
         reformed: "Reformed",
         catholic: "Catholic",
         lutheran: "Lutheran",
-        clickPerson: "Click on a person in the family tree"
+        clickPerson: "Click on a person in the family tree",
+        siblingsLabel: "Siblings:",
+        siblingNoteLabel: "Note:"
     }
 };
 
@@ -82,62 +252,46 @@ function help() {
         div.append("p")
             .attr("class", "add_text")
         
-        // Language selector flags
-        var flagContainer = d3.select("#help")
-            .append("div")
-            .style("position", "absolute")
-            .style("top", "5px")
-            .style("right", "5px")
-            .style("display", "flex")
-            .style("gap", "8px")
-        
-        // Hungarian flag SVG
-        var flagHu = flagContainer.append("svg")
-            .attr("id", "flag_hu")
-            .attr("width", "30")
-            .attr("height", "20")
-            .attr("viewBox", "0 0 30 20")
-            .style("cursor", "pointer")
-            .style("border", "1px solid #ccc")
-            .style("opacity", currentLanguage === 'hu' ? "1" : "0.4")
-            .on("click", function() {
-                currentLanguage = 'hu';
-                updateHelpContent();
-                d3.select("#flag_hu").style("opacity", "1");
-                d3.select("#flag_en").style("opacity", "0.4");
-            })
-        flagHu.append("rect").attr("width", "30").attr("height", "6.67").attr("fill", "#CD2A3E")
-        flagHu.append("rect").attr("width", "30").attr("height", "6.67").attr("y", "6.67").attr("fill", "#FFFFFF")
-        flagHu.append("rect").attr("width", "30").attr("height", "6.66").attr("y", "13.34").attr("fill", "#436F4D")
-        
-        // British flag SVG
-        var flagEn = flagContainer.append("svg")
-            .attr("id", "flag_en")
-            .attr("width", "30")
-            .attr("height", "20")
-            .attr("viewBox", "0 0 60 40")
-            .style("cursor", "pointer")
-            .style("border", "1px solid #ccc")
-            .style("opacity", currentLanguage === 'en' ? "1" : "0.4")
-            .on("click", function() {
-                currentLanguage = 'en';
-                updateHelpContent();
-                d3.select("#flag_hu").style("opacity", "0.4");
-                d3.select("#flag_en").style("opacity", "1");
-            })
-        flagEn.append("rect").attr("width", "60").attr("height", "40").attr("fill", "#012169")
-        flagEn.append("path").attr("d", "M0,0 L60,40 M60,0 L0,40").attr("stroke", "#FFF").attr("stroke-width", "8")
-        flagEn.append("path").attr("d", "M0,0 L60,40 M60,0 L0,40").attr("stroke", "#C8102E").attr("stroke-width", "5")
-        flagEn.append("path").attr("d", "M30,0 L30,40 M0,20 L60,20").attr("stroke", "#FFF").attr("stroke-width", "13.33")
-        flagEn.append("path").attr("d", "M30,0 L30,40 M0,20 L60,20").attr("stroke", "#C8102E").attr("stroke-width", "8")
-        
+        // ...existing code...
         updateHelpContent();
+// Set language globally and update all active UI text
+window.setLanguage = function(lang) {
+    currentLanguage = lang;
+    // Update flag opacity (always update both)
+    var huFlag = document.getElementById('flag_hu');
+    var enFlag = document.getElementById('flag_en');
+    if (huFlag) huFlag.style.opacity = currentLanguage === 'hu' ? '1' : '0.4';
+    if (enFlag) enFlag.style.opacity = currentLanguage === 'en' ? '1' : '0.4';
+    // Update help panel if open
+    if (getElement('help')) updateHelpContent();
+    // Update right panel sibling text if no person selected
+    if (getElement('right_panel_name_text') && getElement('right_panel_name_text').innerHTML === "") {
+        getElement('right_panel_sibling_text').innerHTML = translations[currentLanguage].clickPerson;
+    }
+    // Update other UI text as needed (add more as required)
+}
+
+        // Hide help when clicking anywhere except the help panel or Help button
+        function globalHelpClickListener(e) {
+            const helpElem = getElement("help");
+            if (!helpElem) return;
+            if (
+                !helpElem.contains(e.target) &&
+                e.target.id !== "help_button_id"
+            ) {
+                helpElem.remove();
+                d3.select('#help_button_id').style("background-color", HIGHLIGHT_GREEN);
+                document.removeEventListener('mousedown', globalHelpClickListener, true);
+            }
+        }
+        document.addEventListener('mousedown', globalHelpClickListener, true);
 
         document.addEventListener('keydown', (event) => {
             var name = event.key;
             if (name == "Escape") {
                 getElement("help").remove()
                 d3.select('#help_button_id').style("background-color", HIGHLIGHT_GREEN)
+                document.removeEventListener('mousedown', globalHelpClickListener, true);
             }
         }, { once: true })
 
@@ -199,30 +353,98 @@ function printTree() {
     document.body.style.visibility = "hidden";
     getElement("tree_area").style.visibility = "visible";
 
+    // Escape key restores normal view
     document.addEventListener('keydown', (event) => {
         var name = event.key;
         if (name == "Escape") {
             document.body.style.visibility = "visible";
+            document.removeEventListener('mousedown', printViewMouseListener, true);
         }
     }, { once: true })
+
+    // Any mouse button restores normal view
+    function printViewMouseListener(e) {
+        document.body.style.visibility = "visible";
+        document.removeEventListener('mousedown', printViewMouseListener, true);
+    }
+    document.addEventListener('mousedown', printViewMouseListener, true);
 }
 
 function openRightPan() {
+    closeUpPan();
     getElement("mySidebar").style.width = SIDEBAR_WIDTH_OPEN;
     getElement("right_open_button_div").style.marginRight = SIDEBAR_WIDTH_OPEN;
     if (getElement("right_panel_name_text").innerHTML == "") {
         getElement("right_panel_sibling_text").innerHTML = translations[currentLanguage].clickPerson
     }
     d3.select("#right_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
+
+    // Global click listener to close panel when clicking elsewhere
+    function globalSidebarClickListener(e) {
+        const sidebarElem = getElement("mySidebar");
+        // If NOT clicking on sidebar or any element inside a family tree rectangle
+        const isSidebar = sidebarElem.contains(e.target);
+        let isRectNode = false;
+        // Check if click happened inside a rectangle (id big_rect...) or any of its children
+        let el = e.target;
+        while (el) {
+            // If any parent has id big_rect..., we are inside a rectangle
+            if (el.id && el.id.startsWith("big_rect")) {
+                isRectNode = true;
+                break;
+            }
+            // If SVG element, check if any <g> parent contains a rect with id big_rect...
+            if (el.tagName && ["text","tspan","rect","g","svg"].includes(el.tagName.toLowerCase())) {
+                let group = el;
+                while (group) {
+                    if (group.tagName && group.tagName.toLowerCase() === "g") {
+                        // Search for rect with id big_rect... inside the group
+                        let rects = group.querySelectorAll('rect[id^="big_rect"]');
+                        if (rects.length > 0) {
+                            isRectNode = true;
+                            break;
+                        }
+                    }
+                    group = group.parentElement;
+                }
+                if (isRectNode) break;
+            }
+            el = el.parentElement;
+        }
+        if (!isSidebar && !isRectNode) {
+            closeRightPan();
+            document.removeEventListener('mousedown', globalSidebarClickListener, true);
+        }
+    }
+    document.addEventListener('mousedown', globalSidebarClickListener, true);
 }
 
 function closeRightPan() {
+        // Remove global click listener if present
+        function globalSidebarClickListener() {}
+        document.removeEventListener('mousedown', globalSidebarClickListener, true);
     getElement("mySidebar").style.width = SIDEBAR_WIDTH_CLOSED;
     getElement("right_open_button_div").style.marginRight = SIDEBAR_WIDTH_CLOSED;
     d3.select("#right_open_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 1)
 }
 
 function openUpPan() {
+            // Global click listener to close panel when clicking elsewhere
+            function globalUpbarClickListener(e) {
+                const upbarElem = getElement("myUpbar");
+                if (!upbarElem) return;
+                // Ha NEM a panelre vagy a lenyitó gombra kattintunk
+                if (
+                    !upbarElem.contains(e.target) &&
+                    e.target.id !== "up_open_button_id"
+                ) {
+                    closeUpPan();
+                    document.removeEventListener('mousedown', globalUpbarClickListener, true);
+                }
+            }
+            document.addEventListener('mousedown', globalUpbarClickListener, true);
+        // Hide the right sibling panel icon
+        getElement("right_open_button_div").style.display = "none";
     getElement("myUpbar").style.height = MARGIN_TOP_OPEN;
     getElement("up_open_button_div").style.marginTop = MARGIN_TOP_OPEN;
     getElement("tree_area").style.marginTop = MARGIN_TOP_OPEN;
@@ -235,7 +457,8 @@ function openUpPan() {
     d3.select("#print_button_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
     d3.select("#help_div").transition().duration(1000).ease(d3.easeLinear).style("opacity", 0)
     if (getElement("help") != null ) {
-        d3.select("#help").transition().duration(500).ease(d3.easeLinear).style("opacity", 0)
+        getElement("help").remove();
+        d3.select('#help_button_id').style("background-color", HIGHLIGHT_GREEN);
     }
 
     d3.json("data/families.json").then(familiesData => {
@@ -273,6 +496,11 @@ function openUpPan() {
 }
 
 function closeUpPan() {
+            // Remove global click listener if present
+            function globalUpbarClickListener() {}
+            document.removeEventListener('mousedown', globalUpbarClickListener, true);
+        // Show the right sibling panel icon again
+        getElement("right_open_button_div").style.display = "";
     getElement("myUpbar").style.height = MARGIN_TOP_CLOSED;
     getElement("up_open_button_div").style.marginTop = MARGIN_TOP_CLOSED;
     getElement("top_button_div").style.marginTop = MARGIN_TOP_CLOSED;
@@ -316,8 +544,8 @@ family_tree(initial_family_tree)
 function family_tree(family_tree_data) {
     d3.json("data/"+ family_tree_data +".json").then(function(treeData) {
 
-        var node_width = 238
-            node_height = 90
+        var node_width = NODE_WIDTH
+            node_height = NODE_HEIGHT
             treemap_node_height = 150
             node_gap_gen_0 = 140
             node_gap_gen_1 = 400
@@ -343,7 +571,7 @@ function family_tree(family_tree_data) {
 
         zoomed = d3.zoom()
         .scaleExtent([0.5, 2.5])
-        //.translateExtent([[-3000,0],[3000,3000]])
+        // .translateExtent([[-3000,0],[3000,3000]])
         .on('zoom', function(event) {
             d3.select("#svg_group")
                 .attr("transform", event.transform)
@@ -376,7 +604,7 @@ function family_tree(family_tree_data) {
 
         function update(included,clicked_id,colored_id) {
 
-            // adds the links between the nodes
+            // Add links between nodes
             svg_group.selectAll(".link")
                 .data(nodes.descendants().slice(1))
                 .enter().append("path")
@@ -403,7 +631,7 @@ function family_tree(family_tree_data) {
                 })
                 .attr("id", d => "link"+d.data.id)
 
-            // adds each node as a group
+            // Add each node as a group
             var node = svg_group.selectAll(".node")
                 .data(nodes.descendants())
                 .enter().append("g")
@@ -419,7 +647,7 @@ function family_tree(family_tree_data) {
               .append('g')
               .on("click", click_node)
             
-            // adds the main rectangle to the node
+            // Add the main rectangle to the node
             main_rect.append("rect")
               .attr("id", d => "big_rect"+d.data.id)
               .attr("width", node_width)
@@ -436,7 +664,7 @@ function family_tree(family_tree_data) {
               .attr("x", 1)
               .attr("y", 1)
             
-            // adds the header rectangle to the node
+            // Add the header rectangle to the node
             main_rect.append("rect")
               .attr("id", d => "small_rect"+d.data.id)
               .attr("width", node_width)
@@ -453,7 +681,7 @@ function family_tree(family_tree_data) {
               .attr("x", 1)
               .attr("y", 1)
           
-            //name
+            // Name
             main_rect.append('text')
               .text( d => d.data.name )
               .attr('x', ((node_width + 1) / 2))
@@ -464,7 +692,7 @@ function family_tree(family_tree_data) {
               .style("cursor", "default")
               .style("user-select", "none")
           
-            //date
+            // Date
             main_rect.append('text')
                 .text( d => d.data.birth_date + ((d.data.death_date != null) ? ' - ' + d.data.death_date : ''))
                 .attr('x',((node_width + 1) / 2))
@@ -474,7 +702,7 @@ function family_tree(family_tree_data) {
                 .style("cursor", "default")
                 .style("user-select", "none")
           
-            //places
+            // Places
             main_rect.append('text')
                 .text( d => d.data.birth_place + ((d.data.death_place != null) ? ' - ' + d.data.death_place : ''))
                 .attr('x', ((node_width + 1) / 2))
@@ -484,7 +712,7 @@ function family_tree(family_tree_data) {
                 .style("cursor", "default")
                 .style("user-select", "none")
           
-            //id
+            // ID
             main_rect.append('text')
                 .text( d => d.data.id + "." + d.data.generation)
                 .attr('x', d => {
@@ -580,11 +808,11 @@ function family_tree(family_tree_data) {
             religion_svg.append('path')
                 .attr('d', d => {
                     if (d.data.religion === 'katolikus') {
-                        return katolikus_kereszt
+                        return katolikus_kereszt;
                     }
                 })
                 .attr('fill', 'black')
-                .attr('transform', 'translate(0,0) scale('+ katolikus_sym_scale +')')
+                .attr('transform', 'translate(0,0) scale(' + katolikus_sym_scale + ')');
             
             //evangelikus
             religion_svg.append('path')
@@ -873,39 +1101,14 @@ function family_tree(family_tree_data) {
                     d3.select(this).select('[id="evangelikus_kereszt'+d.data.id+'"]').attr("fill", SELECTED_GREEN)
                     d3.select(this).select('[id="evangelikus_virag'+d.data.id+'"]').attr("fill", SELECTED_GREEN)
                 }
-                document.getElementById("right_panel_name_text").innerHTML = d.data.name
-                document.getElementById("right_panel_comment_text").innerHTML = "<b>Megjegyzés:</b><br>"+d.data.comment+"";
-                for (let i = 0; i <= (d.data.siblings.length - 1); i++) {
-                    if (i==0) {
-                        document.getElementById("right_panel_sibling_text").innerHTML += "<b><u>Testvérek:</u></b><br><br>"
-                    }
-                    document.getElementById("right_panel_sibling_text").innerHTML += "<b>"+(i+1)+".&nbsp;"+d.data.siblings[i].sibling_name+"</b><br>"
-                    if ((d.data.siblings[i].sibling_birth_date != "") || (d.data.siblings[i].sibling_death_date != "")) {
-                        document.getElementById("right_panel_sibling_text").innerHTML += ""+d.data.siblings[i].sibling_birth_date+" - "+d.data.siblings[i].sibling_death_date+"<br>";
-                    } else {
-                        document.getElementById("right_panel_sibling_text").innerHTML += "<br>"
-                    }
-                    if ((d.data.siblings[i].sibling_birth_place != "") || (d.data.siblings[i].sibling_death_place != "")) {
-                        document.getElementById("right_panel_sibling_text").innerHTML += ""+d.data.siblings[i].sibling_birth_place+" - "+d.data.siblings[i].sibling_death_place+"<br>";
-                    } else {
-                        document.getElementById("right_panel_sibling_text").innerHTML += "<br>"
-                    }
-                    if (d.data.siblings[i].sibling_spouse_name != "") {
-                        if ((d.data.siblings[i].sibling_marriage_place != "") || (d.data.siblings[i].sibling_marriage_place != "")) {
-                            document.getElementById("right_panel_sibling_text").innerHTML += ""+d.data.siblings[i].sibling_spouse_name+" ("+d.data.siblings[i].sibling_marriage_place+", "+d.data.siblings[i].sibling_marriage_date+")<br><br>";
-                        } else {
-                            document.getElementById("right_panel_sibling_text").innerHTML += "<br><br>"
-                        }
-                    } else {
-                        document.getElementById("right_panel_sibling_text").innerHTML += "<br><br>"
-                    }
-                    
-                }
+                lastSelectedPerson = d;
+                renderRightPanel(d);
             } else {
                 d3.select(this).select('[id="big_rect'+d.data.id+'"]').attr("fill", "white")
                 document.getElementById("right_panel_name_text").innerHTML = ""
-                document.getElementById("right_panel_sibling_text").innerHTML = "Kattints egy személyre a családfán"
+                document.getElementById("right_panel_sibling_text").innerHTML = translations[currentLanguage].clickPerson
                 document.getElementById("right_panel_comment_text").innerHTML = ""
+                lastSelectedPerson = null;
             }
 
         }
